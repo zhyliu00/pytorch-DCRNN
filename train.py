@@ -12,7 +12,7 @@ import math
 def main(config):
     logger = config.get_logger('train')
 
-    graph_pkl_filename = 'data/sensor_graph/adj_mx_unix.pkl'
+    graph_pkl_filename = 'data/sensor_graph/adj_mx.pkl'
     _, _, adj_mat = utils.load_graph_data(graph_pkl_filename)
     data = utils.load_dataset(dataset_dir='data/METR-LA',
                               batch_size=config["arch"]["args"]["batch_size"],

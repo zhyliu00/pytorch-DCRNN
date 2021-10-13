@@ -55,6 +55,7 @@ class DCRNNTrainer(BaseTrainer):
         for batch_idx, (data, target) in enumerate(self.data_loader.get_iterator()):
             data = torch.FloatTensor(data)
             target = torch.FloatTensor(target)
+            # print(data.shape, target.shape)
             label = target[..., :self.model.output_dim]  # (..., 1)  supposed to be numpy array
             data, target = data.to(self.device), target.to(self.device)
 

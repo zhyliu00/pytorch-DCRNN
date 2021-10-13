@@ -106,7 +106,8 @@ class DCGRUCell(BaseModel):
         else:
             supports.append(utils.calculate_scaled_laplacian(adj_mat))
         for support in supports:
-            self._supports.append(self._build_sparse_matrix(support).cuda())  # to PyTorch sparse tensor
+            # self._supports.append(self._build_sparse_matrix(support).cuda())  # to PyTorch sparse tensor
+            self._supports.append(self._build_sparse_matrix(support))
         # supports = utils.calculate_scaled_laplacian(adj_mat, lambda_max=None)  # scipy coo matrix
         # self._supports = self._build_sparse_matrix(supports).cuda()  # to pytorch sparse tensor
 
