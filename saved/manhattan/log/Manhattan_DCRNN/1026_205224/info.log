@@ -1,0 +1,1230 @@
+2021-10-26 20:57:09,773 - train - INFO - DCRNNModel(
+  (encoder): DCRNNEncoder(
+    (encoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+    )
+  )
+  (decoder): DCGRUDecoder(
+    (decoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+        (project): Linear(in_features=64, out_features=1, bias=True)
+      )
+    )
+  )
+)
+Trainable parameters: 371393
+2021-10-26 20:57:09,775 - trainer - WARNING - Warning: There's no GPU available on this machine,training will be performed on CPU.
+2021-10-26 20:57:09,779 - trainer - WARNING - Warning: visualization (Tensorboard) is configured to use, but currently not installed on this machine. Please install either TensorboardX with 'pip install tensorboardx', upgrade PyTorch to version >= 1.1 for using 'torch.utils.tensorboard' or turn off the option in the 'config.json' file.
+2021-10-26 20:59:29,276 - trainer - INFO -     epoch          : 1
+2021-10-26 20:59:29,276 - trainer - INFO -     loss           : 1.0488006929556528
+2021-10-26 20:59:29,276 - trainer - INFO -     masked_mae_np  : 0.09453023162980874
+2021-10-26 20:59:29,276 - trainer - INFO -     masked_mape_np : 0.03646714128553867
+2021-10-26 20:59:29,276 - trainer - INFO -     masked_rmse_np : 0.996740061044693
+2021-10-26 20:59:29,276 - trainer - INFO -     val_loss       : 1.9262498378753663
+2021-10-26 20:59:29,276 - trainer - INFO -     val_masked_mae_np: 0.17361625134944916
+2021-10-26 20:59:29,276 - trainer - INFO -     val_masked_mape_np: 0.046893763914704324
+2021-10-26 20:59:29,276 - trainer - INFO -     val_masked_rmse_np: 1.9118298172950745
+2021-10-26 20:59:29,277 - trainer - INFO -     Time           : 121.3210s
+2021-10-26 20:59:29,289 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch1.pth ...
+2021-10-26 20:59:29,300 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:01:46,499 - trainer - INFO -     epoch          : 2
+2021-10-26 21:01:46,499 - trainer - INFO -     loss           : 1.047272127866745
+2021-10-26 21:01:46,499 - trainer - INFO -     masked_mae_np  : 0.09439245810111364
+2021-10-26 21:01:46,499 - trainer - INFO -     masked_mape_np : 0.03637595623731613
+2021-10-26 21:01:46,499 - trainer - INFO -     masked_rmse_np : 0.996053671836853
+2021-10-26 21:01:46,499 - trainer - INFO -     val_loss       : 1.9239582061767577
+2021-10-26 21:01:46,500 - trainer - INFO -     val_masked_mae_np: 0.17340969443321227
+2021-10-26 21:01:46,500 - trainer - INFO -     val_masked_mape_np: 0.04677163437008858
+2021-10-26 21:01:46,500 - trainer - INFO -     val_masked_rmse_np: 1.9110410451889037
+2021-10-26 21:01:46,500 - trainer - INFO -     Time           : 119.1545s
+2021-10-26 21:01:46,533 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch2.pth ...
+2021-10-26 21:01:46,570 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:04:04,632 - trainer - INFO -     epoch          : 3
+2021-10-26 21:04:04,632 - trainer - INFO -     loss           : 1.0457432260115942
+2021-10-26 21:04:04,633 - trainer - INFO -     masked_mae_np  : 0.09425465514262517
+2021-10-26 21:04:04,633 - trainer - INFO -     masked_mape_np : 0.036284731390575566
+2021-10-26 21:04:04,633 - trainer - INFO -     masked_rmse_np : 0.9953678091367085
+2021-10-26 21:04:04,633 - trainer - INFO -     val_loss       : 1.9216641306877136
+2021-10-26 21:04:04,633 - trainer - INFO -     val_masked_mae_np: 0.1732029363512993
+2021-10-26 21:04:04,633 - trainer - INFO -     val_masked_mape_np: 0.046649349853396416
+2021-10-26 21:04:04,633 - trainer - INFO -     val_masked_rmse_np: 1.910252320766449
+2021-10-26 21:04:04,633 - trainer - INFO -     Time           : 119.6405s
+2021-10-26 21:04:04,656 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch3.pth ...
+2021-10-26 21:04:04,695 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:06:24,527 - trainer - INFO -     epoch          : 4
+2021-10-26 21:06:24,527 - trainer - INFO -     loss           : 1.044212860862414
+2021-10-26 21:06:24,527 - trainer - INFO -     masked_mae_np  : 0.09411672117809454
+2021-10-26 21:06:24,527 - trainer - INFO -     masked_mape_np : 0.036193400931855045
+2021-10-26 21:06:24,527 - trainer - INFO -     masked_rmse_np : 0.9946820070346196
+2021-10-26 21:06:24,527 - trainer - INFO -     val_loss       : 1.919368040561676
+2021-10-26 21:06:24,527 - trainer - INFO -     val_masked_mae_np: 0.17299599051475525
+2021-10-26 21:06:24,527 - trainer - INFO -     val_masked_mape_np: 0.04652693048119545
+2021-10-26 21:06:24,527 - trainer - INFO -     val_masked_rmse_np: 1.9094636559486389
+2021-10-26 21:06:24,527 - trainer - INFO -     Time           : 121.0028s
+2021-10-26 21:06:24,539 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch4.pth ...
+2021-10-26 21:06:24,577 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:08:41,153 - trainer - INFO -     epoch          : 5
+2021-10-26 21:08:41,153 - trainer - INFO -     loss           : 1.0426811049381892
+2021-10-26 21:08:41,153 - trainer - INFO -     masked_mae_np  : 0.09397866477568945
+2021-10-26 21:08:41,153 - trainer - INFO -     masked_mape_np : 0.03610197075953086
+2021-10-26 21:08:41,153 - trainer - INFO -     masked_rmse_np : 0.9939962774515152
+2021-10-26 21:08:41,153 - trainer - INFO -     val_loss       : 1.917070460319519
+2021-10-26 21:08:41,153 - trainer - INFO -     val_masked_mae_np: 0.17278889566659927
+2021-10-26 21:08:41,154 - trainer - INFO -     val_masked_mape_np: 0.04640444740653038
+2021-10-26 21:08:41,154 - trainer - INFO -     val_masked_rmse_np: 1.9086751341819763
+2021-10-26 21:08:41,154 - trainer - INFO -     Time           : 118.4151s
+2021-10-26 21:08:41,191 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch5.pth ...
+2021-10-26 21:08:41,229 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:10:58,723 - trainer - INFO -     epoch          : 6
+2021-10-26 21:10:58,723 - trainer - INFO -     loss           : 1.0411484003067017
+2021-10-26 21:10:58,723 - trainer - INFO -     masked_mae_np  : 0.09384051871796449
+2021-10-26 21:10:58,724 - trainer - INFO -     masked_mape_np : 0.03601049023369948
+2021-10-26 21:10:58,724 - trainer - INFO -     masked_rmse_np : 0.9933107088009516
+2021-10-26 21:10:58,724 - trainer - INFO -     val_loss       : 1.9147719860076904
+2021-10-26 21:10:58,724 - trainer - INFO -     val_masked_mae_np: 0.1725817307829857
+2021-10-26 21:10:58,724 - trainer - INFO -     val_masked_mape_np: 0.04628196209669113
+2021-10-26 21:10:58,724 - trainer - INFO -     val_masked_rmse_np: 1.9078869581222535
+2021-10-26 21:10:58,724 - trainer - INFO -     Time           : 119.4197s
+2021-10-26 21:10:58,760 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch6.pth ...
+2021-10-26 21:10:58,796 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:13:16,578 - trainer - INFO -     epoch          : 7
+2021-10-26 21:13:16,578 - trainer - INFO -     loss           : 1.0396149545907973
+2021-10-26 21:13:16,578 - trainer - INFO -     masked_mae_np  : 0.09370230349401633
+2021-10-26 21:13:16,578 - trainer - INFO -     masked_mape_np : 0.0359189889083306
+2021-10-26 21:13:16,578 - trainer - INFO -     masked_rmse_np : 0.992625414331754
+2021-10-26 21:13:16,578 - trainer - INFO -     val_loss       : 1.9124719858169557
+2021-10-26 21:13:16,579 - trainer - INFO -     val_masked_mae_np: 0.17237443029880523
+2021-10-26 21:13:16,579 - trainer - INFO -     val_masked_mape_np: 0.046159391105175016
+2021-10-26 21:13:16,579 - trainer - INFO -     val_masked_rmse_np: 1.9070989608764648
+2021-10-26 21:13:16,579 - trainer - INFO -     Time           : 118.9878s
+2021-10-26 21:13:16,613 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch7.pth ...
+2021-10-26 21:13:16,627 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:15:37,647 - trainer - INFO -     epoch          : 8
+2021-10-26 21:15:37,647 - trainer - INFO -     loss           : 1.0380801945924758
+2021-10-26 21:15:37,648 - trainer - INFO -     masked_mae_np  : 0.093563973903656
+2021-10-26 21:15:37,648 - trainer - INFO -     masked_mape_np : 0.03582739016662041
+2021-10-26 21:15:37,648 - trainer - INFO -     masked_rmse_np : 0.9919402599334717
+2021-10-26 21:15:37,648 - trainer - INFO -     val_loss       : 1.9101701498031616
+2021-10-26 21:15:37,648 - trainer - INFO -     val_masked_mae_np: 0.17216695696115494
+2021-10-26 21:15:37,648 - trainer - INFO -     val_masked_mape_np: 0.046036696061491966
+2021-10-26 21:15:37,648 - trainer - INFO -     val_masked_rmse_np: 1.9063111305236817
+2021-10-26 21:15:37,648 - trainer - INFO -     Time           : 120.3162s
+2021-10-26 21:15:37,668 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch8.pth ...
+2021-10-26 21:15:37,705 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:17:56,672 - trainer - INFO -     epoch          : 9
+2021-10-26 21:17:56,673 - trainer - INFO -     loss           : 1.0365441262722015
+2021-10-26 21:17:56,673 - trainer - INFO -     masked_mae_np  : 0.09342552597324054
+2021-10-26 21:17:56,673 - trainer - INFO -     masked_mape_np : 0.03573569388439258
+2021-10-26 21:17:56,673 - trainer - INFO -     masked_rmse_np : 0.9912551899751028
+2021-10-26 21:17:56,673 - trainer - INFO -     val_loss       : 1.9078664541244508
+2021-10-26 21:17:56,673 - trainer - INFO -     val_masked_mae_np: 0.17195932269096376
+2021-10-26 21:17:56,673 - trainer - INFO -     val_masked_mape_np: 0.04591387324035168
+2021-10-26 21:17:56,673 - trainer - INFO -     val_masked_rmse_np: 1.9055234909057617
+2021-10-26 21:17:56,673 - trainer - INFO -     Time           : 120.8615s
+2021-10-26 21:17:56,693 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch9.pth ...
+2021-10-26 21:17:56,735 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:20:13,697 - trainer - INFO -     epoch          : 10
+2021-10-26 21:20:13,697 - trainer - INFO -     loss           : 1.035006699959437
+2021-10-26 21:20:13,697 - trainer - INFO -     masked_mae_np  : 0.09328695336977641
+2021-10-26 21:20:13,697 - trainer - INFO -     masked_mape_np : 0.035643897764384744
+2021-10-26 21:20:13,697 - trainer - INFO -     masked_rmse_np : 0.9905702213446299
+2021-10-26 21:20:13,697 - trainer - INFO -     val_loss       : 1.905560839176178
+2021-10-26 21:20:13,697 - trainer - INFO -     val_masked_mae_np: 0.17175151109695436
+2021-10-26 21:20:13,697 - trainer - INFO -     val_masked_mape_np: 0.04579092152416706
+2021-10-26 21:20:13,697 - trainer - INFO -     val_masked_rmse_np: 1.9047359108924866
+2021-10-26 21:20:13,697 - trainer - INFO -     Time           : 118.6676s
+2021-10-26 21:20:13,788 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch10.pth ...
+2021-10-26 21:20:13,823 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:22:30,532 - trainer - INFO -     epoch          : 11
+2021-10-26 21:22:30,532 - trainer - INFO -     loss           : 1.0334679047266642
+2021-10-26 21:22:30,532 - trainer - INFO -     masked_mae_np  : 0.09314825708667437
+2021-10-26 21:22:30,532 - trainer - INFO -     masked_mape_np : 0.035551999633510904
+2021-10-26 21:22:30,532 - trainer - INFO -     masked_rmse_np : 0.9898853699366251
+2021-10-26 21:22:30,532 - trainer - INFO -     val_loss       : 1.9032532334327699
+2021-10-26 21:22:30,532 - trainer - INFO -     val_masked_mae_np: 0.17154352366924286
+2021-10-26 21:22:30,532 - trainer - INFO -     val_masked_mape_np: 0.04566784016788006
+2021-10-26 21:22:30,532 - trainer - INFO -     val_masked_rmse_np: 1.9039485216140748
+2021-10-26 21:22:30,532 - trainer - INFO -     Time           : 118.2857s
+2021-10-26 21:22:30,575 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch11.pth ...
+2021-10-26 21:22:30,610 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:24:47,617 - trainer - INFO -     epoch          : 12
+2021-10-26 21:24:47,618 - trainer - INFO -     loss           : 1.0319276660680772
+2021-10-26 21:24:47,618 - trainer - INFO -     masked_mae_np  : 0.09300943811734518
+2021-10-26 21:24:47,618 - trainer - INFO -     masked_mape_np : 0.035459998560448486
+2021-10-26 21:24:47,618 - trainer - INFO -     masked_rmse_np : 0.9892005999883016
+2021-10-26 21:24:47,618 - trainer - INFO -     val_loss       : 1.9009437561035156
+2021-10-26 21:24:47,618 - trainer - INFO -     val_masked_mae_np: 0.17133536338806152
+2021-10-26 21:24:47,618 - trainer - INFO -     val_masked_mape_np: 0.045544625446200374
+2021-10-26 21:24:47,618 - trainer - INFO -     val_masked_rmse_np: 1.9031612277030945
+2021-10-26 21:24:47,618 - trainer - INFO -     Time           : 118.9262s
+2021-10-26 21:24:47,631 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch12.pth ...
+2021-10-26 21:24:47,668 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:27:08,583 - trainer - INFO -     epoch          : 13
+2021-10-26 21:27:08,584 - trainer - INFO -     loss           : 1.0303860406080882
+2021-10-26 21:27:08,584 - trainer - INFO -     masked_mae_np  : 0.09287048913538457
+2021-10-26 21:27:08,584 - trainer - INFO -     masked_mape_np : 0.035367891937494275
+2021-10-26 21:27:08,584 - trainer - INFO -     masked_rmse_np : 0.9885159254074096
+2021-10-26 21:27:08,584 - trainer - INFO -     val_loss       : 1.8986321806907653
+2021-10-26 21:27:08,584 - trainer - INFO -     val_masked_mae_np: 0.17112702131271362
+2021-10-26 21:27:08,584 - trainer - INFO -     val_masked_mape_np: 0.045421275123953816
+2021-10-26 21:27:08,584 - trainer - INFO -     val_masked_rmse_np: 1.9023741245269776
+2021-10-26 21:27:08,584 - trainer - INFO -     Time           : 122.6044s
+2021-10-26 21:27:08,619 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch13.pth ...
+2021-10-26 21:27:08,632 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:29:27,131 - trainer - INFO -     epoch          : 14
+2021-10-26 21:29:27,132 - trainer - INFO -     loss           : 1.0288429508606594
+2021-10-26 21:29:27,132 - trainer - INFO -     masked_mae_np  : 0.09273140629132588
+2021-10-26 21:29:27,132 - trainer - INFO -     masked_mape_np : 0.0352756779640913
+2021-10-26 21:29:27,132 - trainer - INFO -     masked_rmse_np : 0.9878313273191452
+2021-10-26 21:29:27,132 - trainer - INFO -     val_loss       : 1.896318781375885
+2021-10-26 21:29:27,132 - trainer - INFO -     val_masked_mae_np: 0.17091851830482482
+2021-10-26 21:29:27,132 - trainer - INFO -     val_masked_mape_np: 0.045297836512327196
+2021-10-26 21:29:27,132 - trainer - INFO -     val_masked_rmse_np: 1.9015870571136475
+2021-10-26 21:29:27,132 - trainer - INFO -     Time           : 120.2210s
+2021-10-26 21:29:27,158 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch14.pth ...
+2021-10-26 21:29:27,195 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:31:43,761 - trainer - INFO -     epoch          : 15
+2021-10-26 21:31:43,762 - trainer - INFO -     loss           : 1.0272983352343241
+2021-10-26 21:31:43,762 - trainer - INFO -     masked_mae_np  : 0.09259218710164228
+2021-10-26 21:31:43,762 - trainer - INFO -     masked_mape_np : 0.03518335378418366
+2021-10-26 21:31:43,762 - trainer - INFO -     masked_rmse_np : 0.9871468245983124
+2021-10-26 21:31:43,762 - trainer - INFO -     val_loss       : 1.8940033912658691
+2021-10-26 21:31:43,762 - trainer - INFO -     val_masked_mae_np: 0.17070982605218887
+2021-10-26 21:31:43,762 - trainer - INFO -     val_masked_mape_np: 0.04517425894737244
+2021-10-26 21:31:43,762 - trainer - INFO -     val_masked_rmse_np: 1.9008002161979676
+2021-10-26 21:31:43,763 - trainer - INFO -     Time           : 118.6434s
+2021-10-26 21:31:43,782 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch15.pth ...
+2021-10-26 21:31:43,816 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:34:04,691 - trainer - INFO -     epoch          : 16
+2021-10-26 21:34:04,691 - trainer - INFO -     loss           : 1.025752235452334
+2021-10-26 21:34:04,691 - trainer - INFO -     masked_mae_np  : 0.09245283616085848
+2021-10-26 21:34:04,691 - trainer - INFO -     masked_mape_np : 0.03509091647962729
+2021-10-26 21:34:04,691 - trainer - INFO -     masked_rmse_np : 0.9864623963832855
+2021-10-26 21:34:04,692 - trainer - INFO -     val_loss       : 1.891686248779297
+2021-10-26 21:34:04,692 - trainer - INFO -     val_masked_mae_np: 0.17050097435712813
+2021-10-26 21:34:04,692 - trainer - INFO -     val_masked_mape_np: 0.045050617679953574
+2021-10-26 21:34:04,692 - trainer - INFO -     val_masked_rmse_np: 1.9000134468078613
+2021-10-26 21:34:04,692 - trainer - INFO -     Time           : 122.6708s
+2021-10-26 21:34:04,704 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch16.pth ...
+2021-10-26 21:34:04,761 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:36:24,689 - trainer - INFO -     epoch          : 17
+2021-10-26 21:36:24,690 - trainer - INFO -     loss           : 1.0242049415906271
+2021-10-26 21:36:24,690 - trainer - INFO -     masked_mae_np  : 0.09231337793171406
+2021-10-26 21:36:24,690 - trainer - INFO -     masked_mape_np : 0.03499840640773376
+2021-10-26 21:36:24,690 - trainer - INFO -     masked_rmse_np : 0.9857781559228898
+2021-10-26 21:36:24,690 - trainer - INFO -     val_loss       : 1.8893680095672607
+2021-10-26 21:36:24,690 - trainer - INFO -     val_masked_mae_np: 0.170292030274868
+2021-10-26 21:36:24,690 - trainer - INFO -     val_masked_mape_np: 0.0449269499629736
+2021-10-26 21:36:24,690 - trainer - INFO -     val_masked_rmse_np: 1.8992270350456237
+2021-10-26 21:36:24,690 - trainer - INFO -     Time           : 121.3156s
+2021-10-26 21:36:24,702 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch17.pth ...
+2021-10-26 21:36:24,715 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:38:42,298 - trainer - INFO -     epoch          : 18
+2021-10-26 21:38:42,298 - trainer - INFO -     loss           : 1.0226567794879278
+2021-10-26 21:38:42,298 - trainer - INFO -     masked_mae_np  : 0.09217383575936158
+2021-10-26 21:38:42,298 - trainer - INFO -     masked_mape_np : 0.0349058764676253
+2021-10-26 21:38:42,298 - trainer - INFO -     masked_rmse_np : 0.9850941439469655
+2021-10-26 21:38:42,299 - trainer - INFO -     val_loss       : 1.8870483994483949
+2021-10-26 21:38:42,299 - trainer - INFO -     val_masked_mae_np: 0.17008295953273772
+2021-10-26 21:38:42,299 - trainer - INFO -     val_masked_mape_np: 0.0448032520711422
+2021-10-26 21:38:42,299 - trainer - INFO -     val_masked_rmse_np: 1.898440992832184
+2021-10-26 21:38:42,299 - trainer - INFO -     Time           : 119.6493s
+2021-10-26 21:38:42,311 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch18.pth ...
+2021-10-26 21:38:42,347 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:40:58,162 - trainer - INFO -     epoch          : 19
+2021-10-26 21:40:58,163 - trainer - INFO -     loss           : 1.021107268333435
+2021-10-26 21:40:58,163 - trainer - INFO -     masked_mae_np  : 0.09203417549530665
+2021-10-26 21:40:58,163 - trainer - INFO -     masked_mape_np : 0.034813264633218446
+2021-10-26 21:40:58,163 - trainer - INFO -     masked_rmse_np : 0.9844102472066879
+2021-10-26 21:40:58,163 - trainer - INFO -     val_loss       : 1.884726881980896
+2021-10-26 21:40:58,163 - trainer - INFO -     val_masked_mae_np: 0.1698737159371376
+2021-10-26 21:40:58,163 - trainer - INFO -     val_masked_mape_np: 0.044679442420601845
+2021-10-26 21:40:58,163 - trainer - INFO -     val_masked_rmse_np: 1.8976551294326782
+2021-10-26 21:40:58,163 - trainer - INFO -     Time           : 117.7457s
+2021-10-26 21:40:58,175 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch19.pth ...
+2021-10-26 21:40:58,208 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:43:13,781 - trainer - INFO -     epoch          : 20
+2021-10-26 21:43:13,782 - trainer - INFO -     loss           : 1.0195563366015752
+2021-10-26 21:43:13,782 - trainer - INFO -     masked_mae_np  : 0.09189438869555791
+2021-10-26 21:43:13,782 - trainer - INFO -     masked_mape_np : 0.03472055345773697
+2021-10-26 21:43:13,782 - trainer - INFO -     masked_rmse_np : 0.9837265322605769
+2021-10-26 21:43:13,782 - trainer - INFO -     val_loss       : 1.882403564453125
+2021-10-26 21:43:13,782 - trainer - INFO -     val_masked_mae_np: 0.16966430395841597
+2021-10-26 21:43:13,782 - trainer - INFO -     val_masked_mape_np: 0.04455551691353321
+2021-10-26 21:43:13,782 - trainer - INFO -     val_masked_rmse_np: 1.8968695163726808
+2021-10-26 21:43:13,782 - trainer - INFO -     Time           : 116.9310s
+2021-10-26 21:43:13,794 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch20.pth ...
+2021-10-26 21:43:13,835 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:45:29,972 - trainer - INFO -     epoch          : 21
+2021-10-26 21:45:29,973 - trainer - INFO -     loss           : 1.018675309419632
+2021-10-26 21:45:29,973 - trainer - INFO -     masked_mae_np  : 0.09181497966249784
+2021-10-26 21:45:29,973 - trainer - INFO -     masked_mape_np : 0.034668088083465894
+2021-10-26 21:45:29,973 - trainer - INFO -     masked_rmse_np : 0.9833390871683757
+2021-10-26 21:45:29,973 - trainer - INFO -     val_loss       : 1.8821712136268616
+2021-10-26 21:45:29,973 - trainer - INFO -     val_masked_mae_np: 0.169643372297287
+2021-10-26 21:45:29,973 - trainer - INFO -     val_masked_mape_np: 0.0445431225001812
+2021-10-26 21:45:29,973 - trainer - INFO -     val_masked_rmse_np: 1.8967909932136535
+2021-10-26 21:45:29,973 - trainer - INFO -     Time           : 118.3742s
+2021-10-26 21:45:29,985 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch21.pth ...
+2021-10-26 21:45:30,017 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:47:46,878 - trainer - INFO -     epoch          : 22
+2021-10-26 21:47:46,878 - trainer - INFO -     loss           : 1.0185202012459438
+2021-10-26 21:47:46,878 - trainer - INFO -     masked_mae_np  : 0.09180100038647651
+2021-10-26 21:47:46,878 - trainer - INFO -     masked_mape_np : 0.03465882427990437
+2021-10-26 21:47:46,878 - trainer - INFO -     masked_rmse_np : 0.983270772298177
+2021-10-26 21:47:46,878 - trainer - INFO -     val_loss       : 1.8819389462471008
+2021-10-26 21:47:46,879 - trainer - INFO -     val_masked_mae_np: 0.16962243020534515
+2021-10-26 21:47:46,879 - trainer - INFO -     val_masked_mape_np: 0.044530732184648515
+2021-10-26 21:47:46,879 - trainer - INFO -     val_masked_rmse_np: 1.8967125177383424
+2021-10-26 21:47:46,879 - trainer - INFO -     Time           : 118.9364s
+2021-10-26 21:47:46,899 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch22.pth ...
+2021-10-26 21:47:46,937 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:50:09,049 - trainer - INFO -     epoch          : 23
+2021-10-26 21:50:09,050 - trainer - INFO -     loss           : 1.0183650970458984
+2021-10-26 21:50:09,051 - trainer - INFO -     masked_mae_np  : 0.09178702160716057
+2021-10-26 21:50:09,051 - trainer - INFO -     masked_mape_np : 0.0346495612214009
+2021-10-26 21:50:09,052 - trainer - INFO -     masked_rmse_np : 0.9832024832566579
+2021-10-26 21:50:09,052 - trainer - INFO -     val_loss       : 1.8817067265510559
+2021-10-26 21:50:09,052 - trainer - INFO -     val_masked_mae_np: 0.1696014940738678
+2021-10-26 21:50:09,052 - trainer - INFO -     val_masked_mape_np: 0.04451834075152874
+2021-10-26 21:50:09,052 - trainer - INFO -     val_masked_rmse_np: 1.8966339945793151
+2021-10-26 21:50:09,052 - trainer - INFO -     Time           : 122.0184s
+2021-10-26 21:50:09,064 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch23.pth ...
+2021-10-26 21:50:09,099 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:52:25,077 - trainer - INFO -     epoch          : 24
+2021-10-26 21:52:25,077 - trainer - INFO -     loss           : 1.0182100226481756
+2021-10-26 21:52:25,077 - trainer - INFO -     masked_mae_np  : 0.09177304431796074
+2021-10-26 21:52:25,077 - trainer - INFO -     masked_mape_np : 0.03464029791454474
+2021-10-26 21:52:25,077 - trainer - INFO -     masked_rmse_np : 0.9831341783205668
+2021-10-26 21:52:25,077 - trainer - INFO -     val_loss       : 1.8814744472503662
+2021-10-26 21:52:25,077 - trainer - INFO -     val_masked_mae_np: 0.16958056539297103
+2021-10-26 21:52:25,078 - trainer - INFO -     val_masked_mape_np: 0.04450595565140247
+2021-10-26 21:52:25,078 - trainer - INFO -     val_masked_rmse_np: 1.8965555787086488
+2021-10-26 21:52:25,078 - trainer - INFO -     Time           : 118.1463s
+2021-10-26 21:52:25,101 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch24.pth ...
+2021-10-26 21:52:25,136 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:54:42,241 - trainer - INFO -     epoch          : 25
+2021-10-26 21:54:42,242 - trainer - INFO -     loss           : 1.0180549850066503
+2021-10-26 21:54:42,242 - trainer - INFO -     masked_mae_np  : 0.09175906752546628
+2021-10-26 21:54:42,242 - trainer - INFO -     masked_mape_np : 0.034631035787363845
+2021-10-26 21:54:42,242 - trainer - INFO -     masked_rmse_np : 0.9830659210681916
+2021-10-26 21:54:42,242 - trainer - INFO -     val_loss       : 1.8812422156333923
+2021-10-26 21:54:42,242 - trainer - INFO -     val_masked_mae_np: 0.1695596382021904
+2021-10-26 21:54:42,242 - trainer - INFO -     val_masked_mape_np: 0.044493571668863294
+2021-10-26 21:54:42,242 - trainer - INFO -     val_masked_rmse_np: 1.8964771151542663
+2021-10-26 21:54:42,242 - trainer - INFO -     Time           : 118.6616s
+2021-10-26 21:54:42,254 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch25.pth ...
+2021-10-26 21:54:42,289 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:57:00,058 - trainer - INFO -     epoch          : 26
+2021-10-26 21:57:00,058 - trainer - INFO -     loss           : 1.0178999304771423
+2021-10-26 21:57:00,059 - trainer - INFO -     masked_mae_np  : 0.09174509259561697
+2021-10-26 21:57:00,059 - trainer - INFO -     masked_mape_np : 0.03462177390853564
+2021-10-26 21:57:00,059 - trainer - INFO -     masked_rmse_np : 0.9829976628224055
+2021-10-26 21:57:00,059 - trainer - INFO -     val_loss       : 1.881010067462921
+2021-10-26 21:57:00,059 - trainer - INFO -     val_masked_mae_np: 0.16953870952129363
+2021-10-26 21:57:00,059 - trainer - INFO -     val_masked_mape_np: 0.04448118805885315
+2021-10-26 21:57:00,059 - trainer - INFO -     val_masked_rmse_np: 1.8963986992836
+2021-10-26 21:57:00,059 - trainer - INFO -     Time           : 119.6726s
+2021-10-26 21:57:00,088 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch26.pth ...
+2021-10-26 21:57:00,121 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 21:59:16,197 - trainer - INFO -     epoch          : 27
+2021-10-26 21:59:16,197 - trainer - INFO -     loss           : 1.0177448958158493
+2021-10-26 21:59:16,197 - trainer - INFO -     masked_mae_np  : 0.09173111903170744
+2021-10-26 21:59:16,197 - trainer - INFO -     masked_mape_np : 0.034612516624232134
+2021-10-26 21:59:16,198 - trainer - INFO -     masked_rmse_np : 0.982929394642512
+2021-10-26 21:59:16,198 - trainer - INFO -     val_loss       : 1.8807778239250184
+2021-10-26 21:59:16,198 - trainer - INFO -     val_masked_mae_np: 0.16951778382062913
+2021-10-26 21:59:16,198 - trainer - INFO -     val_masked_mape_np: 0.04446880556643009
+2021-10-26 21:59:16,198 - trainer - INFO -     val_masked_rmse_np: 1.8963202357292175
+2021-10-26 21:59:16,198 - trainer - INFO -     Time           : 117.8261s
+2021-10-26 21:59:16,260 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch27.pth ...
+2021-10-26 21:59:16,274 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:01:33,307 - trainer - INFO -     epoch          : 28
+2021-10-26 22:01:33,307 - trainer - INFO -     loss           : 1.017589878042539
+2021-10-26 22:01:33,307 - trainer - INFO -     masked_mae_np  : 0.09171714869638284
+2021-10-26 22:01:33,307 - trainer - INFO -     masked_mape_np : 0.03460325989872217
+2021-10-26 22:01:33,307 - trainer - INFO -     masked_rmse_np : 0.9828611383835475
+2021-10-26 22:01:33,307 - trainer - INFO -     val_loss       : 1.880545735359192
+2021-10-26 22:01:33,308 - trainer - INFO -     val_masked_mae_np: 0.1694968581199646
+2021-10-26 22:01:33,308 - trainer - INFO -     val_masked_mape_np: 0.04445642307400703
+2021-10-26 22:01:33,308 - trainer - INFO -     val_masked_rmse_np: 1.8962418556213378
+2021-10-26 22:01:33,308 - trainer - INFO -     Time           : 118.9848s
+2021-10-26 22:01:33,338 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch28.pth ...
+2021-10-26 22:01:33,369 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:03:52,067 - trainer - INFO -     epoch          : 29
+2021-10-26 22:03:52,067 - trainer - INFO -     loss           : 1.0174348880847295
+2021-10-26 22:03:52,067 - trainer - INFO -     masked_mae_np  : 0.09170317873358727
+2021-10-26 22:03:52,067 - trainer - INFO -     masked_mape_np : 0.03459400615344445
+2021-10-26 22:03:52,067 - trainer - INFO -     masked_rmse_np : 0.9827929218610127
+2021-10-26 22:03:52,067 - trainer - INFO -     val_loss       : 1.88031347990036
+2021-10-26 22:03:52,067 - trainer - INFO -     val_masked_mae_np: 0.1694759339094162
+2021-10-26 22:03:52,067 - trainer - INFO -     val_masked_mape_np: 0.04444404207170009
+2021-10-26 22:03:52,068 - trainer - INFO -     val_masked_rmse_np: 1.8961634516716004
+2021-10-26 22:03:52,068 - trainer - INFO -     Time           : 119.0004s
+2021-10-26 22:03:52,097 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch29.pth ...
+2021-10-26 22:03:52,161 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:06:07,796 - trainer - INFO -     epoch          : 30
+2021-10-26 22:06:07,796 - trainer - INFO -     loss           : 1.017279886205991
+2021-10-26 22:06:07,796 - trainer - INFO -     masked_mae_np  : 0.09168920939167341
+2021-10-26 22:06:07,796 - trainer - INFO -     masked_mape_np : 0.03458475178728501
+2021-10-26 22:06:07,797 - trainer - INFO -     masked_rmse_np : 0.9827246983846029
+2021-10-26 22:06:07,797 - trainer - INFO -     val_loss       : 1.880081331729889
+2021-10-26 22:06:07,797 - trainer - INFO -     val_masked_mae_np: 0.1694550096988678
+2021-10-26 22:06:07,797 - trainer - INFO -     val_masked_mape_np: 0.04443165808916092
+2021-10-26 22:06:07,797 - trainer - INFO -     val_masked_rmse_np: 1.8960850477218627
+2021-10-26 22:06:07,797 - trainer - INFO -     Time           : 117.4062s
+2021-10-26 22:06:07,808 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch30.pth ...
+2021-10-26 22:06:07,822 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:08:25,442 - trainer - INFO -     epoch          : 31
+2021-10-26 22:08:25,442 - trainer - INFO -     loss           : 1.0171923985083897
+2021-10-26 22:08:25,442 - trainer - INFO -     masked_mae_np  : 0.09168132171034812
+2021-10-26 22:08:25,442 - trainer - INFO -     masked_mape_np : 0.03457954451441765
+2021-10-26 22:08:25,442 - trainer - INFO -     masked_rmse_np : 0.9826862553755442
+2021-10-26 22:08:25,443 - trainer - INFO -     val_loss       : 1.8800598978996277
+2021-10-26 22:08:25,443 - trainer - INFO -     val_masked_mae_np: 0.16945307105779647
+2021-10-26 22:08:25,443 - trainer - INFO -     val_masked_mape_np: 0.04443051442503929
+2021-10-26 22:08:25,443 - trainer - INFO -     val_masked_rmse_np: 1.8960777878761292
+2021-10-26 22:08:25,443 - trainer - INFO -     Time           : 119.5291s
+2021-10-26 22:08:25,483 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch31.pth ...
+2021-10-26 22:08:25,514 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:10:42,926 - trainer - INFO -     epoch          : 32
+2021-10-26 22:10:42,927 - trainer - INFO -     loss           : 1.0171779960393905
+2021-10-26 22:10:42,927 - trainer - INFO -     masked_mae_np  : 0.09168002245326837
+2021-10-26 22:10:42,927 - trainer - INFO -     masked_mape_np : 0.03457868260641893
+2021-10-26 22:10:42,927 - trainer - INFO -     masked_rmse_np : 0.9826799194018047
+2021-10-26 22:10:42,927 - trainer - INFO -     val_loss       : 1.8800384044647216
+2021-10-26 22:10:42,927 - trainer - INFO -     val_masked_mae_np: 0.1694511279463768
+2021-10-26 22:10:42,927 - trainer - INFO -     val_masked_mape_np: 0.044429368898272516
+2021-10-26 22:10:42,927 - trainer - INFO -     val_masked_rmse_np: 1.8960704922676086
+2021-10-26 22:10:42,927 - trainer - INFO -     Time           : 119.0975s
+2021-10-26 22:10:42,939 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch32.pth ...
+2021-10-26 22:10:42,952 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:12:59,197 - trainer - INFO -     epoch          : 33
+2021-10-26 22:12:59,198 - trainer - INFO -     loss           : 1.0171635548273723
+2021-10-26 22:12:59,198 - trainer - INFO -     masked_mae_np  : 0.09167871947089831
+2021-10-26 22:12:59,198 - trainer - INFO -     masked_mape_np : 0.034577821008861066
+2021-10-26 22:12:59,198 - trainer - INFO -     masked_rmse_np : 0.9826735854148865
+2021-10-26 22:12:59,198 - trainer - INFO -     val_loss       : 1.880016851425171
+2021-10-26 22:12:59,198 - trainer - INFO -     val_masked_mae_np: 0.16944918483495713
+2021-10-26 22:12:59,198 - trainer - INFO -     val_masked_mape_np: 0.044428224489092824
+2021-10-26 22:12:59,198 - trainer - INFO -     val_masked_rmse_np: 1.896063208580017
+2021-10-26 22:12:59,198 - trainer - INFO -     Time           : 118.3099s
+2021-10-26 22:12:59,215 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch33.pth ...
+2021-10-26 22:12:59,248 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:15:17,089 - trainer - INFO -     epoch          : 34
+2021-10-26 22:15:17,090 - trainer - INFO -     loss           : 1.0171491225560507
+2021-10-26 22:15:17,090 - trainer - INFO -     masked_mae_np  : 0.09167742195228736
+2021-10-26 22:15:17,090 - trainer - INFO -     masked_mape_np : 0.0345769598459204
+2021-10-26 22:15:17,090 - trainer - INFO -     masked_rmse_np : 0.9826672355333964
+2021-10-26 22:15:17,090 - trainer - INFO -     val_loss       : 1.87999529838562
+2021-10-26 22:15:17,090 - trainer - INFO -     val_masked_mae_np: 0.16944725066423416
+2021-10-26 22:15:17,090 - trainer - INFO -     val_masked_mape_np: 0.04442707858979702
+2021-10-26 22:15:17,090 - trainer - INFO -     val_masked_rmse_np: 1.8960559844970704
+2021-10-26 22:15:17,090 - trainer - INFO -     Time           : 118.6893s
+2021-10-26 22:15:17,102 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch34.pth ...
+2021-10-26 22:15:17,134 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:17:34,301 - trainer - INFO -     epoch          : 35
+2021-10-26 22:17:34,301 - trainer - INFO -     loss           : 1.0171346962451935
+2021-10-26 22:17:34,301 - trainer - INFO -     masked_mae_np  : 0.0916761198391517
+2021-10-26 22:17:34,301 - trainer - INFO -     masked_mape_np : 0.03457609806209803
+2021-10-26 22:17:34,301 - trainer - INFO -     masked_rmse_np : 0.982660902539889
+2021-10-26 22:17:34,301 - trainer - INFO -     val_loss       : 1.879973793029785
+2021-10-26 22:17:34,301 - trainer - INFO -     val_masked_mae_np: 0.16944531202316285
+2021-10-26 22:17:34,301 - trainer - INFO -     val_masked_mape_np: 0.044425934180617334
+2021-10-26 22:17:34,301 - trainer - INFO -     val_masked_rmse_np: 1.8960487246513367
+2021-10-26 22:17:34,302 - trainer - INFO -     Time           : 119.0699s
+2021-10-26 22:17:34,313 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch35.pth ...
+2021-10-26 22:17:34,345 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:19:53,222 - trainer - INFO -     epoch          : 36
+2021-10-26 22:19:53,222 - trainer - INFO -     loss           : 1.017120282848676
+2021-10-26 22:19:53,223 - trainer - INFO -     masked_mae_np  : 0.09167482083042462
+2021-10-26 22:19:53,223 - trainer - INFO -     masked_mape_np : 0.03457523783047994
+2021-10-26 22:19:53,223 - trainer - INFO -     masked_rmse_np : 0.9826545745134354
+2021-10-26 22:19:53,223 - trainer - INFO -     val_loss       : 1.879952335357666
+2021-10-26 22:19:53,223 - trainer - INFO -     val_masked_mae_np: 0.16944337487220765
+2021-10-26 22:19:53,223 - trainer - INFO -     val_masked_mape_np: 0.044424789398908614
+2021-10-26 22:19:53,223 - trainer - INFO -     val_masked_rmse_np: 1.896041452884674
+2021-10-26 22:19:53,223 - trainer - INFO -     Time           : 119.7188s
+2021-10-26 22:19:53,260 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch36.pth ...
+2021-10-26 22:19:53,298 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:22:10,421 - trainer - INFO -     epoch          : 37
+2021-10-26 22:22:10,421 - trainer - INFO -     loss           : 1.0171058505773545
+2021-10-26 22:22:10,422 - trainer - INFO -     masked_mae_np  : 0.09167351971069972
+2021-10-26 22:22:10,423 - trainer - INFO -     masked_mape_np : 0.034574376046657564
+2021-10-26 22:22:10,423 - trainer - INFO -     masked_rmse_np : 0.9826482226451237
+2021-10-26 22:22:10,423 - trainer - INFO -     val_loss       : 1.8799307823181153
+2021-10-26 22:22:10,423 - trainer - INFO -     val_masked_mae_np: 0.16944143027067185
+2021-10-26 22:22:10,423 - trainer - INFO -     val_masked_mape_np: 0.04442364387214184
+2021-10-26 22:22:10,423 - trainer - INFO -     val_masked_rmse_np: 1.8960341811180115
+2021-10-26 22:22:10,423 - trainer - INFO -     Time           : 118.8856s
+2021-10-26 22:22:10,472 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch37.pth ...
+2021-10-26 22:22:10,504 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:24:27,613 - trainer - INFO -     epoch          : 38
+2021-10-26 22:24:27,614 - trainer - INFO -     loss           : 1.0170914222796759
+2021-10-26 22:24:27,614 - trainer - INFO -     masked_mae_np  : 0.09167222181955974
+2021-10-26 22:24:27,614 - trainer - INFO -     masked_mape_np : 0.03457351494580507
+2021-10-26 22:24:27,614 - trainer - INFO -     masked_rmse_np : 0.9826418985923131
+2021-10-26 22:24:27,614 - trainer - INFO -     val_loss       : 1.8799092650413514
+2021-10-26 22:24:27,614 - trainer - INFO -     val_masked_mae_np: 0.16943949311971665
+2021-10-26 22:24:27,614 - trainer - INFO -     val_masked_mape_np: 0.044422499090433124
+2021-10-26 22:24:27,614 - trainer - INFO -     val_masked_rmse_np: 1.8960269570350647
+2021-10-26 22:24:27,614 - trainer - INFO -     Time           : 119.2204s
+2021-10-26 22:24:27,688 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch38.pth ...
+2021-10-26 22:24:27,723 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:26:43,809 - trainer - INFO -     epoch          : 39
+2021-10-26 22:26:43,810 - trainer - INFO -     loss           : 1.0170770148436228
+2021-10-26 22:26:43,810 - trainer - INFO -     masked_mae_np  : 0.0916709211965402
+2021-10-26 22:26:43,810 - trainer - INFO -     masked_mape_np : 0.03457265372077624
+2021-10-26 22:26:43,810 - trainer - INFO -     masked_rmse_np : 0.9826355497042338
+2021-10-26 22:26:43,810 - trainer - INFO -     val_loss       : 1.8798877716064453
+2021-10-26 22:26:43,810 - trainer - INFO -     val_masked_mae_np: 0.16943755745887756
+2021-10-26 22:26:43,810 - trainer - INFO -     val_masked_mape_np: 0.0444213543087244
+2021-10-26 22:26:43,810 - trainer - INFO -     val_masked_rmse_np: 1.8960196375846863
+2021-10-26 22:26:43,810 - trainer - INFO -     Time           : 118.2464s
+2021-10-26 22:26:43,822 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch39.pth ...
+2021-10-26 22:26:43,853 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:29:00,717 - trainer - INFO -     epoch          : 40
+2021-10-26 22:29:00,718 - trainer - INFO -     loss           : 1.0170625825723012
+2021-10-26 22:29:00,718 - trainer - INFO -     masked_mae_np  : 0.09166961920758089
+2021-10-26 22:29:00,718 - trainer - INFO -     masked_mape_np : 0.03457179187486569
+2021-10-26 22:29:00,718 - trainer - INFO -     masked_rmse_np : 0.9826292316118876
+2021-10-26 22:29:00,718 - trainer - INFO -     val_loss       : 1.8798662900924683
+2021-10-26 22:29:00,718 - trainer - INFO -     val_masked_mae_np: 0.16943561881780625
+2021-10-26 22:29:00,718 - trainer - INFO -     val_masked_mape_np: 0.044420209154486655
+2021-10-26 22:29:00,718 - trainer - INFO -     val_masked_rmse_np: 1.8960124254226685
+2021-10-26 22:29:00,718 - trainer - INFO -     Time           : 118.4453s
+2021-10-26 22:29:00,769 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch40.pth ...
+2021-10-26 22:29:00,811 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:31:16,642 - trainer - INFO -     epoch          : 41
+2021-10-26 22:31:16,643 - trainer - INFO -     loss           : 1.0170549273490905
+2021-10-26 22:31:16,643 - trainer - INFO -     masked_mae_np  : 0.09166892829040686
+2021-10-26 22:31:16,643 - trainer - INFO -     masked_mape_np : 0.034571336768567565
+2021-10-26 22:31:16,643 - trainer - INFO -     masked_rmse_np : 0.9826258758703867
+2021-10-26 22:31:16,643 - trainer - INFO -     val_loss       : 1.8798657059669495
+2021-10-26 22:31:16,643 - trainer - INFO -     val_masked_mae_np: 0.16943557262420655
+2021-10-26 22:31:16,643 - trainer - INFO -     val_masked_mape_np: 0.044420183449983594
+2021-10-26 22:31:16,643 - trainer - INFO -     val_masked_rmse_np: 1.896012258529663
+2021-10-26 22:31:16,643 - trainer - INFO -     Time           : 117.1503s
+2021-10-26 22:31:16,688 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch41.pth ...
+2021-10-26 22:31:16,714 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:33:35,259 - trainer - INFO -     epoch          : 42
+2021-10-26 22:33:35,259 - trainer - INFO -     loss           : 1.017054592569669
+2021-10-26 22:33:35,259 - trainer - INFO -     masked_mae_np  : 0.09166890233755112
+2021-10-26 22:33:35,259 - trainer - INFO -     masked_mape_np : 0.03457131497561931
+2021-10-26 22:33:35,259 - trainer - INFO -     masked_rmse_np : 0.982625745733579
+2021-10-26 22:33:35,259 - trainer - INFO -     val_loss       : 1.8798652648925782
+2021-10-26 22:33:35,259 - trainer - INFO -     val_masked_mae_np: 0.1694355309009552
+2021-10-26 22:33:35,259 - trainer - INFO -     val_masked_mape_np: 0.0444201547652483
+2021-10-26 22:33:35,259 - trainer - INFO -     val_masked_rmse_np: 1.8960120797157287
+2021-10-26 22:33:35,260 - trainer - INFO -     Time           : 120.2442s
+2021-10-26 22:33:35,305 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch42.pth ...
+2021-10-26 22:33:35,339 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:35:51,698 - trainer - INFO -     epoch          : 43
+2021-10-26 22:35:51,698 - trainer - INFO -     loss           : 1.0170542707045873
+2021-10-26 22:35:51,698 - trainer - INFO -     masked_mae_np  : 0.09166887154181798
+2021-10-26 22:35:51,698 - trainer - INFO -     masked_mape_np : 0.03457129299640656
+2021-10-26 22:35:51,698 - trainer - INFO -     masked_rmse_np : 0.9826256215572358
+2021-10-26 22:35:51,698 - trainer - INFO -     val_loss       : 1.8798648238182067
+2021-10-26 22:35:51,698 - trainer - INFO -     val_masked_mae_np: 0.16943548619747162
+2021-10-26 22:35:51,699 - trainer - INFO -     val_masked_mape_np: 0.04442012906074524
+2021-10-26 22:35:51,699 - trainer - INFO -     val_masked_rmse_np: 1.8960119247436524
+2021-10-26 22:35:51,699 - trainer - INFO -     Time           : 118.4558s
+2021-10-26 22:35:51,743 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch43.pth ...
+2021-10-26 22:35:51,778 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:38:10,124 - trainer - INFO -     epoch          : 44
+2021-10-26 22:38:10,125 - trainer - INFO -     loss           : 1.0170539438724517
+2021-10-26 22:38:10,125 - trainer - INFO -     masked_mae_np  : 0.09166884260873
+2021-10-26 22:38:10,125 - trainer - INFO -     masked_mape_np : 0.03457127213478088
+2021-10-26 22:38:10,125 - trainer - INFO -     masked_rmse_np : 0.9826254854599635
+2021-10-26 22:38:10,125 - trainer - INFO -     val_loss       : 1.8798643589019775
+2021-10-26 22:38:10,125 - trainer - INFO -     val_masked_mae_np: 0.16943544447422026
+2021-10-26 22:38:10,125 - trainer - INFO -     val_masked_mape_np: 0.04442010186612606
+2021-10-26 22:38:10,125 - trainer - INFO -     val_masked_rmse_np: 1.8960118055343629
+2021-10-26 22:38:10,126 - trainer - INFO -     Time           : 119.9633s
+2021-10-26 22:38:10,151 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch44.pth ...
+2021-10-26 22:38:10,187 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:40:28,266 - trainer - INFO -     epoch          : 45
+2021-10-26 22:40:28,266 - trainer - INFO -     loss           : 1.0170536100864411
+2021-10-26 22:40:28,266 - trainer - INFO -     masked_mae_np  : 0.09166881218552589
+2021-10-26 22:40:28,266 - trainer - INFO -     masked_mape_np : 0.03457125009347995
+2021-10-26 22:40:28,266 - trainer - INFO -     masked_rmse_np : 0.982625342408816
+2021-10-26 22:40:28,266 - trainer - INFO -     val_loss       : 1.8798638939857484
+2021-10-26 22:40:28,266 - trainer - INFO -     val_masked_mae_np: 0.16943540424108505
+2021-10-26 22:40:28,267 - trainer - INFO -     val_masked_mape_np: 0.044420073926448825
+2021-10-26 22:40:28,267 - trainer - INFO -     val_masked_rmse_np: 1.8960116624832153
+2021-10-26 22:40:28,267 - trainer - INFO -     Time           : 120.1217s
+2021-10-26 22:40:28,278 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch45.pth ...
+2021-10-26 22:40:28,313 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:42:47,215 - trainer - INFO -     epoch          : 46
+2021-10-26 22:42:47,216 - trainer - INFO -     loss           : 1.0170532763004303
+2021-10-26 22:42:47,216 - trainer - INFO -     masked_mae_np  : 0.09166878163814544
+2021-10-26 22:42:47,216 - trainer - INFO -     masked_mape_np : 0.03457122885932525
+2021-10-26 22:42:47,216 - trainer - INFO -     masked_rmse_np : 0.9826252182324727
+2021-10-26 22:42:47,216 - trainer - INFO -     val_loss       : 1.879863452911377
+2021-10-26 22:42:47,216 - trainer - INFO -     val_masked_mae_np: 0.16943535804748536
+2021-10-26 22:42:47,216 - trainer - INFO -     val_masked_mape_np: 0.04442004673182964
+2021-10-26 22:42:47,216 - trainer - INFO -     val_masked_rmse_np: 1.896011471748352
+2021-10-26 22:42:47,216 - trainer - INFO -     Time           : 119.3641s
+2021-10-26 22:42:47,259 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch46.pth ...
+2021-10-26 22:42:47,294 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:45:04,478 - trainer - INFO -     epoch          : 47
+2021-10-26 22:45:04,478 - trainer - INFO -     loss           : 1.0170529574155807
+2021-10-26 22:45:04,479 - trainer - INFO -     masked_mae_np  : 0.0916687536984682
+2021-10-26 22:45:04,479 - trainer - INFO -     masked_mape_np : 0.03457120768725872
+2021-10-26 22:45:04,479 - trainer - INFO -     masked_rmse_np : 0.9826250871022543
+2021-10-26 22:45:04,479 - trainer - INFO -     val_loss       : 1.879862916469574
+2021-10-26 22:45:04,479 - trainer - INFO -     val_masked_mae_np: 0.16943532079458237
+2021-10-26 22:45:04,479 - trainer - INFO -     val_masked_mape_np: 0.04442001804709435
+2021-10-26 22:45:04,479 - trainer - INFO -     val_masked_rmse_np: 1.8960113406181336
+2021-10-26 22:45:04,479 - trainer - INFO -     Time           : 118.6131s
+2021-10-26 22:45:04,491 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch47.pth ...
+2021-10-26 22:45:04,525 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:47:20,119 - trainer - INFO -     epoch          : 48
+2021-10-26 22:47:20,119 - trainer - INFO -     loss           : 1.0170526454846065
+2021-10-26 22:47:20,119 - trainer - INFO -     masked_mae_np  : 0.09166872327526411
+2021-10-26 22:47:20,119 - trainer - INFO -     masked_mape_np : 0.03457118502507607
+2021-10-26 22:47:20,119 - trainer - INFO -     masked_rmse_np : 0.9826249519983927
+2021-10-26 22:47:20,119 - trainer - INFO -     val_loss       : 1.8798624753952027
+2021-10-26 22:47:20,119 - trainer - INFO -     val_masked_mae_np: 0.16943527460098268
+2021-10-26 22:47:20,120 - trainer - INFO -     val_masked_mape_np: 0.04441999159753322
+2021-10-26 22:47:20,120 - trainer - INFO -     val_masked_rmse_np: 1.8960111618041993
+2021-10-26 22:47:20,120 - trainer - INFO -     Time           : 117.0121s
+2021-10-26 22:47:20,135 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch48.pth ...
+2021-10-26 22:47:20,166 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:49:37,204 - trainer - INFO -     epoch          : 49
+2021-10-26 22:49:37,205 - trainer - INFO -     loss           : 1.017052274942398
+2021-10-26 22:49:37,206 - trainer - INFO -     masked_mae_np  : 0.0916686957081159
+2021-10-26 22:49:37,206 - trainer - INFO -     masked_mape_np : 0.0345711637288332
+2021-10-26 22:49:37,207 - trainer - INFO -     masked_rmse_np : 0.9826248159011205
+2021-10-26 22:49:37,207 - trainer - INFO -     val_loss       : 1.8798619866371156
+2021-10-26 22:49:37,207 - trainer - INFO -     val_masked_mae_np: 0.16943523287773132
+2021-10-26 22:49:37,207 - trainer - INFO -     val_masked_mape_np: 0.044419963285326956
+2021-10-26 22:49:37,207 - trainer - INFO -     val_masked_rmse_np: 1.8960110187530517
+2021-10-26 22:49:37,207 - trainer - INFO -     Time           : 118.9711s
+2021-10-26 22:49:37,261 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch49.pth ...
+2021-10-26 22:49:37,299 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:51:54,343 - trainer - INFO -     epoch          : 50
+2021-10-26 22:51:54,344 - trainer - INFO -     loss           : 1.0170519828796387
+2021-10-26 22:51:54,344 - trainer - INFO -     masked_mae_np  : 0.09166866280138493
+2021-10-26 22:51:54,344 - trainer - INFO -     masked_mape_np : 0.03457114212214947
+2021-10-26 22:51:54,344 - trainer - INFO -     masked_rmse_np : 0.982624696691831
+2021-10-26 22:51:54,344 - trainer - INFO -     val_loss       : 1.8798615336418152
+2021-10-26 22:51:54,344 - trainer - INFO -     val_masked_mae_np: 0.1694351926445961
+2021-10-26 22:51:54,344 - trainer - INFO -     val_masked_mape_np: 0.04441993795335293
+2021-10-26 22:51:54,344 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 22:51:54,344 - trainer - INFO -     Time           : 118.2485s
+2021-10-26 22:51:54,357 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch50.pth ...
+2021-10-26 22:51:54,371 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:54:12,211 - trainer - INFO -     epoch          : 51
+2021-10-26 22:54:12,211 - trainer - INFO -     loss           : 1.017051809032758
+2021-10-26 22:54:12,211 - trainer - INFO -     masked_mae_np  : 0.09166864988704522
+2021-10-26 22:54:12,211 - trainer - INFO -     masked_mape_np : 0.0345711304495732
+2021-10-26 22:54:12,211 - trainer - INFO -     masked_rmse_np : 0.98262460231781
+2021-10-26 22:54:12,211 - trainer - INFO -     val_loss       : 1.8798615336418152
+2021-10-26 22:54:12,211 - trainer - INFO -     val_masked_mae_np: 0.1694351926445961
+2021-10-26 22:54:12,211 - trainer - INFO -     val_masked_mape_np: 0.04441993646323681
+2021-10-26 22:54:12,211 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 22:54:12,212 - trainer - INFO -     Time           : 119.7813s
+2021-10-26 22:54:12,231 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch51.pth ...
+2021-10-26 22:54:12,271 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:56:29,180 - trainer - INFO -     epoch          : 52
+2021-10-26 22:56:29,180 - trainer - INFO -     loss           : 1.0170517911513646
+2021-10-26 22:56:29,180 - trainer - INFO -     masked_mae_np  : 0.09166864802440007
+2021-10-26 22:56:29,181 - trainer - INFO -     masked_mape_np : 0.034571129145721594
+2021-10-26 22:56:29,181 - trainer - INFO -     masked_rmse_np : 0.9826246003309885
+2021-10-26 22:56:29,181 - trainer - INFO -     val_loss       : 1.8798615217208863
+2021-10-26 22:56:29,181 - trainer - INFO -     val_masked_mae_np: 0.1694351926445961
+2021-10-26 22:56:29,181 - trainer - INFO -     val_masked_mape_np: 0.04441993534564972
+2021-10-26 22:56:29,181 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 22:56:29,181 - trainer - INFO -     Time           : 118.0525s
+2021-10-26 22:56:29,200 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch52.pth ...
+2021-10-26 22:56:29,232 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 22:58:47,715 - trainer - INFO -     epoch          : 53
+2021-10-26 22:58:47,715 - trainer - INFO -     loss           : 1.017051766316096
+2021-10-26 22:58:47,715 - trainer - INFO -     masked_mae_np  : 0.09166864727934201
+2021-10-26 22:58:47,715 - trainer - INFO -     masked_mape_np : 0.03457112858692805
+2021-10-26 22:58:47,716 - trainer - INFO -     masked_rmse_np : 0.9826245963573456
+2021-10-26 22:58:47,716 - trainer - INFO -     val_loss       : 1.8798615217208863
+2021-10-26 22:58:47,716 - trainer - INFO -     val_masked_mae_np: 0.1694351926445961
+2021-10-26 22:58:47,716 - trainer - INFO -     val_masked_mape_np: 0.04441993348300457
+2021-10-26 22:58:47,716 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 22:58:47,716 - trainer - INFO -     Time           : 120.6004s
+2021-10-26 22:58:47,745 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch53.pth ...
+2021-10-26 22:58:47,780 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:01:03,816 - trainer - INFO -     epoch          : 54
+2021-10-26 23:01:03,817 - trainer - INFO -     loss           : 1.017051750421524
+2021-10-26 23:01:03,817 - trainer - INFO -     masked_mae_np  : 0.09166864678263664
+2021-10-26 23:01:03,817 - trainer - INFO -     masked_mape_np : 0.03457112765560547
+2021-10-26 23:01:03,817 - trainer - INFO -     masked_rmse_np : 0.9826245943705241
+2021-10-26 23:01:03,817 - trainer - INFO -     val_loss       : 1.8798615217208863
+2021-10-26 23:01:03,817 - trainer - INFO -     val_masked_mae_np: 0.16943519115447997
+2021-10-26 23:01:03,817 - trainer - INFO -     val_masked_mape_np: 0.04441993199288845
+2021-10-26 23:01:03,817 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:01:03,817 - trainer - INFO -     Time           : 117.8606s
+2021-10-26 23:01:03,847 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch54.pth ...
+2021-10-26 23:01:03,881 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:03:19,613 - trainer - INFO -     epoch          : 55
+2021-10-26 23:03:19,613 - trainer - INFO -     loss           : 1.0170517315467198
+2021-10-26 23:03:19,613 - trainer - INFO -     masked_mae_np  : 0.09166864603757859
+2021-10-26 23:03:19,613 - trainer - INFO -     masked_mape_np : 0.03457112647593021
+2021-10-26 23:03:19,613 - trainer - INFO -     masked_rmse_np : 0.9826245854298273
+2021-10-26 23:03:19,613 - trainer - INFO -     val_loss       : 1.8798615217208863
+2021-10-26 23:03:19,613 - trainer - INFO -     val_masked_mae_np: 0.16943519115447997
+2021-10-26 23:03:19,613 - trainer - INFO -     val_masked_mape_np: 0.044419930502772334
+2021-10-26 23:03:19,613 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:03:19,614 - trainer - INFO -     Time           : 117.4743s
+2021-10-26 23:03:19,646 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch55.pth ...
+2021-10-26 23:03:19,680 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:05:36,173 - trainer - INFO -     epoch          : 56
+2021-10-26 23:05:36,173 - trainer - INFO -     loss           : 1.0170517176389695
+2021-10-26 23:05:36,173 - trainer - INFO -     masked_mae_np  : 0.09166864355405172
+2021-10-26 23:05:36,174 - trainer - INFO -     masked_mape_np : 0.03457112566878398
+2021-10-26 23:05:36,174 - trainer - INFO -     masked_rmse_np : 0.9826245854298273
+2021-10-26 23:05:36,174 - trainer - INFO -     val_loss       : 1.8798615217208863
+2021-10-26 23:05:36,174 - trainer - INFO -     val_masked_mae_np: 0.16943518966436386
+2021-10-26 23:05:36,174 - trainer - INFO -     val_masked_mape_np: 0.04441992975771427
+2021-10-26 23:05:36,174 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:05:36,174 - trainer - INFO -     Time           : 118.2565s
+2021-10-26 23:05:36,288 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch56.pth ...
+2021-10-26 23:05:36,321 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:07:55,344 - trainer - INFO -     epoch          : 57
+2021-10-26 23:07:55,345 - trainer - INFO -     loss           : 1.017051707704862
+2021-10-26 23:07:55,345 - trainer - INFO -     masked_mae_np  : 0.09166864429910977
+2021-10-26 23:07:55,345 - trainer - INFO -     masked_mape_np : 0.03457112448910872
+2021-10-26 23:07:55,345 - trainer - INFO -     masked_rmse_np : 0.9826245874166488
+2021-10-26 23:07:55,345 - trainer - INFO -     val_loss       : 1.8798615097999574
+2021-10-26 23:07:55,345 - trainer - INFO -     val_masked_mae_np: 0.16943518668413163
+2021-10-26 23:07:55,345 - trainer - INFO -     val_masked_mape_np: 0.04441992901265621
+2021-10-26 23:07:55,345 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:07:55,345 - trainer - INFO -     Time           : 121.1204s
+2021-10-26 23:07:55,368 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch57.pth ...
+2021-10-26 23:07:55,402 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:10:13,040 - trainer - INFO -     epoch          : 58
+2021-10-26 23:10:13,040 - trainer - INFO -     loss           : 1.01705169181029
+2021-10-26 23:10:13,041 - trainer - INFO -     masked_mae_np  : 0.09166864231228829
+2021-10-26 23:10:13,041 - trainer - INFO -     masked_mape_np : 0.034571123371521635
+2021-10-26 23:10:13,041 - trainer - INFO -     masked_rmse_np : 0.9826245854298273
+2021-10-26 23:10:13,041 - trainer - INFO -     val_loss       : 1.8798614859580993
+2021-10-26 23:10:13,041 - trainer - INFO -     val_masked_mae_np: 0.16943518221378326
+2021-10-26 23:10:13,041 - trainer - INFO -     val_masked_mape_np: 0.044419928640127185
+2021-10-26 23:10:13,041 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:10:13,041 - trainer - INFO -     Time           : 119.3865s
+2021-10-26 23:10:13,059 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch58.pth ...
+2021-10-26 23:10:13,094 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:12:31,459 - trainer - INFO -     epoch          : 59
+2021-10-26 23:12:31,460 - trainer - INFO -     loss           : 1.0170516878366471
+2021-10-26 23:12:31,460 - trainer - INFO -     masked_mae_np  : 0.0916686400771141
+2021-10-26 23:12:31,460 - trainer - INFO -     masked_mape_np : 0.034571122067670025
+2021-10-26 23:12:31,460 - trainer - INFO -     masked_rmse_np : 0.9826245844364166
+2021-10-26 23:12:31,460 - trainer - INFO -     val_loss       : 1.8798614740371704
+2021-10-26 23:12:31,460 - trainer - INFO -     val_masked_mae_np: 0.16943517923355103
+2021-10-26 23:12:31,460 - trainer - INFO -     val_masked_mape_np: 0.044419927150011064
+2021-10-26 23:12:31,460 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:12:31,460 - trainer - INFO -     Time           : 120.0397s
+2021-10-26 23:12:31,472 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch59.pth ...
+2021-10-26 23:12:31,505 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:14:47,875 - trainer - INFO -     epoch          : 60
+2021-10-26 23:14:47,875 - trainer - INFO -     loss           : 1.0170516659816107
+2021-10-26 23:14:47,875 - trainer - INFO -     masked_mae_np  : 0.09166863908370336
+2021-10-26 23:14:47,875 - trainer - INFO -     masked_mape_np : 0.03457112132261197
+2021-10-26 23:14:47,875 - trainer - INFO -     masked_rmse_np : 0.9826245784759522
+2021-10-26 23:14:47,875 - trainer - INFO -     val_loss       : 1.8798614740371704
+2021-10-26 23:14:47,875 - trainer - INFO -     val_masked_mae_np: 0.16943517774343492
+2021-10-26 23:14:47,875 - trainer - INFO -     val_masked_mape_np: 0.044419927150011064
+2021-10-26 23:14:47,876 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:14:47,876 - trainer - INFO -     Time           : 118.3358s
+2021-10-26 23:14:47,895 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch60.pth ...
+2021-10-26 23:14:47,908 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:17:03,652 - trainer - INFO -     epoch          : 61
+2021-10-26 23:17:03,652 - trainer - INFO -     loss           : 1.0170516520738602
+2021-10-26 23:17:03,652 - trainer - INFO -     masked_mae_np  : 0.09166863883535067
+2021-10-26 23:17:03,652 - trainer - INFO -     masked_mape_np : 0.034571120391289394
+2021-10-26 23:17:03,652 - trainer - INFO -     masked_rmse_np : 0.9826245754957199
+2021-10-26 23:17:03,652 - trainer - INFO -     val_loss       : 1.8798614263534545
+2021-10-26 23:17:03,652 - trainer - INFO -     val_masked_mae_np: 0.16943517774343492
+2021-10-26 23:17:03,652 - trainer - INFO -     val_masked_mape_np: 0.044419923797249794
+2021-10-26 23:17:03,652 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:17:03,652 - trainer - INFO -     Time           : 117.7736s
+2021-10-26 23:17:03,693 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch61.pth ...
+2021-10-26 23:17:03,728 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:19:23,230 - trainer - INFO -     epoch          : 62
+2021-10-26 23:19:23,230 - trainer - INFO -     loss           : 1.0170516500870386
+2021-10-26 23:19:23,231 - trainer - INFO -     masked_mae_np  : 0.09166863821446895
+2021-10-26 23:19:23,231 - trainer - INFO -     masked_mape_np : 0.03457111952205499
+2021-10-26 23:19:23,231 - trainer - INFO -     masked_rmse_np : 0.9826245745023091
+2021-10-26 23:19:23,231 - trainer - INFO -     val_loss       : 1.8798614025115967
+2021-10-26 23:19:23,231 - trainer - INFO -     val_masked_mae_np: 0.16943517774343492
+2021-10-26 23:19:23,231 - trainer - INFO -     val_masked_mape_np: 0.044419923424720766
+2021-10-26 23:19:23,231 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:19:23,231 - trainer - INFO -     Time           : 120.9356s
+2021-10-26 23:19:23,253 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch62.pth ...
+2021-10-26 23:19:23,286 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:21:45,028 - trainer - INFO -     epoch          : 63
+2021-10-26 23:21:45,028 - trainer - INFO -     loss           : 1.0170516421397526
+2021-10-26 23:21:45,028 - trainer - INFO -     masked_mae_np  : 0.09166863660017649
+2021-10-26 23:21:45,028 - trainer - INFO -     masked_mape_np : 0.0345711184044679
+2021-10-26 23:21:45,028 - trainer - INFO -     masked_rmse_np : 0.9826245695352555
+2021-10-26 23:21:45,028 - trainer - INFO -     val_loss       : 1.8798614025115967
+2021-10-26 23:21:45,028 - trainer - INFO -     val_masked_mae_np: 0.16943517774343492
+2021-10-26 23:21:45,028 - trainer - INFO -     val_masked_mape_np: 0.04441992118954659
+2021-10-26 23:21:45,028 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:21:45,028 - trainer - INFO -     Time           : 123.8782s
+2021-10-26 23:21:45,046 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch63.pth ...
+2021-10-26 23:21:45,077 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:24:02,508 - trainer - INFO -     epoch          : 64
+2021-10-26 23:24:02,509 - trainer - INFO -     loss           : 1.0170516312122344
+2021-10-26 23:24:02,509 - trainer - INFO -     masked_mae_np  : 0.0916686354825894
+2021-10-26 23:24:02,509 - trainer - INFO -     masked_mape_np : 0.03457111747314533
+2021-10-26 23:24:02,509 - trainer - INFO -     masked_rmse_np : 0.9826245685418447
+2021-10-26 23:24:02,509 - trainer - INFO -     val_loss       : 1.8798613548278809
+2021-10-26 23:24:02,509 - trainer - INFO -     val_masked_mae_np: 0.16943517774343492
+2021-10-26 23:24:02,509 - trainer - INFO -     val_masked_mape_np: 0.04441992081701755
+2021-10-26 23:24:02,509 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:24:02,510 - trainer - INFO -     Time           : 119.3912s
+2021-10-26 23:24:02,521 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch64.pth ...
+2021-10-26 23:24:02,553 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:26:20,972 - trainer - INFO -     epoch          : 65
+2021-10-26 23:26:20,972 - trainer - INFO -     loss           : 1.0170516232649485
+2021-10-26 23:26:20,972 - trainer - INFO -     masked_mae_np  : 0.09166863498588403
+2021-10-26 23:26:20,972 - trainer - INFO -     masked_mape_np : 0.034571116355558235
+2021-10-26 23:26:20,972 - trainer - INFO -     masked_rmse_np : 0.9826245665550232
+2021-10-26 23:26:20,972 - trainer - INFO -     val_loss       : 1.8798613548278809
+2021-10-26 23:26:20,972 - trainer - INFO -     val_masked_mae_np: 0.16943517476320266
+2021-10-26 23:26:20,973 - trainer - INFO -     val_masked_mape_np: 0.044419920444488524
+2021-10-26 23:26:20,973 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:26:20,973 - trainer - INFO -     Time           : 120.3931s
+2021-10-26 23:26:20,984 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch65.pth ...
+2021-10-26 23:26:21,017 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:28:35,984 - trainer - INFO -     epoch          : 66
+2021-10-26 23:28:35,984 - trainer - INFO -     loss           : 1.0170516192913055
+2021-10-26 23:28:35,984 - trainer - INFO -     masked_mae_np  : 0.09166863399247328
+2021-10-26 23:28:35,984 - trainer - INFO -     masked_mape_np : 0.03457111585885286
+2021-10-26 23:28:35,984 - trainer - INFO -     masked_rmse_np : 0.9826245645682017
+2021-10-26 23:28:35,984 - trainer - INFO -     val_loss       : 1.879861330986023
+2021-10-26 23:28:35,984 - trainer - INFO -     val_masked_mae_np: 0.16943517327308655
+2021-10-26 23:28:35,984 - trainer - INFO -     val_masked_mape_np: 0.04441991932690144
+2021-10-26 23:28:35,985 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:28:35,985 - trainer - INFO -     Time           : 117.1505s
+2021-10-26 23:28:36,012 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch66.pth ...
+2021-10-26 23:28:36,046 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:30:52,163 - trainer - INFO -     epoch          : 67
+2021-10-26 23:30:52,163 - trainer - INFO -     loss           : 1.0170516033967336
+2021-10-26 23:30:52,163 - trainer - INFO -     masked_mae_np  : 0.09166863337159156
+2021-10-26 23:30:52,164 - trainer - INFO -     masked_mape_np : 0.03457111492753029
+2021-10-26 23:30:52,164 - trainer - INFO -     masked_rmse_np : 0.9826245605945587
+2021-10-26 23:30:52,164 - trainer - INFO -     val_loss       : 1.879861330986023
+2021-10-26 23:30:52,164 - trainer - INFO -     val_masked_mae_np: 0.16943517327308655
+2021-10-26 23:30:52,164 - trainer - INFO -     val_masked_mape_np: 0.04441991783678532
+2021-10-26 23:30:52,164 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:30:52,164 - trainer - INFO -     Time           : 118.0833s
+2021-10-26 23:30:52,183 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch67.pth ...
+2021-10-26 23:30:52,214 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:33:10,015 - trainer - INFO -     epoch          : 68
+2021-10-26 23:33:10,015 - trainer - INFO -     loss           : 1.017051597436269
+2021-10-26 23:33:10,015 - trainer - INFO -     masked_mae_np  : 0.0916686320056518
+2021-10-26 23:33:10,015 - trainer - INFO -     masked_mape_np : 0.034571113375326
+2021-10-26 23:33:10,015 - trainer - INFO -     masked_rmse_np : 0.982624555627505
+2021-10-26 23:33:10,016 - trainer - INFO -     val_loss       : 1.8798612594604491
+2021-10-26 23:33:10,016 - trainer - INFO -     val_masked_mae_np: 0.16943517178297043
+2021-10-26 23:33:10,016 - trainer - INFO -     val_masked_mape_np: 0.04441991560161114
+2021-10-26 23:33:10,016 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:33:10,016 - trainer - INFO -     Time           : 119.4208s
+2021-10-26 23:33:10,035 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch68.pth ...
+2021-10-26 23:33:10,069 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:35:26,628 - trainer - INFO -     epoch          : 69
+2021-10-26 23:35:26,629 - trainer - INFO -     loss           : 1.0170515875021617
+2021-10-26 23:35:26,629 - trainer - INFO -     masked_mae_np  : 0.09166863113641739
+2021-10-26 23:35:26,629 - trainer - INFO -     masked_mape_np : 0.034571111823121704
+2021-10-26 23:35:26,629 - trainer - INFO -     masked_rmse_np : 0.982624551653862
+2021-10-26 23:35:26,629 - trainer - INFO -     val_loss       : 1.8798611879348754
+2021-10-26 23:35:26,629 - trainer - INFO -     val_masked_mae_np: 0.16943516880273818
+2021-10-26 23:35:26,629 - trainer - INFO -     val_masked_mape_np: 0.044419914856553076
+2021-10-26 23:35:26,629 - trainer - INFO -     val_masked_rmse_np: 1.8960108995437621
+2021-10-26 23:35:26,629 - trainer - INFO -     Time           : 118.3774s
+2021-10-26 23:35:26,689 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch69.pth ...
+2021-10-26 23:35:26,746 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:37:45,323 - trainer - INFO -     epoch          : 70
+2021-10-26 23:37:45,323 - trainer - INFO -     loss           : 1.0170515845219295
+2021-10-26 23:37:45,323 - trainer - INFO -     masked_mae_np  : 0.09166862952212493
+2021-10-26 23:37:45,323 - trainer - INFO -     masked_mape_np : 0.034571110581358276
+2021-10-26 23:37:45,323 - trainer - INFO -     masked_rmse_np : 0.982624555627505
+2021-10-26 23:37:45,323 - trainer - INFO -     val_loss       : 1.8798611879348754
+2021-10-26 23:37:45,324 - trainer - INFO -     val_masked_mae_np: 0.16943516582250595
+2021-10-26 23:37:45,324 - trainer - INFO -     val_masked_mape_np: 0.04441991373896599
+2021-10-26 23:37:45,324 - trainer - INFO -     val_masked_rmse_np: 1.8960108757019043
+2021-10-26 23:37:45,324 - trainer - INFO -     Time           : 120.4473s
+2021-10-26 23:37:45,336 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch70.pth ...
+2021-10-26 23:37:45,350 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:40:02,190 - trainer - INFO -     epoch          : 71
+2021-10-26 23:40:02,191 - trainer - INFO -     loss           : 1.0170515646537146
+2021-10-26 23:40:02,191 - trainer - INFO -     masked_mae_np  : 0.09166862790783246
+2021-10-26 23:40:02,191 - trainer - INFO -     masked_mape_np : 0.0345711100846529
+2021-10-26 23:40:02,191 - trainer - INFO -     masked_rmse_np : 0.982624551653862
+2021-10-26 23:40:02,191 - trainer - INFO -     val_loss       : 1.8798611640930176
+2021-10-26 23:40:02,191 - trainer - INFO -     val_masked_mae_np: 0.16943516284227372
+2021-10-26 23:40:02,191 - trainer - INFO -     val_masked_mape_np: 0.04441991224884987
+2021-10-26 23:40:02,191 - trainer - INFO -     val_masked_rmse_np: 1.8960108757019043
+2021-10-26 23:40:02,191 - trainer - INFO -     Time           : 118.5925s
+2021-10-26 23:40:02,204 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch71.pth ...
+2021-10-26 23:40:02,217 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:42:18,081 - trainer - INFO -     epoch          : 72
+2021-10-26 23:42:18,081 - trainer - INFO -     loss           : 1.0170515576998393
+2021-10-26 23:42:18,081 - trainer - INFO -     masked_mae_np  : 0.09166862691442172
+2021-10-26 23:42:18,082 - trainer - INFO -     masked_mape_np : 0.034571108780801295
+2021-10-26 23:42:18,082 - trainer - INFO -     masked_rmse_np : 0.9826245496670405
+2021-10-26 23:42:18,082 - trainer - INFO -     val_loss       : 1.8798611402511596
+2021-10-26 23:42:18,082 - trainer - INFO -     val_masked_mae_np: 0.16943516284227372
+2021-10-26 23:42:18,082 - trainer - INFO -     val_masked_mape_np: 0.044419911503791806
+2021-10-26 23:42:18,082 - trainer - INFO -     val_masked_rmse_np: 1.8960108518600465
+2021-10-26 23:42:18,082 - trainer - INFO -     Time           : 117.3235s
+2021-10-26 23:42:18,094 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch72.pth ...
+2021-10-26 23:42:18,125 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:44:33,463 - trainer - INFO -     epoch          : 73
+2021-10-26 23:44:33,463 - trainer - INFO -     loss           : 1.0170515557130178
+2021-10-26 23:44:33,463 - trainer - INFO -     masked_mae_np  : 0.09166862604518732
+2021-10-26 23:44:33,463 - trainer - INFO -     masked_mape_np : 0.03457110741486152
+2021-10-26 23:44:33,463 - trainer - INFO -     masked_rmse_np : 0.9826245486736298
+2021-10-26 23:44:33,463 - trainer - INFO -     val_loss       : 1.8798611164093018
+2021-10-26 23:44:33,463 - trainer - INFO -     val_masked_mae_np: 0.16943516284227372
+2021-10-26 23:44:33,463 - trainer - INFO -     val_masked_mape_np: 0.04441990926861763
+2021-10-26 23:44:33,463 - trainer - INFO -     val_masked_rmse_np: 1.8960108518600465
+2021-10-26 23:44:33,463 - trainer - INFO -     Time           : 116.9221s
+2021-10-26 23:44:33,475 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch73.pth ...
+2021-10-26 23:44:33,509 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:46:49,603 - trainer - INFO -     epoch          : 74
+2021-10-26 23:46:49,603 - trainer - INFO -     loss           : 1.0170515338579813
+2021-10-26 23:46:49,604 - trainer - INFO -     masked_mae_np  : 0.09166862480342389
+2021-10-26 23:46:49,604 - trainer - INFO -     masked_mape_np : 0.03457110660771529
+2021-10-26 23:46:49,604 - trainer - INFO -     masked_rmse_np : 0.982624547680219
+2021-10-26 23:46:49,604 - trainer - INFO -     val_loss       : 1.8798611164093018
+2021-10-26 23:46:49,604 - trainer - INFO -     val_masked_mae_np: 0.16943516284227372
+2021-10-26 23:46:49,604 - trainer - INFO -     val_masked_mape_np: 0.0444199088960886
+2021-10-26 23:46:49,604 - trainer - INFO -     val_masked_rmse_np: 1.8960108399391173
+2021-10-26 23:46:49,604 - trainer - INFO -     Time           : 117.9198s
+2021-10-26 23:46:49,616 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch74.pth ...
+2021-10-26 23:46:49,650 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:49:06,725 - trainer - INFO -     epoch          : 75
+2021-10-26 23:49:06,726 - trainer - INFO -     loss           : 1.0170515149831771
+2021-10-26 23:49:06,726 - trainer - INFO -     masked_mae_np  : 0.09166862418254217
+2021-10-26 23:49:06,726 - trainer - INFO -     masked_mape_np : 0.0345711054901282
+2021-10-26 23:49:06,726 - trainer - INFO -     masked_rmse_np : 0.982624547680219
+2021-10-26 23:49:06,726 - trainer - INFO -     val_loss       : 1.8798611164093018
+2021-10-26 23:49:06,726 - trainer - INFO -     val_masked_mae_np: 0.16943516135215758
+2021-10-26 23:49:06,726 - trainer - INFO -     val_masked_mape_np: 0.04441990815103054
+2021-10-26 23:49:06,726 - trainer - INFO -     val_masked_rmse_np: 1.8960108160972595
+2021-10-26 23:49:06,726 - trainer - INFO -     Time           : 118.6747s
+2021-10-26 23:49:06,760 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch75.pth ...
+2021-10-26 23:49:06,794 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:51:24,957 - trainer - INFO -     epoch          : 76
+2021-10-26 23:51:24,957 - trainer - INFO -     loss           : 1.0170515050490698
+2021-10-26 23:51:24,958 - trainer - INFO -     masked_mae_np  : 0.09166862306495507
+2021-10-26 23:51:24,958 - trainer - INFO -     masked_mape_np : 0.03457110443462928
+2021-10-26 23:51:24,958 - trainer - INFO -     masked_rmse_np : 0.9826245446999867
+2021-10-26 23:51:24,958 - trainer - INFO -     val_loss       : 1.8798611164093018
+2021-10-26 23:51:24,958 - trainer - INFO -     val_masked_mae_np: 0.16943515837192535
+2021-10-26 23:51:24,958 - trainer - INFO -     val_masked_mape_np: 0.04441990740597248
+2021-10-26 23:51:24,958 - trainer - INFO -     val_masked_rmse_np: 1.8960108160972595
+2021-10-26 23:51:24,958 - trainer - INFO -     Time           : 119.3791s
+2021-10-26 23:51:24,970 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch76.pth ...
+2021-10-26 23:51:25,005 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:53:44,305 - trainer - INFO -     epoch          : 77
+2021-10-26 23:53:44,306 - trainer - INFO -     loss           : 1.0170515010754266
+2021-10-26 23:53:44,306 - trainer - INFO -     masked_mae_np  : 0.09166862145066261
+2021-10-26 23:53:44,306 - trainer - INFO -     masked_mape_np : 0.03457110400001208
+2021-10-26 23:53:44,306 - trainer - INFO -     masked_rmse_np : 0.9826245407263438
+2021-10-26 23:53:44,306 - trainer - INFO -     val_loss       : 1.879861092567444
+2021-10-26 23:53:44,306 - trainer - INFO -     val_masked_mae_np: 0.16943515837192535
+2021-10-26 23:53:44,306 - trainer - INFO -     val_masked_mape_np: 0.04441990591585636
+2021-10-26 23:53:44,306 - trainer - INFO -     val_masked_rmse_np: 1.8960108160972595
+2021-10-26 23:53:44,306 - trainer - INFO -     Time           : 120.2430s
+2021-10-26 23:53:44,361 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch77.pth ...
+2021-10-26 23:53:44,396 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:56:03,975 - trainer - INFO -     epoch          : 78
+2021-10-26 23:56:03,975 - trainer - INFO -     loss           : 1.0170514871676763
+2021-10-26 23:56:03,975 - trainer - INFO -     masked_mae_np  : 0.09166862120230992
+2021-10-26 23:56:03,976 - trainer - INFO -     masked_mape_np : 0.03457110319286585
+2021-10-26 23:56:03,976 - trainer - INFO -     masked_rmse_np : 0.9826245397329331
+2021-10-26 23:56:03,976 - trainer - INFO -     val_loss       : 1.879861068725586
+2021-10-26 23:56:03,976 - trainer - INFO -     val_masked_mae_np: 0.16943515539169313
+2021-10-26 23:56:03,976 - trainer - INFO -     val_masked_mape_np: 0.0444199051707983
+2021-10-26 23:56:03,976 - trainer - INFO -     val_masked_rmse_np: 1.8960108160972595
+2021-10-26 23:56:03,976 - trainer - INFO -     Time           : 121.2606s
+2021-10-26 23:56:03,988 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch78.pth ...
+2021-10-26 23:56:04,023 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-26 23:58:21,429 - trainer - INFO -     epoch          : 79
+2021-10-26 23:58:21,430 - trainer - INFO -     loss           : 1.0170514712731042
+2021-10-26 23:58:21,430 - trainer - INFO -     masked_mae_np  : 0.09166861971219381
+2021-10-26 23:58:21,430 - trainer - INFO -     masked_mape_np : 0.034571101889014244
+2021-10-26 23:58:21,430 - trainer - INFO -     masked_rmse_np : 0.9826245337724686
+2021-10-26 23:58:21,430 - trainer - INFO -     val_loss       : 1.879861068725586
+2021-10-26 23:58:21,430 - trainer - INFO -     val_masked_mae_np: 0.16943515539169313
+2021-10-26 23:58:21,430 - trainer - INFO -     val_masked_mape_np: 0.04441990330815315
+2021-10-26 23:58:21,430 - trainer - INFO -     val_masked_rmse_np: 1.8960108041763306
+2021-10-26 23:58:21,430 - trainer - INFO -     Time           : 119.2472s
+2021-10-26 23:58:21,442 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch79.pth ...
+2021-10-26 23:58:21,477 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:00:37,784 - trainer - INFO -     epoch          : 80
+2021-10-27 00:00:37,784 - trainer - INFO -     loss           : 1.017051457365354
+2021-10-27 00:00:37,784 - trainer - INFO -     masked_mae_np  : 0.09166861946384113
+2021-10-27 00:00:37,784 - trainer - INFO -     masked_mape_np : 0.034571100709338984
+2021-10-27 00:00:37,784 - trainer - INFO -     masked_rmse_np : 0.9826245268185934
+2021-10-27 00:00:37,784 - trainer - INFO -     val_loss       : 1.879861068725586
+2021-10-27 00:00:37,784 - trainer - INFO -     val_masked_mae_np: 0.16943515390157698
+2021-10-27 00:00:37,784 - trainer - INFO -     val_masked_mape_np: 0.04441990181803703
+2021-10-27 00:00:37,785 - trainer - INFO -     val_masked_rmse_np: 1.8960108160972595
+2021-10-27 00:00:37,785 - trainer - INFO -     Time           : 117.5946s
+2021-10-27 00:00:37,796 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch80.pth ...
+2021-10-27 00:00:37,827 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:02:54,569 - trainer - INFO -     epoch          : 81
+2021-10-27 00:02:54,569 - trainer - INFO -     loss           : 1.017051429549853
+2021-10-27 00:02:54,571 - trainer - INFO -     masked_mae_np  : 0.0916686168561379
+2021-10-27 00:02:54,571 - trainer - INFO -     masked_mape_np : 0.03457109996428092
+2021-10-27 00:02:54,571 - trainer - INFO -     masked_rmse_np : 0.9826245238383611
+2021-10-27 00:02:54,571 - trainer - INFO -     val_loss       : 1.879861068725586
+2021-10-27 00:02:54,571 - trainer - INFO -     val_masked_mae_np: 0.16943515092134476
+2021-10-27 00:02:54,572 - trainer - INFO -     val_masked_mape_np: 0.044419900700449946
+2021-10-27 00:02:54,572 - trainer - INFO -     val_masked_rmse_np: 1.8960108160972595
+2021-10-27 00:02:54,572 - trainer - INFO -     Time           : 118.1692s
+2021-10-27 00:02:54,583 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch81.pth ...
+2021-10-27 00:02:54,619 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:05:12,047 - trainer - INFO -     epoch          : 82
+2021-10-27 00:05:12,047 - trainer - INFO -     loss           : 1.0170514235893886
+2021-10-27 00:05:12,047 - trainer - INFO -     masked_mae_np  : 0.09166861549019814
+2021-10-27 00:05:12,047 - trainer - INFO -     masked_mape_np : 0.03457109866042932
+2021-10-27 00:05:12,047 - trainer - INFO -     masked_rmse_np : 0.9826245148976643
+2021-10-27 00:05:12,047 - trainer - INFO -     val_loss       : 1.879861044883728
+2021-10-27 00:05:12,047 - trainer - INFO -     val_masked_mae_np: 0.1694351464509964
+2021-10-27 00:05:12,047 - trainer - INFO -     val_masked_mape_np: 0.04441989995539188
+2021-10-27 00:05:12,047 - trainer - INFO -     val_masked_rmse_np: 1.8960108041763306
+2021-10-27 00:05:12,048 - trainer - INFO -     Time           : 119.0138s
+2021-10-27 00:05:12,059 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch82.pth ...
+2021-10-27 00:05:12,090 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:07:28,617 - trainer - INFO -     epoch          : 83
+2021-10-27 00:07:28,618 - trainer - INFO -     loss           : 1.017051417628924
+2021-10-27 00:07:28,618 - trainer - INFO -     masked_mae_np  : 0.09166861462096373
+2021-10-27 00:07:28,618 - trainer - INFO -     masked_mape_np : 0.03457109791537126
+2021-10-27 00:07:28,618 - trainer - INFO -     masked_rmse_np : 0.9826245129108429
+2021-10-27 00:07:28,618 - trainer - INFO -     val_loss       : 1.8798610329627992
+2021-10-27 00:07:28,618 - trainer - INFO -     val_masked_mae_np: 0.16943514347076416
+2021-10-27 00:07:28,618 - trainer - INFO -     val_masked_mape_np: 0.044419897347688676
+2021-10-27 00:07:28,618 - trainer - INFO -     val_masked_rmse_np: 1.8960108041763306
+2021-10-27 00:07:28,618 - trainer - INFO -     Time           : 118.0232s
+2021-10-27 00:07:28,630 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch83.pth ...
+2021-10-27 00:07:28,665 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:09:44,646 - trainer - INFO -     epoch          : 84
+2021-10-27 00:09:44,647 - trainer - INFO -     loss           : 1.0170514116684595
+2021-10-27 00:09:44,647 - trainer - INFO -     masked_mae_np  : 0.0916686133792003
+2021-10-27 00:09:44,647 - trainer - INFO -     masked_mape_np : 0.03457109679778417
+2021-10-27 00:09:44,647 - trainer - INFO -     masked_rmse_np : 0.9826245109240214
+2021-10-27 00:09:44,647 - trainer - INFO -     val_loss       : 1.87986102104187
+2021-10-27 00:09:44,647 - trainer - INFO -     val_masked_mae_np: 0.16943514198064805
+2021-10-27 00:09:44,647 - trainer - INFO -     val_masked_mape_np: 0.04441989660263061
+2021-10-27 00:09:44,647 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:09:44,647 - trainer - INFO -     Time           : 118.1485s
+2021-10-27 00:09:44,673 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch84.pth ...
+2021-10-27 00:09:44,706 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:12:04,150 - trainer - INFO -     epoch          : 85
+2021-10-27 00:12:04,151 - trainer - INFO -     loss           : 1.0170513997475306
+2021-10-27 00:12:04,151 - trainer - INFO -     masked_mae_np  : 0.09166861275831859
+2021-10-27 00:12:04,151 - trainer - INFO -     masked_mape_np : 0.03457109568019708
+2021-10-27 00:12:04,151 - trainer - INFO -     masked_rmse_np : 0.9826245109240214
+2021-10-27 00:12:04,151 - trainer - INFO -     val_loss       : 1.87986102104187
+2021-10-27 00:12:04,151 - trainer - INFO -     val_masked_mae_np: 0.16943513751029968
+2021-10-27 00:12:04,151 - trainer - INFO -     val_masked_mape_np: 0.0444198951125145
+2021-10-27 00:12:04,151 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:12:04,151 - trainer - INFO -     Time           : 121.1813s
+2021-10-27 00:12:04,220 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch85.pth ...
+2021-10-27 00:12:04,255 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:14:20,712 - trainer - INFO -     epoch          : 86
+2021-10-27 00:14:20,713 - trainer - INFO -     loss           : 1.0170513778924941
+2021-10-27 00:14:20,713 - trainer - INFO -     masked_mae_np  : 0.09166861151655516
+2021-10-27 00:14:20,713 - trainer - INFO -     masked_mape_np : 0.03457109425216913
+2021-10-27 00:14:20,713 - trainer - INFO -     masked_rmse_np : 0.9826245109240214
+2021-10-27 00:14:20,713 - trainer - INFO -     val_loss       : 1.87986102104187
+2021-10-27 00:14:20,713 - trainer - INFO -     val_masked_mae_np: 0.16943513751029968
+2021-10-27 00:14:20,713 - trainer - INFO -     val_masked_mape_np: 0.04441989473998546
+2021-10-27 00:14:20,713 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:14:20,713 - trainer - INFO -     Time           : 118.3986s
+2021-10-27 00:14:20,725 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch86.pth ...
+2021-10-27 00:14:20,763 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:16:39,623 - trainer - INFO -     epoch          : 87
+2021-10-27 00:16:39,623 - trainer - INFO -     loss           : 1.0170513679583868
+2021-10-27 00:16:39,623 - trainer - INFO -     masked_mae_np  : 0.0916686099022627
+2021-10-27 00:16:39,623 - trainer - INFO -     masked_mape_np : 0.034571093320846555
+2021-10-27 00:16:39,623 - trainer - INFO -     masked_rmse_np : 0.9826245069503784
+2021-10-27 00:16:39,623 - trainer - INFO -     val_loss       : 1.8798609852790833
+2021-10-27 00:16:39,623 - trainer - INFO -     val_masked_mae_np: 0.16943513453006745
+2021-10-27 00:16:39,623 - trainer - INFO -     val_masked_mape_np: 0.044419894367456435
+2021-10-27 00:16:39,623 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:16:39,624 - trainer - INFO -     Time           : 120.5922s
+2021-10-27 00:16:39,669 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch87.pth ...
+2021-10-27 00:16:39,701 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:18:56,008 - trainer - INFO -     epoch          : 88
+2021-10-27 00:18:56,009 - trainer - INFO -     loss           : 1.017051362991333
+2021-10-27 00:18:56,009 - trainer - INFO -     masked_mae_np  : 0.09166860915720462
+2021-10-27 00:18:56,009 - trainer - INFO -     masked_mape_np : 0.03457109183073044
+2021-10-27 00:18:56,009 - trainer - INFO -     masked_rmse_np : 0.9826244990030925
+2021-10-27 00:18:56,009 - trainer - INFO -     val_loss       : 1.8798609733581544
+2021-10-27 00:18:56,009 - trainer - INFO -     val_masked_mae_np: 0.16943513453006745
+2021-10-27 00:18:56,009 - trainer - INFO -     val_masked_mape_np: 0.044419892877340314
+2021-10-27 00:18:56,009 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:18:56,009 - trainer - INFO -     Time           : 118.4366s
+2021-10-27 00:18:56,021 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch88.pth ...
+2021-10-27 00:18:56,054 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:21:12,786 - trainer - INFO -     epoch          : 89
+2021-10-27 00:21:12,786 - trainer - INFO -     loss           : 1.017051355044047
+2021-10-27 00:21:12,787 - trainer - INFO -     masked_mae_np  : 0.09166860803961754
+2021-10-27 00:21:12,787 - trainer - INFO -     masked_mape_np : 0.034571091271936895
+2021-10-27 00:21:12,787 - trainer - INFO -     masked_rmse_np : 0.9826245009899139
+2021-10-27 00:21:12,787 - trainer - INFO -     val_loss       : 1.8798609852790833
+2021-10-27 00:21:12,787 - trainer - INFO -     val_masked_mae_np: 0.16943513453006745
+2021-10-27 00:21:12,787 - trainer - INFO -     val_masked_mape_np: 0.04441989213228226
+2021-10-27 00:21:12,787 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:21:12,787 - trainer - INFO -     Time           : 118.3219s
+2021-10-27 00:21:12,808 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch89.pth ...
+2021-10-27 00:23:30,692 - trainer - INFO -     epoch          : 90
+2021-10-27 00:23:30,693 - trainer - INFO -     loss           : 1.0170513451099397
+2021-10-27 00:23:30,693 - trainer - INFO -     masked_mae_np  : 0.0916686067978541
+2021-10-27 00:23:30,693 - trainer - INFO -     masked_mape_np : 0.034571090651055174
+2021-10-27 00:23:30,693 - trainer - INFO -     masked_rmse_np : 0.9826244990030925
+2021-10-27 00:23:30,693 - trainer - INFO -     val_loss       : 1.8798609256744385
+2021-10-27 00:23:30,693 - trainer - INFO -     val_masked_mae_np: 0.16943513303995134
+2021-10-27 00:23:30,693 - trainer - INFO -     val_masked_mape_np: 0.044419891014695165
+2021-10-27 00:23:30,693 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:23:30,693 - trainer - INFO -     Time           : 119.8863s
+2021-10-27 00:23:30,710 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch90.pth ...
+2021-10-27 00:23:30,742 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:25:52,031 - trainer - INFO -     epoch          : 91
+2021-10-27 00:25:52,031 - trainer - INFO -     loss           : 1.0170513282219569
+2021-10-27 00:25:52,031 - trainer - INFO -     masked_mae_np  : 0.09166860555609067
+2021-10-27 00:25:52,031 - trainer - INFO -     masked_mape_np : 0.03457108916093906
+2021-10-27 00:25:52,031 - trainer - INFO -     masked_rmse_np : 0.9826244950294495
+2021-10-27 00:25:52,032 - trainer - INFO -     val_loss       : 1.8798608541488648
+2021-10-27 00:25:52,032 - trainer - INFO -     val_masked_mae_np: 0.16943513303995134
+2021-10-27 00:25:52,032 - trainer - INFO -     val_masked_mape_np: 0.044419891014695165
+2021-10-27 00:25:52,032 - trainer - INFO -     val_masked_rmse_np: 1.8960107803344726
+2021-10-27 00:25:52,032 - trainer - INFO -     Time           : 122.2048s
+2021-10-27 00:25:52,115 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch91.pth ...
+2021-10-27 00:25:52,151 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:28:12,456 - trainer - INFO -     epoch          : 92
+2021-10-27 00:28:12,456 - trainer - INFO -     loss           : 1.0170513143142064
+2021-10-27 00:28:12,456 - trainer - INFO -     masked_mae_np  : 0.09166860369344552
+2021-10-27 00:28:12,456 - trainer - INFO -     masked_mape_np : 0.03457108804335197
+2021-10-27 00:28:12,456 - trainer - INFO -     masked_rmse_np : 0.9826244950294495
+2021-10-27 00:28:12,457 - trainer - INFO -     val_loss       : 1.8798608303070068
+2021-10-27 00:28:12,457 - trainer - INFO -     val_masked_mae_np: 0.16943512856960297
+2021-10-27 00:28:12,457 - trainer - INFO -     val_masked_mape_np: 0.04441988952457905
+2021-10-27 00:28:12,457 - trainer - INFO -     val_masked_rmse_np: 1.8960107684135437
+2021-10-27 00:28:12,457 - trainer - INFO -     Time           : 121.5966s
+2021-10-27 00:28:12,469 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch92.pth ...
+2021-10-27 00:28:12,501 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:30:27,564 - trainer - INFO -     epoch          : 93
+2021-10-27 00:30:27,564 - trainer - INFO -     loss           : 1.0170513023932775
+2021-10-27 00:30:27,565 - trainer - INFO -     masked_mae_np  : 0.09166860294838747
+2021-10-27 00:30:27,565 - trainer - INFO -     masked_mape_np : 0.03457108736038208
+2021-10-27 00:30:27,565 - trainer - INFO -     masked_rmse_np : 0.9826244920492172
+2021-10-27 00:30:27,565 - trainer - INFO -     val_loss       : 1.8798608303070068
+2021-10-27 00:30:27,565 - trainer - INFO -     val_masked_mae_np: 0.16943512856960297
+2021-10-27 00:30:27,565 - trainer - INFO -     val_masked_mape_np: 0.044419887289404866
+2021-10-27 00:30:27,565 - trainer - INFO -     val_masked_rmse_np: 1.8960107445716858
+2021-10-27 00:30:27,565 - trainer - INFO -     Time           : 116.9229s
+2021-10-27 00:30:27,577 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch93.pth ...
+2021-10-27 00:30:27,605 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:32:49,493 - trainer - INFO -     epoch          : 94
+2021-10-27 00:32:49,493 - trainer - INFO -     loss           : 1.0170512934525808
+2021-10-27 00:32:49,494 - trainer - INFO -     masked_mae_np  : 0.09166860207915306
+2021-10-27 00:32:49,494 - trainer - INFO -     masked_mape_np : 0.03457108611861865
+2021-10-27 00:32:49,494 - trainer - INFO -     masked_rmse_np : 0.982624485095342
+2021-10-27 00:32:49,494 - trainer - INFO -     val_loss       : 1.87986079454422
+2021-10-27 00:32:49,494 - trainer - INFO -     val_masked_mae_np: 0.16943512856960297
+2021-10-27 00:32:49,494 - trainer - INFO -     val_masked_mape_np: 0.04441988430917263
+2021-10-27 00:32:49,494 - trainer - INFO -     val_masked_rmse_np: 1.8960107445716858
+2021-10-27 00:32:49,494 - trainer - INFO -     Time           : 123.6279s
+2021-10-27 00:32:49,506 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch94.pth ...
+2021-10-27 00:32:49,536 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:35:12,572 - trainer - INFO -     epoch          : 95
+2021-10-27 00:35:12,572 - trainer - INFO -     loss           : 1.017051281531652
+2021-10-27 00:35:12,572 - trainer - INFO -     masked_mae_np  : 0.09166860120991865
+2021-10-27 00:35:12,573 - trainer - INFO -     masked_mape_np : 0.034571085249384244
+2021-10-27 00:35:12,573 - trainer - INFO -     masked_rmse_np : 0.9826244781414668
+2021-10-27 00:35:12,573 - trainer - INFO -     val_loss       : 1.87986079454422
+2021-10-27 00:35:12,573 - trainer - INFO -     val_masked_mae_np: 0.16943512856960297
+2021-10-27 00:35:12,573 - trainer - INFO -     val_masked_mape_np: 0.04441988430917263
+2021-10-27 00:35:12,573 - trainer - INFO -     val_masked_rmse_np: 1.8960107207298278
+2021-10-27 00:35:12,573 - trainer - INFO -     Time           : 123.3858s
+2021-10-27 00:35:12,618 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch95.pth ...
+2021-10-27 00:35:12,646 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:37:27,625 - trainer - INFO -     epoch          : 96
+2021-10-27 00:37:27,626 - trainer - INFO -     loss           : 1.0170512656370798
+2021-10-27 00:37:27,626 - trainer - INFO -     masked_mae_np  : 0.09166859996815523
+2021-10-27 00:37:27,626 - trainer - INFO -     masked_mape_np : 0.03457108462850253
+2021-10-27 00:37:27,626 - trainer - INFO -     masked_rmse_np : 0.9826244761546453
+2021-10-27 00:37:27,626 - trainer - INFO -     val_loss       : 1.87986079454422
+2021-10-27 00:37:27,626 - trainer - INFO -     val_masked_mae_np: 0.16943512856960297
+2021-10-27 00:37:27,626 - trainer - INFO -     val_masked_mape_np: 0.04441988319158554
+2021-10-27 00:37:27,626 - trainer - INFO -     val_masked_rmse_np: 1.8960107207298278
+2021-10-27 00:37:27,626 - trainer - INFO -     Time           : 117.0276s
+2021-10-27 00:37:27,639 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch96.pth ...
+2021-10-27 00:37:27,668 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:39:47,056 - trainer - INFO -     epoch          : 97
+2021-10-27 00:39:47,056 - trainer - INFO -     loss           : 1.017051237821579
+2021-10-27 00:39:47,056 - trainer - INFO -     masked_mae_np  : 0.0916685987263918
+2021-10-27 00:39:47,056 - trainer - INFO -     masked_mape_np : 0.03457108320047458
+2021-10-27 00:39:47,056 - trainer - INFO -     masked_rmse_np : 0.9826244761546453
+2021-10-27 00:39:47,056 - trainer - INFO -     val_loss       : 1.87986079454422
+2021-10-27 00:39:47,056 - trainer - INFO -     val_masked_mae_np: 0.16943512558937074
+2021-10-27 00:39:47,056 - trainer - INFO -     val_masked_mape_np: 0.04441988095641136
+2021-10-27 00:39:47,056 - trainer - INFO -     val_masked_rmse_np: 1.8960107207298278
+2021-10-27 00:39:47,056 - trainer - INFO -     Time           : 120.7908s
+2021-10-27 00:39:47,068 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch97.pth ...
+2021-10-27 00:39:47,097 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:42:05,579 - trainer - INFO -     epoch          : 98
+2021-10-27 00:42:05,579 - trainer - INFO -     loss           : 1.017051237821579
+2021-10-27 00:42:05,579 - trainer - INFO -     masked_mae_np  : 0.09166859736045202
+2021-10-27 00:42:05,579 - trainer - INFO -     masked_mape_np : 0.03457108233124018
+2021-10-27 00:42:05,579 - trainer - INFO -     masked_rmse_np : 0.9826244721810024
+2021-10-27 00:42:05,580 - trainer - INFO -     val_loss       : 1.87986079454422
+2021-10-27 00:42:05,580 - trainer - INFO -     val_masked_mae_np: 0.16943512558937074
+2021-10-27 00:42:05,580 - trainer - INFO -     val_masked_mape_np: 0.044419880211353305
+2021-10-27 00:42:05,580 - trainer - INFO -     val_masked_rmse_np: 1.8960107207298278
+2021-10-27 00:42:05,580 - trainer - INFO -     Time           : 120.3756s
+2021-10-27 00:42:05,591 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch98.pth ...
+2021-10-27 00:42:05,605 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:44:22,758 - trainer - INFO -     epoch          : 99
+2021-10-27 00:44:22,758 - trainer - INFO -     loss           : 1.0170512189467749
+2021-10-27 00:44:22,759 - trainer - INFO -     masked_mae_np  : 0.09166859698792298
+2021-10-27 00:44:22,759 - trainer - INFO -     masked_mape_np : 0.03457108158618212
+2021-10-27 00:44:22,759 - trainer - INFO -     masked_rmse_np : 0.9826244721810024
+2021-10-27 00:44:22,759 - trainer - INFO -     val_loss       : 1.879860770702362
+2021-10-27 00:44:22,759 - trainer - INFO -     val_masked_mae_np: 0.16943512558937074
+2021-10-27 00:44:22,759 - trainer - INFO -     val_masked_mape_np: 0.04441987946629524
+2021-10-27 00:44:22,759 - trainer - INFO -     val_masked_rmse_np: 1.8960107207298278
+2021-10-27 00:44:22,759 - trainer - INFO -     Time           : 119.3777s
+2021-10-27 00:44:22,771 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch99.pth ...
+2021-10-27 00:44:22,784 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:46:40,322 - trainer - INFO -     epoch          : 100
+2021-10-27 00:46:40,323 - trainer - INFO -     loss           : 1.0170512199401855
+2021-10-27 00:46:40,323 - trainer - INFO -     masked_mae_np  : 0.09166859537363052
+2021-10-27 00:46:40,323 - trainer - INFO -     masked_mape_np : 0.03457107990980148
+2021-10-27 00:46:40,323 - trainer - INFO -     masked_rmse_np : 0.9826244721810024
+2021-10-27 00:46:40,323 - trainer - INFO -     val_loss       : 1.879860770702362
+2021-10-27 00:46:40,323 - trainer - INFO -     val_masked_mae_np: 0.16943512260913848
+2021-10-27 00:46:40,323 - trainer - INFO -     val_masked_mape_np: 0.044419878348708156
+2021-10-27 00:46:40,323 - trainer - INFO -     val_masked_rmse_np: 1.8960107207298278
+2021-10-27 00:46:40,323 - trainer - INFO -     Time           : 118.7167s
+2021-10-27 00:46:40,344 - trainer - INFO - Saving checkpoint: saved/manhattan/models/Manhattan_DCRNN/1026_205224/checkpoint-epoch100.pth ...
+2021-10-27 00:46:40,374 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 00:46:40,375 - trainer - INFO - Average training time: 119.2928s

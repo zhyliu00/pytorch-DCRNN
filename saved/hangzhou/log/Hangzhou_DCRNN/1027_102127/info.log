@@ -1,0 +1,31 @@
+2021-10-27 10:24:36,597 - test - INFO - DCRNNModel(
+  (encoder): DCRNNEncoder(
+    (encoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+    )
+  )
+  (decoder): DCGRUDecoder(
+    (decoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+        (project): Linear(in_features=64, out_features=1, bias=True)
+      )
+    )
+  )
+)
+Trainable parameters: 371393
+2021-10-27 10:24:36,599 - test - INFO - Loading checkpoint: /root/pytorch-DCRNN/saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/model_best.pth ...
+2021-10-27 10:24:52,665 - test - INFO - Inference time: 16.0558 s
+2021-10-27 10:24:52,684 - test - INFO - {'Horizon': 1, 'MAE': 11.250374, 'MAPE': 0.6636724102866204, 'RMSE': 31.656376}

@@ -193,14 +193,16 @@ def count_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
 
-def load_dataset(dataset_dir, batch_size, test_batch_size=None, **kwargs):
+def load_dataset(data_path, batch_size, test_batch_size=None, **kwargs):
+    cat_data = load_pickle(data_path)
+    
     data = {}
     for category in ['train', 'val', 'test']:
-        cat_data = np.load(os.path.join(dataset_dir, category + '.npz'))
-        data['x_' + category] = cat_data['x']
-        data['y_' + category] = cat_data['y']
+        data['x_' + category] = cat_data[category]['X']
+        data['y_' + category] = cat_data[category]['y']
     scaler = StandardScaler(mean=data['x_train'][..., 0].mean(), std=data['x_train'][..., 0].std())
-    # Data format
+    means = data['x_train'][..., 0].mean()
+    stds = data['x_train'][..., 0].std()
     for category in ['train', 'val', 'test']:
         data['x_' + category][..., 0] = scaler.transform(data['x_' + category][..., 0])
         data['y_' + category][..., 0] = scaler.transform(data['y_' + category][..., 0])
@@ -209,12 +211,21 @@ def load_dataset(dataset_dir, batch_size, test_batch_size=None, **kwargs):
     data['test_loader'] = DataLoader(data['x_test'], data['y_test'], test_batch_size, shuffle=False)
     data['scaler'] = scaler
 
-    return data
+    return data, means, stds
 
 
 def load_graph_data(pkl_filename):
-    sensor_ids, sensor_id_to_ind, adj_mx = load_pickle(pkl_filename)
-    return sensor_ids, sensor_id_to_ind, adj_mx
+    data = load_pickle(pkl_filename)
+    table = data['train']['A']
+    node = data['train']['nodes']
+    R = len(table)
+    A = np.zeros((R, R))
+    for start_id, end_table in table.items():
+        start_idx = node[start_id]
+        for end_id in end_table:
+            end_idx = node[end_id]
+            A[end_idx, start_idx] = 1
+    return A
 
 
 def load_pickle(pickle_file):
@@ -228,3 +239,10 @@ def load_pickle(pickle_file):
         print('Unable to load data ', pickle_file, ':', e)
         raise
     return pickle_data
+
+def load_pk_data(data_path):
+    data = load_pickle(data_path)
+    # return (epoch_len, layer_depth , node_num, num_feat)
+
+    print(list(data.keys()))
+    return 

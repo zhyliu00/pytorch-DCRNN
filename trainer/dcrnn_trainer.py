@@ -9,11 +9,13 @@ class DCRNNTrainer(BaseTrainer):
     """
     DCRNN trainer class
     """
-    def __init__(self, model, loss, metrics, optimizer, config, data_loader,
+    def __init__(self, model, loss, metrics, optimizer, config, data_loader, means, stds, 
                  valid_data_loader=None, lr_scheduler=None, len_epoch=None, val_len_epoch=None):
         super(DCRNNTrainer, self).__init__(model, loss, metrics, optimizer, config)
         self.config = config
         self.data_loader = data_loader
+        self.means = means
+        self.stds = stds
         self.len_epoch = len_epoch
         self.val_len_epoch = val_len_epoch
         self.cl_decay_steps = config["trainer"]["cl_decay_steps"]
@@ -58,6 +60,7 @@ class DCRNNTrainer(BaseTrainer):
             # print(data.shape, target.shape)
             label = target[..., :self.model.output_dim]  # (..., 1)  supposed to be numpy array
             data, target = data.to(self.device), target.to(self.device)
+            # print(data.shape, target.shape)
 
             self.optimizer.zero_grad()
 
@@ -66,10 +69,13 @@ class DCRNNTrainer(BaseTrainer):
             teacher_forcing_ratio = self._compute_sampling_threshold(global_step, self.cl_decay_steps)
 
             output = self.model(data, target, teacher_forcing_ratio)
-            output = torch.transpose(output.view(12, self.model.batch_size, self.model.num_nodes,
-                                                 self.model.output_dim), 0, 1)  # back to (50, 12, 207, 1)
+            output = torch.transpose(output.view(1, self.model.batch_size, self.model.num_nodes,
+                                                 self.model.output_dim), 0, 1)  # back to (50, 1, 207, 1)
 
-            loss = self.loss(output.cpu(), label)  # loss is self-defined, need cpu input
+            # baseline mask
+            mask = (label * self.stds + self.means > 5)
+
+            loss = self.loss(mask*output.cpu(), mask*label)  # loss is self-defined, need cpu input
             loss.backward()
             # add max grad clipping
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.max_grad_norm)
@@ -79,7 +85,9 @@ class DCRNNTrainer(BaseTrainer):
             self.writer.set_step((epoch - 1) * self.len_epoch + batch_idx)
             self.writer.add_scalar('loss', loss.item())
             total_loss += loss.item()
-            total_metrics += self._eval_metrics(output.detach().numpy(), label.numpy())
+
+            mask = mask.detach().numpy()
+            total_metrics += self._eval_metrics(mask*output.detach().numpy(), mask*label.numpy())
 
             if batch_idx % self.log_step == 0:
                 self.logger.debug('Train Epoch: {} {} Loss: {:.6f}'.format(
@@ -124,15 +132,17 @@ class DCRNNTrainer(BaseTrainer):
                 data, target = data.to(self.device), target.to(self.device)
 
                 output = self.model(data, target, 0)
-                output = torch.transpose(output.view(12, self.model.batch_size, self.model.num_nodes,
+                output = torch.transpose(output.view(1, self.model.batch_size, self.model.num_nodes,
                                                      self.model.output_dim), 0, 1)  # back to (50, 12, 207, 1)
 
-                loss = self.loss(output.cpu(), label)
+                mask = (label * self.stds + self.means > 5)
+                loss = self.loss(mask * output.cpu(), mask * label)
 
+                mask = mask.detach().numpy()
                 self.writer.set_step((epoch - 1) * self.val_len_epoch + batch_idx, 'valid')
                 self.writer.add_scalar('loss', loss.item())
                 total_val_loss += loss.item()
-                total_val_metrics += self._eval_metrics(output.detach().numpy(), label.numpy())
+                total_val_metrics += self._eval_metrics(mask * output.detach().numpy(), mask * label.numpy())
                 # self.writer.add_image('input', make_grid(data.cpu(), nrow=8, normalize=True))
 
         # add histogram of model parameters to the tensorboard

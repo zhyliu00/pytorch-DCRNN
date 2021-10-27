@@ -1,0 +1,1226 @@
+2021-10-18 15:10:31,902 - train - INFO - DCRNNModel(
+  (encoder): DCRNNEncoder(
+    (encoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+    )
+  )
+  (decoder): DCGRUDecoder(
+    (decoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+        (project): Linear(in_features=64, out_features=1, bias=True)
+      )
+    )
+  )
+)
+Trainable parameters: 371393
+2021-10-18 15:10:31,905 - trainer - WARNING - Warning: There's no GPU available on this machine,training will be performed on CPU.
+2021-10-18 15:10:31,908 - trainer - WARNING - Warning: visualization (Tensorboard) is configured to use, but currently not installed on this machine. Please install either TensorboardX with 'pip install tensorboardx', upgrade PyTorch to version >= 1.1 for using 'torch.utils.tensorboard' or turn off the option in the 'config.json' file.
+2021-10-18 15:11:46,768 - trainer - INFO -     epoch          : 1
+2021-10-18 15:11:46,768 - trainer - INFO -     loss           : 0.9407882352670034
+2021-10-18 15:11:46,768 - trainer - INFO -     masked_mae_np  : 0.19785689214865368
+2021-10-18 15:11:46,768 - trainer - INFO -     masked_mape_np : 0.07303199308613936
+2021-10-18 15:11:46,768 - trainer - INFO -     masked_rmse_np : 1.0147531787554422
+2021-10-18 15:11:46,768 - trainer - INFO -     val_loss       : 1.9046610116958618
+2021-10-18 15:11:46,768 - trainer - INFO -     val_masked_mae_np: 0.40056869089603425
+2021-10-18 15:11:46,769 - trainer - INFO -     val_masked_mape_np: 0.10182357802987099
+2021-10-18 15:11:46,769 - trainer - INFO -     val_masked_rmse_np: 1.9992027401924133
+2021-10-18 15:11:46,769 - trainer - INFO -     Time           : 64.9891s
+2021-10-18 15:11:46,781 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch1.pth ...
+2021-10-18 15:11:46,792 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:13:01,302 - trainer - INFO -     epoch          : 2
+2021-10-18 15:13:01,302 - trainer - INFO -     loss           : 0.9395826210578283
+2021-10-18 15:13:01,302 - trainer - INFO -     masked_mae_np  : 0.1976033384601275
+2021-10-18 15:13:01,302 - trainer - INFO -     masked_mape_np : 0.07291968427598476
+2021-10-18 15:13:01,302 - trainer - INFO -     masked_rmse_np : 1.0137504994869233
+2021-10-18 15:13:01,302 - trainer - INFO -     val_loss       : 1.9027094960212707
+2021-10-18 15:13:01,303 - trainer - INFO -     val_masked_mae_np: 0.4001582682132721
+2021-10-18 15:13:01,303 - trainer - INFO -     val_masked_mape_np: 0.10167836248874665
+2021-10-18 15:13:01,303 - trainer - INFO -     val_masked_rmse_np: 1.9979254722595214
+2021-10-18 15:13:01,303 - trainer - INFO -     Time           : 64.7753s
+2021-10-18 15:13:01,348 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch2.pth ...
+2021-10-18 15:13:01,362 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:14:15,717 - trainer - INFO -     epoch          : 3
+2021-10-18 15:14:15,717 - trainer - INFO -     loss           : 0.9383746912082036
+2021-10-18 15:14:15,717 - trainer - INFO -     masked_mae_np  : 0.19734930445750554
+2021-10-18 15:14:15,717 - trainer - INFO -     masked_mape_np : 0.07280717653532823
+2021-10-18 15:14:15,718 - trainer - INFO -     masked_rmse_np : 1.0127461542685827
+2021-10-18 15:14:15,718 - trainer - INFO -     val_loss       : 1.9007607102394104
+2021-10-18 15:14:15,718 - trainer - INFO -     val_masked_mae_np: 0.399748420715332
+2021-10-18 15:14:15,718 - trainer - INFO -     val_masked_mape_np: 0.10153337791562081
+2021-10-18 15:14:15,718 - trainer - INFO -     val_masked_rmse_np: 1.996650218963623
+2021-10-18 15:14:15,718 - trainer - INFO -     Time           : 64.4474s
+2021-10-18 15:14:15,743 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch3.pth ...
+2021-10-18 15:14:15,758 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:15:28,937 - trainer - INFO -     epoch          : 4
+2021-10-18 15:15:28,937 - trainer - INFO -     loss           : 0.9371684302886327
+2021-10-18 15:15:28,938 - trainer - INFO -     masked_mae_np  : 0.1970956136782964
+2021-10-18 15:15:28,938 - trainer - INFO -     masked_mape_np : 0.07269484462837378
+2021-10-18 15:15:28,938 - trainer - INFO -     masked_rmse_np : 1.011743394533793
+2021-10-18 15:15:28,938 - trainer - INFO -     val_loss       : 1.898813819885254
+2021-10-18 15:15:28,938 - trainer - INFO -     val_masked_mae_np: 0.39933895468711855
+2021-10-18 15:15:28,938 - trainer - INFO -     val_masked_mape_np: 0.1013885535299778
+2021-10-18 15:15:28,938 - trainer - INFO -     val_masked_rmse_np: 1.9953763604164123
+2021-10-18 15:15:28,938 - trainer - INFO -     Time           : 63.4362s
+2021-10-18 15:15:28,966 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch4.pth ...
+2021-10-18 15:15:29,000 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:16:44,021 - trainer - INFO -     epoch          : 5
+2021-10-18 15:16:44,022 - trainer - INFO -     loss           : 0.9359632194042206
+2021-10-18 15:16:44,022 - trainer - INFO -     masked_mae_np  : 0.19684214914838474
+2021-10-18 15:16:44,022 - trainer - INFO -     masked_mape_np : 0.07258263056476912
+2021-10-18 15:16:44,022 - trainer - INFO -     masked_rmse_np : 1.0107417345046996
+2021-10-18 15:16:44,022 - trainer - INFO -     val_loss       : 1.8968679189682007
+2021-10-18 15:16:44,022 - trainer - INFO -     val_masked_mae_np: 0.3989297240972519
+2021-10-18 15:16:44,022 - trainer - INFO -     val_masked_mape_np: 0.10124384686350822
+2021-10-18 15:16:44,022 - trainer - INFO -     val_masked_rmse_np: 1.9941033959388732
+2021-10-18 15:16:44,022 - trainer - INFO -     Time           : 65.0305s
+2021-10-18 15:16:44,057 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch5.pth ...
+2021-10-18 15:16:44,099 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:17:59,976 - trainer - INFO -     epoch          : 6
+2021-10-18 15:17:59,976 - trainer - INFO -     loss           : 0.9347587416569392
+2021-10-18 15:17:59,977 - trainer - INFO -     masked_mae_np  : 0.19658882866303126
+2021-10-18 15:17:59,977 - trainer - INFO -     masked_mape_np : 0.07247050230701764
+2021-10-18 15:17:59,977 - trainer - INFO -     masked_rmse_np : 1.0097408990065257
+2021-10-18 15:17:59,977 - trainer - INFO -     val_loss       : 1.894922661781311
+2021-10-18 15:17:59,977 - trainer - INFO -     val_masked_mae_np: 0.39852062463760374
+2021-10-18 15:17:59,977 - trainer - INFO -     val_masked_mape_np: 0.10109921917319298
+2021-10-18 15:17:59,977 - trainer - INFO -     val_masked_rmse_np: 1.9928311467170716
+2021-10-18 15:17:59,977 - trainer - INFO -     Time           : 66.1468s
+2021-10-18 15:17:59,989 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch6.pth ...
+2021-10-18 15:18:00,021 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:19:15,432 - trainer - INFO -     epoch          : 7
+2021-10-18 15:19:15,432 - trainer - INFO -     loss           : 0.933554740746816
+2021-10-18 15:19:15,432 - trainer - INFO -     masked_mae_np  : 0.19633562316497166
+2021-10-18 15:19:15,433 - trainer - INFO -     masked_mape_np : 0.07235843725502492
+2021-10-18 15:19:15,433 - trainer - INFO -     masked_rmse_np : 1.008740708231926
+2021-10-18 15:19:15,433 - trainer - INFO -     val_loss       : 1.892978048324585
+2021-10-18 15:19:15,433 - trainer - INFO -     val_masked_mae_np: 0.39811164438724517
+2021-10-18 15:19:15,433 - trainer - INFO -     val_masked_mape_np: 0.10095466077327728
+2021-10-18 15:19:15,433 - trainer - INFO -     val_masked_rmse_np: 1.9915594816207887
+2021-10-18 15:19:15,433 - trainer - INFO -     Time           : 65.4459s
+2021-10-18 15:19:15,450 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch7.pth ...
+2021-10-18 15:19:15,485 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:20:31,073 - trainer - INFO -     epoch          : 8
+2021-10-18 15:20:31,074 - trainer - INFO -     loss           : 0.9323511550823848
+2021-10-18 15:20:31,074 - trainer - INFO -     masked_mae_np  : 0.19608249440789222
+2021-10-18 15:20:31,074 - trainer - INFO -     masked_mape_np : 0.07224642882744471
+2021-10-18 15:20:31,074 - trainer - INFO -     masked_rmse_np : 1.0077410946289698
+2021-10-18 15:20:31,074 - trainer - INFO -     val_loss       : 1.8910337805747985
+2021-10-18 15:20:31,074 - trainer - INFO -     val_masked_mae_np: 0.3977027416229248
+2021-10-18 15:20:31,074 - trainer - INFO -     val_masked_mape_np: 0.10081015527248383
+2021-10-18 15:20:31,074 - trainer - INFO -     val_masked_rmse_np: 1.9902883172035217
+2021-10-18 15:20:31,074 - trainer - INFO -     Time           : 65.6934s
+2021-10-18 15:20:31,091 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch8.pth ...
+2021-10-18 15:20:31,122 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:21:46,385 - trainer - INFO -     epoch          : 9
+2021-10-18 15:21:46,385 - trainer - INFO -     loss           : 0.9311478992303213
+2021-10-18 15:21:46,385 - trainer - INFO -     masked_mae_np  : 0.19582943965991337
+2021-10-18 15:21:46,385 - trainer - INFO -     masked_mape_np : 0.07213446758687496
+2021-10-18 15:21:46,385 - trainer - INFO -     masked_rmse_np : 1.0067420065402986
+2021-10-18 15:21:46,386 - trainer - INFO -     val_loss       : 1.8890897154808044
+2021-10-18 15:21:46,386 - trainer - INFO -     val_masked_mae_np: 0.39729389548301697
+2021-10-18 15:21:46,386 - trainer - INFO -     val_masked_mape_np: 0.10066568925976753
+2021-10-18 15:21:46,386 - trainer - INFO -     val_masked_rmse_np: 1.9890176653862
+2021-10-18 15:21:46,386 - trainer - INFO -     Time           : 65.0554s
+2021-10-18 15:21:46,398 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch9.pth ...
+2021-10-18 15:21:46,430 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:23:01,500 - trainer - INFO -     epoch          : 10
+2021-10-18 15:23:01,500 - trainer - INFO -     loss           : 0.9299448659022649
+2021-10-18 15:23:01,500 - trainer - INFO -     masked_mae_np  : 0.1955764338374138
+2021-10-18 15:23:01,500 - trainer - INFO -     masked_mape_np : 0.07202254844208558
+2021-10-18 15:23:01,500 - trainer - INFO -     masked_rmse_np : 1.005743369460106
+2021-10-18 15:23:01,500 - trainer - INFO -     val_loss       : 1.8871457934379579
+2021-10-18 15:23:01,500 - trainer - INFO -     val_masked_mae_np: 0.3968850702047348
+2021-10-18 15:23:01,500 - trainer - INFO -     val_masked_mape_np: 0.10052126348018646
+2021-10-18 15:23:01,501 - trainer - INFO -     val_masked_rmse_np: 1.9877472639083862
+2021-10-18 15:23:01,501 - trainer - INFO -     Time           : 64.6923s
+2021-10-18 15:23:01,513 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch10.pth ...
+2021-10-18 15:23:01,546 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:24:16,317 - trainer - INFO -     epoch          : 11
+2021-10-18 15:24:16,318 - trainer - INFO -     loss           : 0.9287420640389125
+2021-10-18 15:24:16,318 - trainer - INFO -     masked_mae_np  : 0.19532346601287523
+2021-10-18 15:24:16,318 - trainer - INFO -     masked_mape_np : 0.07191066406667232
+2021-10-18 15:24:16,318 - trainer - INFO -     masked_rmse_np : 1.004745176434517
+2021-10-18 15:24:16,318 - trainer - INFO -     val_loss       : 1.8852020740509032
+2021-10-18 15:24:16,318 - trainer - INFO -     val_masked_mae_np: 0.3964762806892395
+2021-10-18 15:24:16,318 - trainer - INFO -     val_masked_mape_np: 0.10037686750292778
+2021-10-18 15:24:16,318 - trainer - INFO -     val_masked_rmse_np: 1.9864773154258728
+2021-10-18 15:24:16,318 - trainer - INFO -     Time           : 64.8417s
+2021-10-18 15:24:16,330 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch11.pth ...
+2021-10-18 15:24:16,343 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:25:31,644 - trainer - INFO -     epoch          : 12
+2021-10-18 15:25:31,644 - trainer - INFO -     loss           : 0.9275394191344579
+2021-10-18 15:25:31,646 - trainer - INFO -     masked_mae_np  : 0.1950705426434676
+2021-10-18 15:25:31,646 - trainer - INFO -     masked_mape_np : 0.0717988104869922
+2021-10-18 15:25:31,646 - trainer - INFO -     masked_rmse_np : 1.003747393687566
+2021-10-18 15:25:31,646 - trainer - INFO -     val_loss       : 1.883258318901062
+2021-10-18 15:25:31,646 - trainer - INFO -     val_masked_mae_np: 0.3960675060749054
+2021-10-18 15:25:31,647 - trainer - INFO -     val_masked_mape_np: 0.10023250132799148
+2021-10-18 15:25:31,647 - trainer - INFO -     val_masked_rmse_np: 1.985207736492157
+2021-10-18 15:25:31,647 - trainer - INFO -     Time           : 65.3953s
+2021-10-18 15:25:31,658 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch12.pth ...
+2021-10-18 15:25:31,689 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:26:46,830 - trainer - INFO -     epoch          : 13
+2021-10-18 15:26:46,830 - trainer - INFO -     loss           : 0.9263369162877401
+2021-10-18 15:26:46,830 - trainer - INFO -     masked_mae_np  : 0.19481763641039532
+2021-10-18 15:26:46,830 - trainer - INFO -     masked_mape_np : 0.07168698435028394
+2021-10-18 15:26:46,830 - trainer - INFO -     masked_rmse_np : 1.0027500013510386
+2021-10-18 15:26:46,830 - trainer - INFO -     val_loss       : 1.8813145875930786
+2021-10-18 15:26:46,830 - trainer - INFO -     val_masked_mae_np: 0.39565872848033906
+2021-10-18 15:26:46,830 - trainer - INFO -     val_masked_mape_np: 0.1000881589949131
+2021-10-18 15:26:46,830 - trainer - INFO -     val_masked_rmse_np: 1.9839385390281676
+2021-10-18 15:26:46,831 - trainer - INFO -     Time           : 65.1299s
+2021-10-18 15:26:46,842 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch13.pth ...
+2021-10-18 15:26:46,875 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:28:03,520 - trainer - INFO -     epoch          : 14
+2021-10-18 15:28:03,520 - trainer - INFO -     loss           : 0.9251344968875249
+2021-10-18 15:28:03,520 - trainer - INFO -     masked_mae_np  : 0.19456476594010988
+2021-10-18 15:28:03,520 - trainer - INFO -     masked_mape_np : 0.0715751837939024
+2021-10-18 15:28:03,521 - trainer - INFO -     masked_rmse_np : 1.0017529606819153
+2021-10-18 15:28:03,521 - trainer - INFO -     val_loss       : 1.879370963573456
+2021-10-18 15:28:03,521 - trainer - INFO -     val_masked_mae_np: 0.39524994492530824
+2021-10-18 15:28:03,521 - trainer - INFO -     val_masked_mape_np: 0.09994383156299591
+2021-10-18 15:28:03,521 - trainer - INFO -     val_masked_rmse_np: 1.9826695442199707
+2021-10-18 15:28:03,521 - trainer - INFO -     Time           : 65.7738s
+2021-10-18 15:28:03,533 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch14.pth ...
+2021-10-18 15:28:03,572 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:29:18,959 - trainer - INFO -     epoch          : 15
+2021-10-18 15:29:18,959 - trainer - INFO -     loss           : 0.923932154973348
+2021-10-18 15:29:18,959 - trainer - INFO -     masked_mae_np  : 0.19431189546982447
+2021-10-18 15:29:18,959 - trainer - INFO -     masked_mape_np : 0.07146340161561966
+2021-10-18 15:29:18,959 - trainer - INFO -     masked_rmse_np : 1.0007562686999638
+2021-10-18 15:29:18,959 - trainer - INFO -     val_loss       : 1.8774271607398987
+2021-10-18 15:29:18,959 - trainer - INFO -     val_masked_mae_np: 0.394841143488884
+2021-10-18 15:29:18,960 - trainer - INFO -     val_masked_mape_np: 0.09979952052235604
+2021-10-18 15:29:18,960 - trainer - INFO -     val_masked_rmse_np: 1.9814008355140686
+2021-10-18 15:29:18,960 - trainer - INFO -     Time           : 64.9976s
+2021-10-18 15:29:18,972 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch15.pth ...
+2021-10-18 15:29:19,004 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:30:34,346 - trainer - INFO -     epoch          : 16
+2021-10-18 15:30:34,347 - trainer - INFO -     loss           : 0.9227298269669215
+2021-10-18 15:30:34,347 - trainer - INFO -     masked_mae_np  : 0.19405903443694114
+2021-10-18 15:30:34,347 - trainer - INFO -     masked_mape_np : 0.07135163868467014
+2021-10-18 15:30:34,347 - trainer - INFO -     masked_rmse_np : 0.9997599204381307
+2021-10-18 15:30:34,347 - trainer - INFO -     val_loss       : 1.8754832863807678
+2021-10-18 15:30:34,347 - trainer - INFO -     val_masked_mae_np: 0.3944323182106018
+2021-10-18 15:30:34,347 - trainer - INFO -     val_masked_mape_np: 0.09965521991252899
+2021-10-18 15:30:34,347 - trainer - INFO -     val_masked_rmse_np: 1.9801324605941772
+2021-10-18 15:30:34,347 - trainer - INFO -     Time           : 65.4865s
+2021-10-18 15:30:34,359 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch16.pth ...
+2021-10-18 15:30:34,391 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:31:49,473 - trainer - INFO -     epoch          : 17
+2021-10-18 15:31:49,473 - trainer - INFO -     loss           : 0.9215275247891744
+2021-10-18 15:31:49,473 - trainer - INFO -     masked_mae_np  : 0.19380618234475452
+2021-10-18 15:31:49,473 - trainer - INFO -     masked_mape_np : 0.07123989003400008
+2021-10-18 15:31:49,473 - trainer - INFO -     masked_rmse_np : 0.9987638851006826
+2021-10-18 15:31:49,473 - trainer - INFO -     val_loss       : 1.8735391974449158
+2021-10-18 15:31:49,473 - trainer - INFO -     val_masked_mae_np: 0.394023472070694
+2021-10-18 15:31:49,473 - trainer - INFO -     val_masked_mape_np: 0.09951092451810836
+2021-10-18 15:31:49,473 - trainer - INFO -     val_masked_rmse_np: 1.9788643717765808
+2021-10-18 15:31:49,473 - trainer - INFO -     Time           : 64.8554s
+2021-10-18 15:31:49,485 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch17.pth ...
+2021-10-18 15:31:49,517 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:33:04,111 - trainer - INFO -     epoch          : 18
+2021-10-18 15:33:04,111 - trainer - INFO -     loss           : 0.9203252176443736
+2021-10-18 15:33:04,113 - trainer - INFO -     masked_mae_np  : 0.19355332503716152
+2021-10-18 15:33:04,113 - trainer - INFO -     masked_mape_np : 0.07112815553943316
+2021-10-18 15:33:04,113 - trainer - INFO -     masked_rmse_np : 0.9977681507666906
+2021-10-18 15:33:04,113 - trainer - INFO -     val_loss       : 1.8715949654579163
+2021-10-18 15:33:04,113 - trainer - INFO -     val_masked_mae_np: 0.39361459016799927
+2021-10-18 15:33:04,113 - trainer - INFO -     val_masked_mape_np: 0.09936663508415222
+2021-10-18 15:33:04,113 - trainer - INFO -     val_masked_rmse_np: 1.9775965332984924
+2021-10-18 15:33:04,113 - trainer - INFO -     Time           : 64.0323s
+2021-10-18 15:33:04,129 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch18.pth ...
+2021-10-18 15:33:04,161 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:34:18,467 - trainer - INFO -     epoch          : 19
+2021-10-18 15:34:18,468 - trainer - INFO -     loss           : 0.9191228896379471
+2021-10-18 15:34:18,468 - trainer - INFO -     masked_mae_np  : 0.1933004602789879
+2021-10-18 15:34:18,468 - trainer - INFO -     masked_mape_np : 0.07101642812291781
+2021-10-18 15:34:18,468 - trainer - INFO -     masked_rmse_np : 0.9967727065086365
+2021-10-18 15:34:18,468 - trainer - INFO -     val_loss       : 1.8696505904197693
+2021-10-18 15:34:18,468 - trainer - INFO -     val_masked_mae_np: 0.39320564568042754
+2021-10-18 15:34:18,468 - trainer - INFO -     val_masked_mape_np: 0.09922234639525414
+2021-10-18 15:34:18,468 - trainer - INFO -     val_masked_rmse_np: 1.9763288974761963
+2021-10-18 15:34:18,468 - trainer - INFO -     Time           : 64.5847s
+2021-10-18 15:34:18,500 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch19.pth ...
+2021-10-18 15:34:18,536 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:35:34,549 - trainer - INFO -     epoch          : 20
+2021-10-18 15:35:34,549 - trainer - INFO -     loss           : 0.9179204980532328
+2021-10-18 15:35:34,549 - trainer - INFO -     masked_mae_np  : 0.19304758906364441
+2021-10-18 15:35:34,550 - trainer - INFO -     masked_mape_np : 0.07090470952292284
+2021-10-18 15:35:34,550 - trainer - INFO -     masked_rmse_np : 0.9957775602738063
+2021-10-18 15:35:34,550 - trainer - INFO -     val_loss       : 1.8677058458328246
+2021-10-18 15:35:34,550 - trainer - INFO -     val_masked_mae_np: 0.3927966594696045
+2021-10-18 15:35:34,550 - trainer - INFO -     val_masked_mape_np: 0.09907806366682052
+2021-10-18 15:35:34,550 - trainer - INFO -     val_masked_rmse_np: 1.9750615239143372
+2021-10-18 15:35:34,550 - trainer - INFO -     Time           : 66.1284s
+2021-10-18 15:35:34,576 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch20.pth ...
+2021-10-18 15:35:34,590 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:36:49,319 - trainer - INFO -     epoch          : 21
+2021-10-18 15:36:49,319 - trainer - INFO -     loss           : 0.9172619342803955
+2021-10-18 15:36:49,319 - trainer - INFO -     masked_mae_np  : 0.19290908748904864
+2021-10-18 15:36:49,319 - trainer - INFO -     masked_mape_np : 0.07084283841152986
+2021-10-18 15:36:49,320 - trainer - INFO -     masked_rmse_np : 0.9952271779378256
+2021-10-18 15:36:49,320 - trainer - INFO -     val_loss       : 1.8675114631652832
+2021-10-18 15:36:49,320 - trainer - INFO -     val_masked_mae_np: 0.3927557855844498
+2021-10-18 15:36:49,320 - trainer - INFO -     val_masked_mape_np: 0.09906363785266876
+2021-10-18 15:36:49,320 - trainer - INFO -     val_masked_rmse_np: 1.9749348759651184
+2021-10-18 15:36:49,320 - trainer - INFO -     Time           : 64.6094s
+2021-10-18 15:36:49,331 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch21.pth ...
+2021-10-18 15:36:49,364 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:38:05,306 - trainer - INFO -     epoch          : 22
+2021-10-18 15:38:05,307 - trainer - INFO -     loss           : 0.9171417365471523
+2021-10-18 15:38:05,307 - trainer - INFO -     masked_mae_np  : 0.19288380841414135
+2021-10-18 15:38:05,307 - trainer - INFO -     masked_mape_np : 0.0708316714813312
+2021-10-18 15:38:05,307 - trainer - INFO -     masked_rmse_np : 0.9951277285814285
+2021-10-18 15:38:05,307 - trainer - INFO -     val_loss       : 1.8673171043395995
+2021-10-18 15:38:05,307 - trainer - INFO -     val_masked_mae_np: 0.3927149087190628
+2021-10-18 15:38:05,307 - trainer - INFO -     val_masked_mape_np: 0.09904921650886536
+2021-10-18 15:38:05,307 - trainer - INFO -     val_masked_rmse_np: 1.9748082399368285
+2021-10-18 15:38:05,307 - trainer - INFO -     Time           : 65.3662s
+2021-10-18 15:38:05,319 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch22.pth ...
+2021-10-18 15:38:05,352 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:39:21,166 - trainer - INFO -     epoch          : 23
+2021-10-18 15:39:21,166 - trainer - INFO -     loss           : 0.9170215537150701
+2021-10-18 15:39:21,167 - trainer - INFO -     masked_mae_np  : 0.19285852933923403
+2021-10-18 15:39:21,167 - trainer - INFO -     masked_mape_np : 0.07082050380607446
+2021-10-18 15:39:21,167 - trainer - INFO -     masked_rmse_np : 0.9950282951196034
+2021-10-18 15:39:21,167 - trainer - INFO -     val_loss       : 1.867122733592987
+2021-10-18 15:39:21,167 - trainer - INFO -     val_masked_mae_np: 0.39267403781414034
+2021-10-18 15:39:21,167 - trainer - INFO -     val_masked_mape_np: 0.09903479591012002
+2021-10-18 15:39:21,167 - trainer - INFO -     val_masked_rmse_np: 1.9746816039085389
+2021-10-18 15:39:21,167 - trainer - INFO -     Time           : 66.0000s
+2021-10-18 15:39:21,179 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch23.pth ...
+2021-10-18 15:39:21,211 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:40:35,748 - trainer - INFO -     epoch          : 24
+2021-10-18 15:40:35,748 - trainer - INFO -     loss           : 0.9169013520081838
+2021-10-18 15:40:35,748 - trainer - INFO -     masked_mae_np  : 0.19283325696984926
+2021-10-18 15:40:35,749 - trainer - INFO -     masked_mape_np : 0.07080933737258116
+2021-10-18 15:40:35,749 - trainer - INFO -     masked_rmse_np : 0.9949288715918859
+2021-10-18 15:40:35,749 - trainer - INFO -     val_loss       : 1.8669283986091614
+2021-10-18 15:40:35,749 - trainer - INFO -     val_masked_mae_np: 0.3926331579685211
+2021-10-18 15:40:35,749 - trainer - INFO -     val_masked_mape_np: 0.09902037754654884
+2021-10-18 15:40:35,749 - trainer - INFO -     val_masked_rmse_np: 1.9745550155639648
+2021-10-18 15:40:35,749 - trainer - INFO -     Time           : 64.7370s
+2021-10-18 15:40:35,779 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch24.pth ...
+2021-10-18 15:40:35,811 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:41:49,695 - trainer - INFO -     epoch          : 25
+2021-10-18 15:41:49,695 - trainer - INFO -     loss           : 0.9167811671892802
+2021-10-18 15:41:49,696 - trainer - INFO -     masked_mae_np  : 0.19280797615647316
+2021-10-18 15:41:49,696 - trainer - INFO -     masked_mape_np : 0.07079817031820615
+2021-10-18 15:41:49,696 - trainer - INFO -     masked_rmse_np : 0.9948294560114542
+2021-10-18 15:41:49,696 - trainer - INFO -     val_loss       : 1.8667340397834777
+2021-10-18 15:41:49,696 - trainer - INFO -     val_masked_mae_np: 0.3925922870635986
+2021-10-18 15:41:49,696 - trainer - INFO -     val_masked_mape_np: 0.0990059532225132
+2021-10-18 15:41:49,696 - trainer - INFO -     val_masked_rmse_np: 1.9744283437728882
+2021-10-18 15:41:49,696 - trainer - INFO -     Time           : 63.3107s
+2021-10-18 15:41:49,708 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch25.pth ...
+2021-10-18 15:41:49,740 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:43:06,882 - trainer - INFO -     epoch          : 26
+2021-10-18 15:43:06,882 - trainer - INFO -     loss           : 0.9166609903176626
+2021-10-18 15:43:06,883 - trainer - INFO -     masked_mae_np  : 0.192782707264026
+2021-10-18 15:43:06,883 - trainer - INFO -     masked_mape_np : 0.07078700587153434
+2021-10-18 15:43:06,883 - trainer - INFO -     masked_rmse_np : 0.9947300344705582
+2021-10-18 15:43:06,883 - trainer - INFO -     val_loss       : 1.8665396571159363
+2021-10-18 15:43:06,883 - trainer - INFO -     val_masked_mae_np: 0.392551401257515
+2021-10-18 15:43:06,883 - trainer - INFO -     val_masked_mape_np: 0.0989915318787098
+2021-10-18 15:43:06,883 - trainer - INFO -     val_masked_rmse_np: 1.9743017554283142
+2021-10-18 15:43:06,883 - trainer - INFO -     Time           : 66.4980s
+2021-10-18 15:43:06,902 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch26.pth ...
+2021-10-18 15:43:06,935 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:44:21,515 - trainer - INFO -     epoch          : 27
+2021-10-18 15:44:21,515 - trainer - INFO -     loss           : 0.9165408144394557
+2021-10-18 15:44:21,515 - trainer - INFO -     masked_mae_np  : 0.19275743067264556
+2021-10-18 15:44:21,516 - trainer - INFO -     masked_mape_np : 0.07077584117650985
+2021-10-18 15:44:21,516 - trainer - INFO -     masked_rmse_np : 0.9946306278308232
+2021-10-18 15:44:21,516 - trainer - INFO -     val_loss       : 1.8663452744483948
+2021-10-18 15:44:21,516 - trainer - INFO -     val_masked_mae_np: 0.39251053929328916
+2021-10-18 15:44:21,516 - trainer - INFO -     val_masked_mape_np: 0.09897711500525475
+2021-10-18 15:44:21,516 - trainer - INFO -     val_masked_rmse_np: 1.9741750836372376
+2021-10-18 15:44:21,516 - trainer - INFO -     Time           : 64.7849s
+2021-10-18 15:44:21,527 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch27.pth ...
+2021-10-18 15:44:21,559 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:45:35,435 - trainer - INFO -     epoch          : 28
+2021-10-18 15:45:35,435 - trainer - INFO -     loss           : 0.9164206554492315
+2021-10-18 15:45:35,435 - trainer - INFO -     masked_mae_np  : 0.192732152591149
+2021-10-18 15:45:35,435 - trainer - INFO -     masked_mape_np : 0.07076467660566171
+2021-10-18 15:45:35,435 - trainer - INFO -     masked_rmse_np : 0.9945312450329463
+2021-10-18 15:45:35,435 - trainer - INFO -     val_loss       : 1.866151010990143
+2021-10-18 15:45:35,435 - trainer - INFO -     val_masked_mae_np: 0.3924696683883667
+2021-10-18 15:45:35,436 - trainer - INFO -     val_masked_mape_np: 0.0989626981317997
+2021-10-18 15:45:35,436 - trainer - INFO -     val_masked_rmse_np: 1.9740484952926636
+2021-10-18 15:45:35,436 - trainer - INFO -     Time           : 64.0855s
+2021-10-18 15:45:35,447 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch28.pth ...
+2021-10-18 15:45:35,479 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:46:49,487 - trainer - INFO -     epoch          : 29
+2021-10-18 15:46:49,487 - trainer - INFO -     loss           : 0.9163004755973816
+2021-10-18 15:46:49,487 - trainer - INFO -     masked_mae_np  : 0.1927068846921126
+2021-10-18 15:46:49,487 - trainer - INFO -     masked_mape_np : 0.07075351265569528
+2021-10-18 15:46:49,487 - trainer - INFO -     masked_rmse_np : 0.9944318622350693
+2021-10-18 15:46:49,487 - trainer - INFO -     val_loss       : 1.8659566402435304
+2021-10-18 15:46:49,487 - trainer - INFO -     val_masked_mae_np: 0.3924287915229797
+2021-10-18 15:46:49,487 - trainer - INFO -     val_masked_mape_np: 0.09894827902317047
+2021-10-18 15:46:49,487 - trainer - INFO -     val_masked_rmse_np: 1.9739218950271606
+2021-10-18 15:46:49,488 - trainer - INFO -     Time           : 63.9355s
+2021-10-18 15:46:49,499 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch29.pth ...
+2021-10-18 15:46:49,531 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:48:03,760 - trainer - INFO -     epoch          : 30
+2021-10-18 15:48:03,760 - trainer - INFO -     loss           : 0.9161803235610326
+2021-10-18 15:48:03,760 - trainer - INFO -     masked_mae_np  : 0.1926816130677859
+2021-10-18 15:48:03,760 - trainer - INFO -     masked_mape_np : 0.07074234858155251
+2021-10-18 15:48:03,760 - trainer - INFO -     masked_rmse_np : 0.9943324794371923
+2021-10-18 15:48:03,761 - trainer - INFO -     val_loss       : 1.8657623171806335
+2021-10-18 15:48:03,761 - trainer - INFO -     val_masked_mae_np: 0.392387917637825
+2021-10-18 15:48:03,761 - trainer - INFO -     val_masked_mape_np: 0.09893386363983155
+2021-10-18 15:48:03,761 - trainer - INFO -     val_masked_rmse_np: 1.9737953662872314
+2021-10-18 15:48:03,761 - trainer - INFO -     Time           : 63.7958s
+2021-10-18 15:48:03,772 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch30.pth ...
+2021-10-18 15:48:03,804 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:49:18,756 - trainer - INFO -     epoch          : 31
+2021-10-18 15:49:18,756 - trainer - INFO -     loss           : 0.9161149789889653
+2021-10-18 15:49:18,756 - trainer - INFO -     masked_mae_np  : 0.19266786674658457
+2021-10-18 15:49:18,756 - trainer - INFO -     masked_mape_np : 0.07073620582620303
+2021-10-18 15:49:18,756 - trainer - INFO -     masked_rmse_np : 0.9942778637011845
+2021-10-18 15:49:18,756 - trainer - INFO -     val_loss       : 1.8657443881034852
+2021-10-18 15:49:18,756 - trainer - INFO -     val_masked_mae_np: 0.3923841595649719
+2021-10-18 15:49:18,756 - trainer - INFO -     val_masked_mape_np: 0.0989325374364853
+2021-10-18 15:49:18,756 - trainer - INFO -     val_masked_rmse_np: 1.9737837314605713
+2021-10-18 15:49:18,756 - trainer - INFO -     Time           : 65.0217s
+2021-10-18 15:49:18,768 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch31.pth ...
+2021-10-18 15:49:18,800 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:50:35,068 - trainer - INFO -     epoch          : 32
+2021-10-18 15:50:35,068 - trainer - INFO -     loss           : 0.9161038637161255
+2021-10-18 15:50:35,068 - trainer - INFO -     masked_mae_np  : 0.19266553074121476
+2021-10-18 15:50:35,068 - trainer - INFO -     masked_mape_np : 0.07073517640431722
+2021-10-18 15:50:35,068 - trainer - INFO -     masked_rmse_np : 0.9942686945199967
+2021-10-18 15:50:35,068 - trainer - INFO -     val_loss       : 1.8657266974449158
+2021-10-18 15:50:35,068 - trainer - INFO -     val_masked_mae_np: 0.3923804223537445
+2021-10-18 15:50:35,068 - trainer - INFO -     val_masked_mape_np: 0.0989312157034874
+2021-10-18 15:50:35,068 - trainer - INFO -     val_masked_rmse_np: 1.973772120475769
+2021-10-18 15:50:35,068 - trainer - INFO -     Time           : 65.9405s
+2021-10-18 15:50:35,081 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch32.pth ...
+2021-10-18 15:50:35,112 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:51:51,546 - trainer - INFO -     epoch          : 33
+2021-10-18 15:51:51,547 - trainer - INFO -     loss           : 0.9160927762587865
+2021-10-18 15:51:51,547 - trainer - INFO -     masked_mae_np  : 0.19266320218642552
+2021-10-18 15:51:51,547 - trainer - INFO -     masked_mape_np : 0.07073414425055186
+2021-10-18 15:51:51,547 - trainer - INFO -     masked_rmse_np : 0.9942595203717549
+2021-10-18 15:51:51,547 - trainer - INFO -     val_loss       : 1.8657087206840515
+2021-10-18 15:51:51,547 - trainer - INFO -     val_masked_mae_np: 0.392376646399498
+2021-10-18 15:51:51,547 - trainer - INFO -     val_masked_mape_np: 0.09892989322543144
+2021-10-18 15:51:51,547 - trainer - INFO -     val_masked_rmse_np: 1.9737604260444641
+2021-10-18 15:51:51,547 - trainer - INFO -     Time           : 66.7736s
+2021-10-18 15:51:51,559 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch33.pth ...
+2021-10-18 15:51:51,592 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:53:08,194 - trainer - INFO -     epoch          : 34
+2021-10-18 15:53:08,194 - trainer - INFO -     loss           : 0.9160816659530003
+2021-10-18 15:53:08,195 - trainer - INFO -     masked_mae_np  : 0.19266086220741271
+2021-10-18 15:53:08,195 - trainer - INFO -     masked_mape_np : 0.07073311321437359
+2021-10-18 15:53:08,195 - trainer - INFO -     masked_rmse_np : 0.9942503452301026
+2021-10-18 15:53:08,195 - trainer - INFO -     val_loss       : 1.8656909346580506
+2021-10-18 15:53:08,195 - trainer - INFO -     val_masked_mae_np: 0.3923729002475739
+2021-10-18 15:53:08,195 - trainer - INFO -     val_masked_mape_np: 0.09892857000231743
+2021-10-18 15:53:08,195 - trainer - INFO -     val_masked_rmse_np: 1.973748791217804
+2021-10-18 15:53:08,195 - trainer - INFO -     Time           : 66.6884s
+2021-10-18 15:53:08,207 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch34.pth ...
+2021-10-18 15:53:08,238 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:54:21,778 - trainer - INFO -     epoch          : 35
+2021-10-18 15:54:21,778 - trainer - INFO -     loss           : 0.9160705775022506
+2021-10-18 15:54:21,778 - trainer - INFO -     masked_mae_np  : 0.1926585353910923
+2021-10-18 15:54:21,778 - trainer - INFO -     masked_mape_np : 0.07073208081225554
+2021-10-18 15:54:21,778 - trainer - INFO -     masked_rmse_np : 0.9942411810159684
+2021-10-18 15:54:21,779 - trainer - INFO -     val_loss       : 1.8656730771064758
+2021-10-18 15:54:21,779 - trainer - INFO -     val_masked_mae_np: 0.3923691391944885
+2021-10-18 15:54:21,779 - trainer - INFO -     val_masked_mape_np: 0.09892724677920342
+2021-10-18 15:54:21,779 - trainer - INFO -     val_masked_rmse_np: 1.9737371921539306
+2021-10-18 15:54:21,779 - trainer - INFO -     Time           : 63.5758s
+2021-10-18 15:54:21,790 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch35.pth ...
+2021-10-18 15:54:21,823 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:55:36,498 - trainer - INFO -     epoch          : 36
+2021-10-18 15:55:36,498 - trainer - INFO -     loss           : 0.9160594920317332
+2021-10-18 15:55:36,498 - trainer - INFO -     masked_mae_np  : 0.19265619913736978
+2021-10-18 15:55:36,498 - trainer - INFO -     masked_mape_np : 0.07073104965190093
+2021-10-18 15:55:36,498 - trainer - INFO -     masked_rmse_np : 0.9942319929599762
+2021-10-18 15:55:36,498 - trainer - INFO -     val_loss       : 1.8656551957130432
+2021-10-18 15:55:36,498 - trainer - INFO -     val_masked_mae_np: 0.39236539602279663
+2021-10-18 15:55:36,498 - trainer - INFO -     val_masked_mape_np: 0.09892592579126358
+2021-10-18 15:55:36,498 - trainer - INFO -     val_masked_rmse_np: 1.9737255215644836
+2021-10-18 15:55:36,498 - trainer - INFO -     Time           : 64.3085s
+2021-10-18 15:55:36,510 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch36.pth ...
+2021-10-18 15:55:36,542 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:56:51,138 - trainer - INFO -     epoch          : 37
+2021-10-18 15:56:51,138 - trainer - INFO -     loss           : 0.9160483956336976
+2021-10-18 15:56:51,138 - trainer - INFO -     masked_mae_np  : 0.1926538680990537
+2021-10-18 15:56:51,139 - trainer - INFO -     masked_mape_np : 0.07073001849154631
+2021-10-18 15:56:51,139 - trainer - INFO -     masked_rmse_np : 0.9942228188117345
+2021-10-18 15:56:51,139 - trainer - INFO -     val_loss       : 1.8656373977661134
+2021-10-18 15:56:51,139 - trainer - INFO -     val_masked_mae_np: 0.39236163794994355
+2021-10-18 15:56:51,139 - trainer - INFO -     val_masked_mape_np: 0.09892460107803344
+2021-10-18 15:56:51,139 - trainer - INFO -     val_masked_rmse_np: 1.9737138390541076
+2021-10-18 15:56:51,139 - trainer - INFO -     Time           : 64.6843s
+2021-10-18 15:56:51,155 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch37.pth ...
+2021-10-18 15:56:51,187 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:58:05,165 - trainer - INFO -     epoch          : 38
+2021-10-18 15:58:05,165 - trainer - INFO -     loss           : 0.9160373240709305
+2021-10-18 15:58:05,165 - trainer - INFO -     masked_mae_np  : 0.19265153234203655
+2021-10-18 15:58:05,165 - trainer - INFO -     masked_mape_np : 0.07072898633778095
+2021-10-18 15:58:05,165 - trainer - INFO -     masked_rmse_np : 0.9942136406898499
+2021-10-18 15:58:05,165 - trainer - INFO -     val_loss       : 1.8656195163726808
+2021-10-18 15:58:05,166 - trainer - INFO -     val_masked_mae_np: 0.39235789477825167
+2021-10-18 15:58:05,166 - trainer - INFO -     val_masked_mape_np: 0.09892327859997749
+2021-10-18 15:58:05,166 - trainer - INFO -     val_masked_rmse_np: 1.9737022638320922
+2021-10-18 15:58:05,166 - trainer - INFO -     Time           : 63.7742s
+2021-10-18 15:58:05,177 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch38.pth ...
+2021-10-18 15:58:05,210 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 15:59:20,888 - trainer - INFO -     epoch          : 39
+2021-10-18 15:59:20,888 - trainer - INFO -     loss           : 0.9160262256860733
+2021-10-18 15:59:20,888 - trainer - INFO -     masked_mae_np  : 0.19264920130372049
+2021-10-18 15:59:20,888 - trainer - INFO -     masked_mape_np : 0.07072795530160268
+2021-10-18 15:59:20,888 - trainer - INFO -     masked_rmse_np : 0.9942044685284297
+2021-10-18 15:59:20,888 - trainer - INFO -     val_loss       : 1.865601658821106
+2021-10-18 15:59:20,888 - trainer - INFO -     val_masked_mae_np: 0.39235412776470185
+2021-10-18 15:59:20,888 - trainer - INFO -     val_masked_mape_np: 0.0989219605922699
+2021-10-18 15:59:20,889 - trainer - INFO -     val_masked_rmse_np: 1.973690640926361
+2021-10-18 15:59:20,889 - trainer - INFO -     Time           : 65.6222s
+2021-10-18 15:59:20,924 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch39.pth ...
+2021-10-18 15:59:20,955 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:00:37,607 - trainer - INFO -     epoch          : 40
+2021-10-18 16:00:37,607 - trainer - INFO -     loss           : 0.9160151352485021
+2021-10-18 16:00:37,608 - trainer - INFO -     masked_mae_np  : 0.1926468700170517
+2021-10-18 16:00:37,608 - trainer - INFO -     masked_mape_np : 0.07072692314783732
+2021-10-18 16:00:37,608 - trainer - INFO -     masked_rmse_np : 0.994195298353831
+2021-10-18 16:00:37,608 - trainer - INFO -     val_loss       : 1.8655838131904603
+2021-10-18 16:00:37,608 - trainer - INFO -     val_masked_mae_np: 0.3923503696918488
+2021-10-18 16:00:37,608 - trainer - INFO -     val_masked_mape_np: 0.09892063587903976
+2021-10-18 16:00:37,608 - trainer - INFO -     val_masked_rmse_np: 1.9736789345741272
+2021-10-18 16:00:37,608 - trainer - INFO -     Time           : 66.9454s
+2021-10-18 16:00:37,620 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch40.pth ...
+2021-10-18 16:00:37,652 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:01:53,401 - trainer - INFO -     epoch          : 41
+2021-10-18 16:01:53,401 - trainer - INFO -     loss           : 0.9160094837347666
+2021-10-18 16:01:53,401 - trainer - INFO -     masked_mae_np  : 0.19264568611979485
+2021-10-18 16:01:53,401 - trainer - INFO -     masked_mape_np : 0.07072639216979344
+2021-10-18 16:01:53,401 - trainer - INFO -     masked_rmse_np : 0.9941905945539474
+2021-10-18 16:01:53,402 - trainer - INFO -     val_loss       : 1.8655833959579469
+2021-10-18 16:01:53,402 - trainer - INFO -     val_masked_mae_np: 0.3923502922058105
+2021-10-18 16:01:53,402 - trainer - INFO -     val_masked_mape_np: 0.09892060235142708
+2021-10-18 16:01:53,402 - trainer - INFO -     val_masked_rmse_np: 1.9736786961555481
+2021-10-18 16:01:53,402 - trainer - INFO -     Time           : 66.1295s
+2021-10-18 16:01:53,413 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch41.pth ...
+2021-10-18 16:01:53,445 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:03:08,791 - trainer - INFO -     epoch          : 42
+2021-10-18 16:03:08,791 - trainer - INFO -     loss           : 0.9160092433293661
+2021-10-18 16:03:08,791 - trainer - INFO -     masked_mae_np  : 0.19264562726020812
+2021-10-18 16:03:08,792 - trainer - INFO -     masked_mape_np : 0.07072636671364307
+2021-10-18 16:03:08,792 - trainer - INFO -     masked_rmse_np : 0.9941903899113337
+2021-10-18 16:03:08,792 - trainer - INFO -     val_loss       : 1.8655830383300782
+2021-10-18 16:03:08,792 - trainer - INFO -     val_masked_mae_np: 0.3923502117395401
+2021-10-18 16:03:08,792 - trainer - INFO -     val_masked_mape_np: 0.09892057329416275
+2021-10-18 16:03:08,792 - trainer - INFO -     val_masked_rmse_np: 1.9736784815788269
+2021-10-18 16:03:08,792 - trainer - INFO -     Time           : 64.1706s
+2021-10-18 16:03:08,803 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch42.pth ...
+2021-10-18 16:03:08,835 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:04:25,615 - trainer - INFO -     epoch          : 43
+2021-10-18 16:04:25,616 - trainer - INFO -     loss           : 0.9160089721282323
+2021-10-18 16:04:25,616 - trainer - INFO -     masked_mae_np  : 0.19264557510614394
+2021-10-18 16:04:25,616 - trainer - INFO -     masked_mape_np : 0.07072634100914002
+2021-10-18 16:04:25,616 - trainer - INFO -     masked_rmse_np : 0.9941901842753093
+2021-10-18 16:04:25,616 - trainer - INFO -     val_loss       : 1.8655826807022096
+2021-10-18 16:04:25,616 - trainer - INFO -     val_masked_mae_np: 0.3923501282930374
+2021-10-18 16:04:25,616 - trainer - INFO -     val_masked_mape_np: 0.09892054200172425
+2021-10-18 16:04:25,616 - trainer - INFO -     val_masked_rmse_np: 1.9736782312393188
+2021-10-18 16:04:25,616 - trainer - INFO -     Time           : 65.7084s
+2021-10-18 16:04:25,628 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch43.pth ...
+2021-10-18 16:04:25,662 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:05:40,678 - trainer - INFO -     epoch          : 44
+2021-10-18 16:05:40,678 - trainer - INFO -     loss           : 0.9160087118546169
+2021-10-18 16:05:40,678 - trainer - INFO -     masked_mae_np  : 0.19264552171031635
+2021-10-18 16:05:40,678 - trainer - INFO -     masked_mape_np : 0.07072631530463695
+2021-10-18 16:05:40,678 - trainer - INFO -     masked_rmse_np : 0.9941899865865708
+2021-10-18 16:05:40,678 - trainer - INFO -     val_loss       : 1.865582251548767
+2021-10-18 16:05:40,678 - trainer - INFO -     val_masked_mae_np: 0.3923500537872314
+2021-10-18 16:05:40,678 - trainer - INFO -     val_masked_mape_np: 0.09892051070928573
+2021-10-18 16:05:40,678 - trainer - INFO -     val_masked_rmse_np: 1.9736779570579528
+2021-10-18 16:05:40,678 - trainer - INFO -     Time           : 64.5978s
+2021-10-18 16:05:40,690 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch44.pth ...
+2021-10-18 16:05:40,723 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:06:56,164 - trainer - INFO -     epoch          : 45
+2021-10-18 16:06:56,164 - trainer - INFO -     loss           : 0.916008456548055
+2021-10-18 16:06:56,164 - trainer - INFO -     masked_mae_np  : 0.19264547154307365
+2021-10-18 16:06:56,164 - trainer - INFO -     masked_mape_np : 0.07072629096607368
+2021-10-18 16:06:56,164 - trainer - INFO -     masked_rmse_np : 0.994189801812172
+2021-10-18 16:06:56,165 - trainer - INFO -     val_loss       : 1.8655818223953247
+2021-10-18 16:06:56,165 - trainer - INFO -     val_masked_mae_np: 0.392349973320961
+2021-10-18 16:06:56,165 - trainer - INFO -     val_masked_mape_np: 0.09892047792673112
+2021-10-18 16:06:56,165 - trainer - INFO -     val_masked_rmse_np: 1.9736777663230896
+2021-10-18 16:06:56,165 - trainer - INFO -     Time           : 65.5920s
+2021-10-18 16:06:56,177 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch45.pth ...
+2021-10-18 16:06:56,209 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:08:12,629 - trainer - INFO -     epoch          : 46
+2021-10-18 16:08:12,630 - trainer - INFO -     loss           : 0.9160081883271535
+2021-10-18 16:08:12,630 - trainer - INFO -     masked_mae_np  : 0.19264541541536648
+2021-10-18 16:08:12,630 - trainer - INFO -     masked_mape_np : 0.0707262646406889
+2021-10-18 16:08:12,630 - trainer - INFO -     masked_rmse_np : 0.9941896051168442
+2021-10-18 16:08:12,630 - trainer - INFO -     val_loss       : 1.865581500530243
+2021-10-18 16:08:12,630 - trainer - INFO -     val_masked_mae_np: 0.3923498958349228
+2021-10-18 16:08:12,630 - trainer - INFO -     val_masked_mape_np: 0.0989204466342926
+2021-10-18 16:08:12,630 - trainer - INFO -     val_masked_rmse_np: 1.9736775398254394
+2021-10-18 16:08:12,630 - trainer - INFO -     Time           : 65.9496s
+2021-10-18 16:08:12,642 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch46.pth ...
+2021-10-18 16:08:12,674 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:09:27,354 - trainer - INFO -     epoch          : 47
+2021-10-18 16:09:27,354 - trainer - INFO -     loss           : 0.9160079707702001
+2021-10-18 16:09:27,355 - trainer - INFO -     masked_mae_np  : 0.1926453597843647
+2021-10-18 16:09:27,356 - trainer - INFO -     masked_mape_np : 0.0707262388120095
+2021-10-18 16:09:27,356 - trainer - INFO -     masked_rmse_np : 0.9941894014676412
+2021-10-18 16:09:27,356 - trainer - INFO -     val_loss       : 1.8655810475349426
+2021-10-18 16:09:27,356 - trainer - INFO -     val_masked_mae_np: 0.3923497974872589
+2021-10-18 16:09:27,356 - trainer - INFO -     val_masked_mape_np: 0.0989204153418541
+2021-10-18 16:09:27,356 - trainer - INFO -     val_masked_rmse_np: 1.9736773133277894
+2021-10-18 16:09:27,356 - trainer - INFO -     Time           : 64.5682s
+2021-10-18 16:09:27,369 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch47.pth ...
+2021-10-18 16:09:27,400 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:10:41,952 - trainer - INFO -     epoch          : 48
+2021-10-18 16:10:41,952 - trainer - INFO -     loss           : 0.9160076965888341
+2021-10-18 16:10:41,952 - trainer - INFO -     masked_mae_np  : 0.1926453098654747
+2021-10-18 16:10:41,952 - trainer - INFO -     masked_mape_np : 0.07072621236244837
+2021-10-18 16:10:41,952 - trainer - INFO -     masked_rmse_np : 0.9941892147064209
+2021-10-18 16:10:41,952 - trainer - INFO -     val_loss       : 1.8655806064605713
+2021-10-18 16:10:41,953 - trainer - INFO -     val_masked_mae_np: 0.3923497200012207
+2021-10-18 16:10:41,953 - trainer - INFO -     val_masked_mape_np: 0.09892038553953171
+2021-10-18 16:10:41,953 - trainer - INFO -     val_masked_rmse_np: 1.9736770391464233
+2021-10-18 16:10:41,953 - trainer - INFO -     Time           : 64.2288s
+2021-10-18 16:10:41,965 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch48.pth ...
+2021-10-18 16:10:41,997 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:11:57,686 - trainer - INFO -     epoch          : 49
+2021-10-18 16:11:57,686 - trainer - INFO -     loss           : 0.9160074273745219
+2021-10-18 16:11:57,686 - trainer - INFO -     masked_mae_np  : 0.19264525348941486
+2021-10-18 16:11:57,687 - trainer - INFO -     masked_mape_np : 0.07072618715465069
+2021-10-18 16:11:57,687 - trainer - INFO -     masked_rmse_np : 0.9941890100638072
+2021-10-18 16:11:57,687 - trainer - INFO -     val_loss       : 1.8655802965164185
+2021-10-18 16:11:57,687 - trainer - INFO -     val_masked_mae_np: 0.392349636554718
+2021-10-18 16:11:57,687 - trainer - INFO -     val_masked_mape_np: 0.09892035275697708
+2021-10-18 16:11:57,687 - trainer - INFO -     val_masked_rmse_np: 1.9736767888069153
+2021-10-18 16:11:57,687 - trainer - INFO -     Time           : 65.6399s
+2021-10-18 16:11:57,703 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch49.pth ...
+2021-10-18 16:11:57,735 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:13:13,210 - trainer - INFO -     epoch          : 50
+2021-10-18 16:13:13,211 - trainer - INFO -     loss           : 0.9160071929295858
+2021-10-18 16:13:13,212 - trainer - INFO -     masked_mae_np  : 0.19264520034193994
+2021-10-18 16:13:13,212 - trainer - INFO -     masked_mape_np : 0.07072616356114546
+2021-10-18 16:13:13,212 - trainer - INFO -     masked_rmse_np : 0.9941888054211935
+2021-10-18 16:13:13,212 - trainer - INFO -     val_loss       : 1.8655797958374023
+2021-10-18 16:13:13,213 - trainer - INFO -     val_masked_mae_np: 0.3923495501279831
+2021-10-18 16:13:13,213 - trainer - INFO -     val_masked_mape_np: 0.09892032146453858
+2021-10-18 16:13:13,213 - trainer - INFO -     val_masked_rmse_np: 1.9736765265464782
+2021-10-18 16:13:13,213 - trainer - INFO -     Time           : 65.1128s
+2021-10-18 16:13:13,225 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch50.pth ...
+2021-10-18 16:13:13,257 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:14:26,941 - trainer - INFO -     epoch          : 51
+2021-10-18 16:14:26,942 - trainer - INFO -     loss           : 0.9160070776939392
+2021-10-18 16:14:26,942 - trainer - INFO -     masked_mae_np  : 0.19264517252643903
+2021-10-18 16:14:26,942 - trainer - INFO -     masked_mape_np : 0.07072615064680576
+2021-10-18 16:14:26,942 - trainer - INFO -     masked_rmse_np : 0.9941887011130651
+2021-10-18 16:14:26,942 - trainer - INFO -     val_loss       : 1.8655797958374023
+2021-10-18 16:14:26,942 - trainer - INFO -     val_masked_mae_np: 0.39234953820705415
+2021-10-18 16:14:26,942 - trainer - INFO -     val_masked_mape_np: 0.09892032071948051
+2021-10-18 16:14:26,942 - trainer - INFO -     val_masked_rmse_np: 1.9736765265464782
+2021-10-18 16:14:26,942 - trainer - INFO -     Time           : 64.0209s
+2021-10-18 16:14:26,959 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch51.pth ...
+2021-10-18 16:14:26,990 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:15:43,842 - trainer - INFO -     epoch          : 52
+2021-10-18 16:15:43,843 - trainer - INFO -     loss           : 0.9160070767005285
+2021-10-18 16:15:43,843 - trainer - INFO -     masked_mae_np  : 0.19264517202973366
+2021-10-18 16:15:43,843 - trainer - INFO -     masked_mape_np : 0.07072615015010039
+2021-10-18 16:15:43,843 - trainer - INFO -     masked_rmse_np : 0.9941887001196543
+2021-10-18 16:15:43,843 - trainer - INFO -     val_loss       : 1.8655797958374023
+2021-10-18 16:15:43,843 - trainer - INFO -     val_masked_mae_np: 0.3923495292663574
+2021-10-18 16:15:43,843 - trainer - INFO -     val_masked_mape_np: 0.09892031997442245
+2021-10-18 16:15:43,843 - trainer - INFO -     val_masked_rmse_np: 1.9736765265464782
+2021-10-18 16:15:43,843 - trainer - INFO -     Time           : 66.8311s
+2021-10-18 16:15:43,855 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch52.pth ...
+2021-10-18 16:15:43,887 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:16:57,992 - trainer - INFO -     epoch          : 53
+2021-10-18 16:16:57,993 - trainer - INFO -     loss           : 0.9160070637861888
+2021-10-18 16:16:57,993 - trainer - INFO -     masked_mae_np  : 0.19264517004291218
+2021-10-18 16:16:57,993 - trainer - INFO -     masked_mape_np : 0.07072614841163158
+2021-10-18 16:16:57,993 - trainer - INFO -     masked_rmse_np : 0.9941886921723684
+2021-10-18 16:16:57,993 - trainer - INFO -     val_loss       : 1.8655797958374023
+2021-10-18 16:16:57,993 - trainer - INFO -     val_masked_mae_np: 0.3923495262861252
+2021-10-18 16:16:57,993 - trainer - INFO -     val_masked_mape_np: 0.09892031848430634
+2021-10-18 16:16:57,993 - trainer - INFO -     val_masked_rmse_np: 1.9736765265464782
+2021-10-18 16:16:57,993 - trainer - INFO -     Time           : 64.1688s
+2021-10-18 16:16:58,005 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch53.pth ...
+2021-10-18 16:16:58,036 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:18:13,355 - trainer - INFO -     epoch          : 54
+2021-10-18 16:18:13,355 - trainer - INFO -     loss           : 0.9160070478916168
+2021-10-18 16:18:13,355 - trainer - INFO -     masked_mae_np  : 0.19264516805609067
+2021-10-18 16:18:13,355 - trainer - INFO -     masked_mape_np : 0.0707261464248101
+2021-10-18 16:18:13,355 - trainer - INFO -     masked_rmse_np : 0.9941886901855469
+2021-10-18 16:18:13,355 - trainer - INFO -     val_loss       : 1.8655797958374023
+2021-10-18 16:18:13,355 - trainer - INFO -     val_masked_mae_np: 0.3923495262861252
+2021-10-18 16:18:13,355 - trainer - INFO -     val_masked_mape_np: 0.09892031773924828
+2021-10-18 16:18:13,355 - trainer - INFO -     val_masked_rmse_np: 1.9736765265464782
+2021-10-18 16:18:13,355 - trainer - INFO -     Time           : 65.1205s
+2021-10-18 16:18:13,382 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch54.pth ...
+2021-10-18 16:18:13,414 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:19:26,944 - trainer - INFO -     epoch          : 55
+2021-10-18 16:19:26,944 - trainer - INFO -     loss           : 0.9160070339838664
+2021-10-18 16:19:26,944 - trainer - INFO -     masked_mae_np  : 0.19264516457915307
+2021-10-18 16:19:26,944 - trainer - INFO -     masked_mape_np : 0.07072614456216494
+2021-10-18 16:19:26,944 - trainer - INFO -     masked_rmse_np : 0.9941886862119039
+2021-10-18 16:19:26,944 - trainer - INFO -     val_loss       : 1.8655797958374023
+2021-10-18 16:19:26,944 - trainer - INFO -     val_masked_mae_np: 0.3923495262861252
+2021-10-18 16:19:26,944 - trainer - INFO -     val_masked_mape_np: 0.09892031624913215
+2021-10-18 16:19:26,944 - trainer - INFO -     val_masked_rmse_np: 1.9736765027046204
+2021-10-18 16:19:26,944 - trainer - INFO -     Time           : 63.9542s
+2021-10-18 16:19:26,961 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch55.pth ...
+2021-10-18 16:19:26,993 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:20:42,588 - trainer - INFO -     epoch          : 56
+2021-10-18 16:20:42,588 - trainer - INFO -     loss           : 0.9160070359706879
+2021-10-18 16:20:42,588 - trainer - INFO -     masked_mae_np  : 0.1926451618472735
+2021-10-18 16:20:42,588 - trainer - INFO -     masked_mape_np : 0.07072614394128322
+2021-10-18 16:20:42,588 - trainer - INFO -     masked_rmse_np : 0.9941886872053146
+2021-10-18 16:20:42,588 - trainer - INFO -     val_loss       : 1.8655797839164734
+2021-10-18 16:20:42,588 - trainer - INFO -     val_masked_mae_np: 0.39234952330589296
+2021-10-18 16:20:42,588 - trainer - INFO -     val_masked_mape_np: 0.0989203155040741
+2021-10-18 16:20:42,589 - trainer - INFO -     val_masked_rmse_np: 1.9736765027046204
+2021-10-18 16:20:42,589 - trainer - INFO -     Time           : 64.7498s
+2021-10-18 16:20:42,601 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch56.pth ...
+2021-10-18 16:20:42,633 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:21:57,610 - trainer - INFO -     epoch          : 57
+2021-10-18 16:21:57,610 - trainer - INFO -     loss           : 0.9160070290168126
+2021-10-18 16:21:57,610 - trainer - INFO -     masked_mae_np  : 0.19264516085386277
+2021-10-18 16:21:57,610 - trainer - INFO -     masked_mape_np : 0.07072614344457785
+2021-10-18 16:21:57,610 - trainer - INFO -     masked_rmse_np : 0.9941886832316716
+2021-10-18 16:21:57,610 - trainer - INFO -     val_loss       : 1.8655797481536864
+2021-10-18 16:21:57,610 - trainer - INFO -     val_masked_mae_np: 0.39234952032566073
+2021-10-18 16:21:57,610 - trainer - INFO -     val_masked_mape_np: 0.09892031326889991
+2021-10-18 16:21:57,610 - trainer - INFO -     val_masked_rmse_np: 1.9736764907836915
+2021-10-18 16:21:57,610 - trainer - INFO -     Time           : 65.2910s
+2021-10-18 16:21:57,622 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch57.pth ...
+2021-10-18 16:21:57,655 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:23:13,425 - trainer - INFO -     epoch          : 58
+2021-10-18 16:23:13,425 - trainer - INFO -     loss           : 0.9160070111354192
+2021-10-18 16:23:13,426 - trainer - INFO -     masked_mae_np  : 0.19264515911539395
+2021-10-18 16:23:13,426 - trainer - INFO -     masked_mape_np : 0.07072614282369613
+2021-10-18 16:23:13,426 - trainer - INFO -     masked_rmse_np : 0.9941886792580287
+2021-10-18 16:23:13,426 - trainer - INFO -     val_loss       : 1.8655797481536864
+2021-10-18 16:23:13,426 - trainer - INFO -     val_masked_mae_np: 0.39234951734542844
+2021-10-18 16:23:13,426 - trainer - INFO -     val_masked_mape_np: 0.09892031326889991
+2021-10-18 16:23:13,426 - trainer - INFO -     val_masked_rmse_np: 1.9736764788627625
+2021-10-18 16:23:13,426 - trainer - INFO -     Time           : 65.5003s
+2021-10-18 16:23:13,438 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch58.pth ...
+2021-10-18 16:23:13,470 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:24:27,632 - trainer - INFO -     epoch          : 59
+2021-10-18 16:24:27,632 - trainer - INFO -     loss           : 0.916007000207901
+2021-10-18 16:24:27,632 - trainer - INFO -     masked_mae_np  : 0.1926451581219832
+2021-10-18 16:24:27,632 - trainer - INFO -     masked_mape_np : 0.07072614232699076
+2021-10-18 16:24:27,633 - trainer - INFO -     masked_rmse_np : 0.9941886693239212
+2021-10-18 16:24:27,633 - trainer - INFO -     val_loss       : 1.8655797481536864
+2021-10-18 16:24:27,633 - trainer - INFO -     val_masked_mae_np: 0.39234951734542844
+2021-10-18 16:24:27,633 - trainer - INFO -     val_masked_mape_np: 0.09892031326889991
+2021-10-18 16:24:27,633 - trainer - INFO -     val_masked_rmse_np: 1.9736764788627625
+2021-10-18 16:24:27,633 - trainer - INFO -     Time           : 64.1496s
+2021-10-18 16:24:27,650 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch59.pth ...
+2021-10-18 16:24:27,682 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:25:41,234 - trainer - INFO -     epoch          : 60
+2021-10-18 16:25:41,234 - trainer - INFO -     loss           : 0.916006992260615
+2021-10-18 16:25:41,235 - trainer - INFO -     masked_mae_np  : 0.19264515464504559
+2021-10-18 16:25:41,235 - trainer - INFO -     masked_mape_np : 0.0707261415819327
+2021-10-18 16:25:41,235 - trainer - INFO -     masked_rmse_np : 0.9941886673370998
+2021-10-18 16:25:41,235 - trainer - INFO -     val_loss       : 1.8655797481536864
+2021-10-18 16:25:41,235 - trainer - INFO -     val_masked_mae_np: 0.39234951734542844
+2021-10-18 16:25:41,235 - trainer - INFO -     val_masked_mape_np: 0.09892031103372574
+2021-10-18 16:25:41,235 - trainer - INFO -     val_masked_rmse_np: 1.9736764788627625
+2021-10-18 16:25:41,235 - trainer - INFO -     Time           : 63.5680s
+2021-10-18 16:25:41,247 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch60.pth ...
+2021-10-18 16:25:41,279 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:26:55,634 - trainer - INFO -     epoch          : 61
+2021-10-18 16:26:55,635 - trainer - INFO -     loss           : 0.9160069743792216
+2021-10-18 16:26:55,635 - trainer - INFO -     masked_mae_np  : 0.19264515240987143
+2021-10-18 16:26:55,635 - trainer - INFO -     masked_mape_np : 0.07072614046434561
+2021-10-18 16:26:55,635 - trainer - INFO -     masked_rmse_np : 0.9941886574029922
+2021-10-18 16:26:55,635 - trainer - INFO -     val_loss       : 1.8655797481536864
+2021-10-18 16:26:55,635 - trainer - INFO -     val_masked_mae_np: 0.39234951734542844
+2021-10-18 16:26:55,635 - trainer - INFO -     val_masked_mape_np: 0.09892031028866768
+2021-10-18 16:26:55,635 - trainer - INFO -     val_masked_rmse_np: 1.9736764669418334
+2021-10-18 16:26:55,635 - trainer - INFO -     Time           : 64.6294s
+2021-10-18 16:26:55,654 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch61.pth ...
+2021-10-18 16:26:55,687 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:28:11,880 - trainer - INFO -     epoch          : 62
+2021-10-18 16:28:11,881 - trainer - INFO -     loss           : 0.9160069684187572
+2021-10-18 16:28:11,881 - trainer - INFO -     masked_mae_np  : 0.19264515216151873
+2021-10-18 16:28:11,881 - trainer - INFO -     masked_mape_np : 0.07072613909840583
+2021-10-18 16:28:11,881 - trainer - INFO -     masked_rmse_np : 0.9941886564095815
+2021-10-18 16:28:11,881 - trainer - INFO -     val_loss       : 1.8655797362327575
+2021-10-18 16:28:11,881 - trainer - INFO -     val_masked_mae_np: 0.3923495143651962
+2021-10-18 16:28:11,881 - trainer - INFO -     val_masked_mape_np: 0.09892030879855156
+2021-10-18 16:28:11,881 - trainer - INFO -     val_masked_rmse_np: 1.9736764550209045
+2021-10-18 16:28:11,881 - trainer - INFO -     Time           : 65.9833s
+2021-10-18 16:28:11,893 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch62.pth ...
+2021-10-18 16:28:11,925 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:29:27,016 - trainer - INFO -     epoch          : 63
+2021-10-18 16:29:27,016 - trainer - INFO -     loss           : 0.9160069634517034
+2021-10-18 16:29:27,016 - trainer - INFO -     masked_mae_np  : 0.19264515042304992
+2021-10-18 16:29:27,016 - trainer - INFO -     masked_mape_np : 0.0707261378566424
+2021-10-18 16:29:27,016 - trainer - INFO -     masked_rmse_np : 0.994188646475474
+2021-10-18 16:29:27,016 - trainer - INFO -     val_loss       : 1.8655797362327575
+2021-10-18 16:29:27,016 - trainer - INFO -     val_masked_mae_np: 0.3923495143651962
+2021-10-18 16:29:27,017 - trainer - INFO -     val_masked_mape_np: 0.0989203080534935
+2021-10-18 16:29:27,017 - trainer - INFO -     val_masked_rmse_np: 1.9736764550209045
+2021-10-18 16:29:27,017 - trainer - INFO -     Time           : 64.7896s
+2021-10-18 16:29:27,029 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch63.pth ...
+2021-10-18 16:29:27,063 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:30:42,107 - trainer - INFO -     epoch          : 64
+2021-10-18 16:30:42,107 - trainer - INFO -     loss           : 0.916006953517596
+2021-10-18 16:30:42,107 - trainer - INFO -     masked_mae_np  : 0.1926451491812865
+2021-10-18 16:30:42,107 - trainer - INFO -     masked_mape_np : 0.07072613723576068
+2021-10-18 16:30:42,107 - trainer - INFO -     masked_rmse_np : 0.9941886444886525
+2021-10-18 16:30:42,107 - trainer - INFO -     val_loss       : 1.8655797123908997
+2021-10-18 16:30:42,107 - trainer - INFO -     val_masked_mae_np: 0.3923495143651962
+2021-10-18 16:30:42,107 - trainer - INFO -     val_masked_mape_np: 0.09892030507326126
+2021-10-18 16:30:42,108 - trainer - INFO -     val_masked_rmse_np: 1.9736764550209045
+2021-10-18 16:30:42,108 - trainer - INFO -     Time           : 65.1585s
+2021-10-18 16:30:42,120 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch64.pth ...
+2021-10-18 16:30:42,152 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:31:56,216 - trainer - INFO -     epoch          : 65
+2021-10-18 16:31:56,217 - trainer - INFO -     loss           : 0.916006953517596
+2021-10-18 16:31:56,217 - trainer - INFO -     masked_mae_np  : 0.192645147194465
+2021-10-18 16:31:56,217 - trainer - INFO -     masked_mape_np : 0.07072613450388114
+2021-10-18 16:31:56,217 - trainer - INFO -     masked_rmse_np : 0.9941886385281881
+2021-10-18 16:31:56,217 - trainer - INFO -     val_loss       : 1.8655797123908997
+2021-10-18 16:31:56,217 - trainer - INFO -     val_masked_mae_np: 0.3923495143651962
+2021-10-18 16:31:56,217 - trainer - INFO -     val_masked_mape_np: 0.09892030283808709
+2021-10-18 16:31:56,217 - trainer - INFO -     val_masked_rmse_np: 1.9736764550209045
+2021-10-18 16:31:56,217 - trainer - INFO -     Time           : 63.9536s
+2021-10-18 16:31:56,248 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch65.pth ...
+2021-10-18 16:31:56,293 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:33:11,092 - trainer - INFO -     epoch          : 66
+2021-10-18 16:33:11,092 - trainer - INFO -     loss           : 0.9160069445768992
+2021-10-18 16:33:11,092 - trainer - INFO -     masked_mae_np  : 0.19264514669775962
+2021-10-18 16:33:11,092 - trainer - INFO -     masked_mape_np : 0.07072613400717577
+2021-10-18 16:33:11,092 - trainer - INFO -     masked_rmse_np : 0.9941886305809021
+2021-10-18 16:33:11,092 - trainer - INFO -     val_loss       : 1.8655797123908997
+2021-10-18 16:33:11,092 - trainer - INFO -     val_masked_mae_np: 0.39234950542449953
+2021-10-18 16:33:11,092 - trainer - INFO -     val_masked_mape_np: 0.09892030209302902
+2021-10-18 16:33:11,092 - trainer - INFO -     val_masked_rmse_np: 1.9736764550209045
+2021-10-18 16:33:11,093 - trainer - INFO -     Time           : 64.9000s
+2021-10-18 16:33:11,118 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch66.pth ...
+2021-10-18 16:33:11,150 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:34:25,529 - trainer - INFO -     epoch          : 67
+2021-10-18 16:34:25,529 - trainer - INFO -     loss           : 0.9160069406032563
+2021-10-18 16:34:25,529 - trainer - INFO -     masked_mae_np  : 0.1926451452076435
+2021-10-18 16:34:25,529 - trainer - INFO -     masked_mape_np : 0.07072613338629405
+2021-10-18 16:34:25,529 - trainer - INFO -     masked_rmse_np : 0.9941886256138484
+2021-10-18 16:34:25,529 - trainer - INFO -     val_loss       : 1.8655796647071838
+2021-10-18 16:34:25,530 - trainer - INFO -     val_masked_mae_np: 0.39234950542449953
+2021-10-18 16:34:25,530 - trainer - INFO -     val_masked_mape_np: 0.09892030209302902
+2021-10-18 16:34:25,530 - trainer - INFO -     val_masked_rmse_np: 1.9736764430999756
+2021-10-18 16:34:25,530 - trainer - INFO -     Time           : 64.5689s
+2021-10-18 16:34:25,545 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch67.pth ...
+2021-10-18 16:34:25,576 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:35:40,131 - trainer - INFO -     epoch          : 68
+2021-10-18 16:35:40,131 - trainer - INFO -     loss           : 0.916006933649381
+2021-10-18 16:35:40,131 - trainer - INFO -     masked_mae_np  : 0.19264514421423276
+2021-10-18 16:35:40,131 - trainer - INFO -     masked_mape_np : 0.07072613276541233
+2021-10-18 16:35:40,131 - trainer - INFO -     masked_rmse_np : 0.9941886206467946
+2021-10-18 16:35:40,131 - trainer - INFO -     val_loss       : 1.8655796647071838
+2021-10-18 16:35:40,131 - trainer - INFO -     val_masked_mae_np: 0.39234950542449953
+2021-10-18 16:35:40,132 - trainer - INFO -     val_masked_mape_np: 0.09892030134797096
+2021-10-18 16:35:40,132 - trainer - INFO -     val_masked_rmse_np: 1.9736764430999756
+2021-10-18 16:35:40,132 - trainer - INFO -     Time           : 64.4682s
+2021-10-18 16:35:40,143 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch68.pth ...
+2021-10-18 16:35:40,157 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:36:54,844 - trainer - INFO -     epoch          : 69
+2021-10-18 16:36:54,845 - trainer - INFO -     loss           : 0.9160069197416305
+2021-10-18 16:36:54,845 - trainer - INFO -     masked_mae_np  : 0.1926451437175274
+2021-10-18 16:36:54,845 - trainer - INFO -     masked_mape_np : 0.07072613115111986
+2021-10-18 16:36:54,845 - trainer - INFO -     masked_rmse_np : 0.9941886146863301
+2021-10-18 16:36:54,845 - trainer - INFO -     val_loss       : 1.8655796647071838
+2021-10-18 16:36:54,845 - trainer - INFO -     val_masked_mae_np: 0.39234950542449953
+2021-10-18 16:36:54,845 - trainer - INFO -     val_masked_mape_np: 0.09892029911279679
+2021-10-18 16:36:54,845 - trainer - INFO -     val_masked_rmse_np: 1.9736764311790467
+2021-10-18 16:36:54,845 - trainer - INFO -     Time           : 64.7620s
+2021-10-18 16:36:54,857 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch69.pth ...
+2021-10-18 16:36:54,889 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:38:11,444 - trainer - INFO -     epoch          : 70
+2021-10-18 16:38:11,444 - trainer - INFO -     loss           : 0.9160069197416305
+2021-10-18 16:38:11,445 - trainer - INFO -     masked_mae_np  : 0.19264514222741128
+2021-10-18 16:38:11,445 - trainer - INFO -     masked_mape_np : 0.0707261295368274
+2021-10-18 16:38:11,445 - trainer - INFO -     masked_rmse_np : 0.9941886126995086
+2021-10-18 16:38:11,445 - trainer - INFO -     val_loss       : 1.8655796647071838
+2021-10-18 16:38:11,445 - trainer - INFO -     val_masked_mae_np: 0.39234950542449953
+2021-10-18 16:38:11,445 - trainer - INFO -     val_masked_mape_np: 0.09892029836773872
+2021-10-18 16:38:11,445 - trainer - INFO -     val_masked_rmse_np: 1.9736764311790467
+2021-10-18 16:38:11,445 - trainer - INFO -     Time           : 66.2756s
+2021-10-18 16:38:11,457 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch70.pth ...
+2021-10-18 16:38:11,489 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:39:26,469 - trainer - INFO -     epoch          : 71
+2021-10-18 16:39:26,469 - trainer - INFO -     loss           : 0.916006913781166
+2021-10-18 16:39:26,470 - trainer - INFO -     masked_mae_np  : 0.19264514222741128
+2021-10-18 16:39:26,470 - trainer - INFO -     masked_mape_np : 0.07072612904012203
+2021-10-18 16:39:26,470 - trainer - INFO -     masked_rmse_np : 0.9941886087258657
+2021-10-18 16:39:26,470 - trainer - INFO -     val_loss       : 1.8655796647071838
+2021-10-18 16:39:26,470 - trainer - INFO -     val_masked_mae_np: 0.39234950542449953
+2021-10-18 16:39:26,470 - trainer - INFO -     val_masked_mape_np: 0.0989202968776226
+2021-10-18 16:39:26,470 - trainer - INFO -     val_masked_rmse_np: 1.9736764311790467
+2021-10-18 16:39:26,470 - trainer - INFO -     Time           : 64.9183s
+2021-10-18 16:39:26,489 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch71.pth ...
+2021-10-18 16:39:26,521 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:40:41,400 - trainer - INFO -     epoch          : 72
+2021-10-18 16:40:41,401 - trainer - INFO -     loss           : 0.9160069068272908
+2021-10-18 16:40:41,402 - trainer - INFO -     masked_mae_np  : 0.1926451417307059
+2021-10-18 16:40:41,402 - trainer - INFO -     masked_mape_np : 0.07072612841924032
+2021-10-18 16:40:41,402 - trainer - INFO -     masked_rmse_np : 0.9941886007785797
+2021-10-18 16:40:41,402 - trainer - INFO -     val_loss       : 1.865579640865326
+2021-10-18 16:40:41,402 - trainer - INFO -     val_masked_mae_np: 0.392349499464035
+2021-10-18 16:40:41,402 - trainer - INFO -     val_masked_mape_np: 0.09892029538750649
+2021-10-18 16:40:41,402 - trainer - INFO -     val_masked_rmse_np: 1.9736764311790467
+2021-10-18 16:40:41,402 - trainer - INFO -     Time           : 64.6034s
+2021-10-18 16:40:41,415 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch72.pth ...
+2021-10-18 16:40:41,447 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:41:56,111 - trainer - INFO -     epoch          : 73
+2021-10-18 16:41:56,111 - trainer - INFO -     loss           : 0.9160069048404693
+2021-10-18 16:41:56,111 - trainer - INFO -     masked_mae_np  : 0.19264513924717902
+2021-10-18 16:41:56,111 - trainer - INFO -     masked_mape_np : 0.07072612668077151
+2021-10-18 16:41:56,111 - trainer - INFO -     masked_rmse_np : 0.9941885948181153
+2021-10-18 16:41:56,111 - trainer - INFO -     val_loss       : 1.8655796289443969
+2021-10-18 16:41:56,111 - trainer - INFO -     val_masked_mae_np: 0.392349499464035
+2021-10-18 16:41:56,111 - trainer - INFO -     val_masked_mape_np: 0.09892029389739036
+2021-10-18 16:41:56,111 - trainer - INFO -     val_masked_rmse_np: 1.9736764311790467
+2021-10-18 16:41:56,111 - trainer - INFO -     Time           : 64.5273s
+2021-10-18 16:41:56,123 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch73.pth ...
+2021-10-18 16:41:56,156 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:43:10,364 - trainer - INFO -     epoch          : 74
+2021-10-18 16:43:10,365 - trainer - INFO -     loss           : 0.9160068988800049
+2021-10-18 16:43:10,365 - trainer - INFO -     masked_mae_np  : 0.1926451402405898
+2021-10-18 16:43:10,365 - trainer - INFO -     masked_mape_np : 0.07072612668077151
+2021-10-18 16:43:10,365 - trainer - INFO -     masked_rmse_np : 0.9941885908444722
+2021-10-18 16:43:10,365 - trainer - INFO -     val_loss       : 1.8655795931816102
+2021-10-18 16:43:10,365 - trainer - INFO -     val_masked_mae_np: 0.392349499464035
+2021-10-18 16:43:10,365 - trainer - INFO -     val_masked_mape_np: 0.09892029240727425
+2021-10-18 16:43:10,365 - trainer - INFO -     val_masked_rmse_np: 1.9736763954162597
+2021-10-18 16:43:10,365 - trainer - INFO -     Time           : 63.8678s
+2021-10-18 16:43:10,377 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch74.pth ...
+2021-10-18 16:43:10,410 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:44:25,456 - trainer - INFO -     epoch          : 75
+2021-10-18 16:44:25,456 - trainer - INFO -     loss           : 0.9160068839788437
+2021-10-18 16:44:25,456 - trainer - INFO -     masked_mae_np  : 0.19264513527353605
+2021-10-18 16:44:25,457 - trainer - INFO -     masked_mape_np : 0.07072612605988979
+2021-10-18 16:44:25,457 - trainer - INFO -     masked_rmse_np : 0.9941885789235433
+2021-10-18 16:44:25,457 - trainer - INFO -     val_loss       : 1.8655795931816102
+2021-10-18 16:44:25,457 - trainer - INFO -     val_masked_mae_np: 0.392349499464035
+2021-10-18 16:44:25,457 - trainer - INFO -     val_masked_mape_np: 0.09892029166221619
+2021-10-18 16:44:25,457 - trainer - INFO -     val_masked_rmse_np: 1.9736763954162597
+2021-10-18 16:44:25,457 - trainer - INFO -     Time           : 64.6582s
+2021-10-18 16:44:25,469 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch75.pth ...
+2021-10-18 16:44:25,501 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:45:41,150 - trainer - INFO -     epoch          : 76
+2021-10-18 16:45:41,150 - trainer - INFO -     loss           : 0.9160068750381469
+2021-10-18 16:45:41,150 - trainer - INFO -     masked_mae_np  : 0.1926451327900092
+2021-10-18 16:45:41,150 - trainer - INFO -     masked_mape_np : 0.07072612506647905
+2021-10-18 16:45:41,150 - trainer - INFO -     masked_rmse_np : 0.9941885749499003
+2021-10-18 16:45:41,151 - trainer - INFO -     val_loss       : 1.865579569339752
+2021-10-18 16:45:41,151 - trainer - INFO -     val_masked_mae_np: 0.3923494964838028
+2021-10-18 16:45:41,151 - trainer - INFO -     val_masked_mape_np: 0.09892029091715812
+2021-10-18 16:45:41,151 - trainer - INFO -     val_masked_rmse_np: 1.9736763954162597
+2021-10-18 16:45:41,151 - trainer - INFO -     Time           : 65.9481s
+2021-10-18 16:45:41,162 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch76.pth ...
+2021-10-18 16:45:41,194 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:46:56,640 - trainer - INFO -     epoch          : 77
+2021-10-18 16:46:56,641 - trainer - INFO -     loss           : 0.9160068730513254
+2021-10-18 16:46:56,641 - trainer - INFO -     masked_mae_np  : 0.19264512931307157
+2021-10-18 16:46:56,641 - trainer - INFO -     masked_mape_np : 0.07072612419724464
+2021-10-18 16:46:56,641 - trainer - INFO -     masked_rmse_np : 0.9941885679960251
+2021-10-18 16:46:56,641 - trainer - INFO -     val_loss       : 1.8655795454978943
+2021-10-18 16:46:56,641 - trainer - INFO -     val_masked_mae_np: 0.39234948754310606
+2021-10-18 16:46:56,641 - trainer - INFO -     val_masked_mape_np: 0.09892029017210006
+2021-10-18 16:46:56,641 - trainer - INFO -     val_masked_rmse_np: 1.973676371574402
+2021-10-18 16:46:56,641 - trainer - INFO -     Time           : 65.0828s
+2021-10-18 16:46:56,675 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch77.pth ...
+2021-10-18 16:46:56,708 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:48:11,356 - trainer - INFO -     epoch          : 78
+2021-10-18 16:48:11,356 - trainer - INFO -     loss           : 0.9160068611303965
+2021-10-18 16:48:11,356 - trainer - INFO -     masked_mae_np  : 0.19264512782295545
+2021-10-18 16:48:11,356 - trainer - INFO -     masked_mape_np : 0.0707261232038339
+2021-10-18 16:48:11,356 - trainer - INFO -     masked_rmse_np : 0.9941885660092036
+2021-10-18 16:48:11,356 - trainer - INFO -     val_loss       : 1.865579569339752
+2021-10-18 16:48:11,356 - trainer - INFO -     val_masked_mae_np: 0.39234949350357057
+2021-10-18 16:48:11,356 - trainer - INFO -     val_masked_mape_np: 0.09892029017210006
+2021-10-18 16:48:11,357 - trainer - INFO -     val_masked_rmse_np: 1.9736763954162597
+2021-10-18 16:48:11,357 - trainer - INFO -     Time           : 64.0467s
+2021-10-18 16:48:11,368 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch78.pth ...
+2021-10-18 16:49:25,776 - trainer - INFO -     epoch          : 79
+2021-10-18 16:49:25,777 - trainer - INFO -     loss           : 0.9160068511962891
+2021-10-18 16:49:25,777 - trainer - INFO -     masked_mae_np  : 0.19264512459437053
+2021-10-18 16:49:25,777 - trainer - INFO -     masked_mape_np : 0.07072612196207047
+2021-10-18 16:49:25,777 - trainer - INFO -     masked_rmse_np : 0.9941885530948639
+2021-10-18 16:49:25,777 - trainer - INFO -     val_loss       : 1.8655795454978943
+2021-10-18 16:49:25,777 - trainer - INFO -     val_masked_mae_np: 0.39234947264194486
+2021-10-18 16:49:25,777 - trainer - INFO -     val_masked_mape_np: 0.09892028942704201
+2021-10-18 16:49:25,777 - trainer - INFO -     val_masked_rmse_np: 1.973676371574402
+2021-10-18 16:49:25,777 - trainer - INFO -     Time           : 64.3357s
+2021-10-18 16:49:25,789 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch79.pth ...
+2021-10-18 16:49:25,819 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:50:38,873 - trainer - INFO -     epoch          : 80
+2021-10-18 16:50:38,873 - trainer - INFO -     loss           : 0.9160068462292353
+2021-10-18 16:50:38,873 - trainer - INFO -     masked_mae_np  : 0.19264512235919634
+2021-10-18 16:50:38,873 - trainer - INFO -     masked_mape_np : 0.07072612047195434
+2021-10-18 16:50:38,873 - trainer - INFO -     masked_rmse_np : 0.9941885491212209
+2021-10-18 16:50:38,873 - trainer - INFO -     val_loss       : 1.8655795574188232
+2021-10-18 16:50:38,874 - trainer - INFO -     val_masked_mae_np: 0.39234947264194486
+2021-10-18 16:50:38,874 - trainer - INFO -     val_masked_mape_np: 0.09892028868198395
+2021-10-18 16:50:38,874 - trainer - INFO -     val_masked_rmse_np: 1.973676371574402
+2021-10-18 16:50:38,874 - trainer - INFO -     Time           : 63.5254s
+2021-10-18 16:50:38,886 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch80.pth ...
+2021-10-18 16:51:54,102 - trainer - INFO -     epoch          : 81
+2021-10-18 16:51:54,102 - trainer - INFO -     loss           : 0.9160068323214848
+2021-10-18 16:51:54,102 - trainer - INFO -     masked_mae_np  : 0.19264511863390604
+2021-10-18 16:51:54,102 - trainer - INFO -     masked_mape_np : 0.0707261194785436
+2021-10-18 16:51:54,102 - trainer - INFO -     masked_rmse_np : 0.9941885451475779
+2021-10-18 16:51:54,102 - trainer - INFO -     val_loss       : 1.8655795097351073
+2021-10-18 16:51:54,102 - trainer - INFO -     val_masked_mae_np: 0.39234946966171264
+2021-10-18 16:51:54,102 - trainer - INFO -     val_masked_mape_np: 0.09892028644680977
+2021-10-18 16:51:54,103 - trainer - INFO -     val_masked_rmse_np: 1.973676371574402
+2021-10-18 16:51:54,103 - trainer - INFO -     Time           : 65.1272s
+2021-10-18 16:51:54,114 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch81.pth ...
+2021-10-18 16:51:54,127 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:53:10,190 - trainer - INFO -     epoch          : 82
+2021-10-18 16:53:10,190 - trainer - INFO -     loss           : 0.9160068243741989
+2021-10-18 16:53:10,191 - trainer - INFO -     masked_mae_np  : 0.19264511664708456
+2021-10-18 16:53:10,191 - trainer - INFO -     masked_mape_np : 0.07072611885766188
+2021-10-18 16:53:10,191 - trainer - INFO -     masked_rmse_np : 0.994188541173935
+2021-10-18 16:53:10,191 - trainer - INFO -     val_loss       : 1.8655795097351073
+2021-10-18 16:53:10,191 - trainer - INFO -     val_masked_mae_np: 0.39234946966171264
+2021-10-18 16:53:10,191 - trainer - INFO -     val_masked_mape_np: 0.09892028644680977
+2021-10-18 16:53:10,191 - trainer - INFO -     val_masked_rmse_np: 1.973676371574402
+2021-10-18 16:53:10,191 - trainer - INFO -     Time           : 65.1205s
+2021-10-18 16:53:10,203 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch82.pth ...
+2021-10-18 16:53:10,235 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:54:23,124 - trainer - INFO -     epoch          : 83
+2021-10-18 16:54:23,125 - trainer - INFO -     loss           : 0.91600681245327
+2021-10-18 16:54:23,125 - trainer - INFO -     masked_mae_np  : 0.19264511540532112
+2021-10-18 16:54:23,125 - trainer - INFO -     masked_mape_np : 0.07072611786425113
+2021-10-18 16:54:23,125 - trainer - INFO -     masked_rmse_np : 0.9941885352134705
+2021-10-18 16:54:23,125 - trainer - INFO -     val_loss       : 1.8655794858932495
+2021-10-18 16:54:23,125 - trainer - INFO -     val_masked_mae_np: 0.39234946966171264
+2021-10-18 16:54:23,125 - trainer - INFO -     val_masked_mape_np: 0.09892028570175171
+2021-10-18 16:54:23,125 - trainer - INFO -     val_masked_rmse_np: 1.973676371574402
+2021-10-18 16:54:23,125 - trainer - INFO -     Time           : 63.0389s
+2021-10-18 16:54:23,137 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch83.pth ...
+2021-10-18 16:54:23,168 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:55:37,861 - trainer - INFO -     epoch          : 84
+2021-10-18 16:55:37,861 - trainer - INFO -     loss           : 0.9160067995389303
+2021-10-18 16:55:37,861 - trainer - INFO -     masked_mae_np  : 0.19264511466026307
+2021-10-18 16:55:37,861 - trainer - INFO -     masked_mape_np : 0.07072611761589845
+2021-10-18 16:55:37,861 - trainer - INFO -     masked_rmse_np : 0.9941885352134705
+2021-10-18 16:55:37,861 - trainer - INFO -     val_loss       : 1.8655794620513917
+2021-10-18 16:55:37,862 - trainer - INFO -     val_masked_mae_np: 0.39234946966171264
+2021-10-18 16:55:37,862 - trainer - INFO -     val_masked_mape_np: 0.09892028570175171
+2021-10-18 16:55:37,862 - trainer - INFO -     val_masked_rmse_np: 1.973676359653473
+2021-10-18 16:55:37,862 - trainer - INFO -     Time           : 64.8704s
+2021-10-18 16:55:37,873 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch84.pth ...
+2021-10-18 16:55:37,906 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:56:51,365 - trainer - INFO -     epoch          : 85
+2021-10-18 16:56:51,366 - trainer - INFO -     loss           : 0.9160067896048228
+2021-10-18 16:56:51,366 - trainer - INFO -     masked_mae_np  : 0.19264511292179426
+2021-10-18 16:56:51,366 - trainer - INFO -     masked_mape_np : 0.0707261157532533
+2021-10-18 16:56:51,366 - trainer - INFO -     masked_rmse_np : 0.994188533226649
+2021-10-18 16:56:51,366 - trainer - INFO -     val_loss       : 1.8655794501304626
+2021-10-18 16:56:51,366 - trainer - INFO -     val_masked_mae_np: 0.3923494666814804
+2021-10-18 16:56:51,366 - trainer - INFO -     val_masked_mape_np: 0.09892028197646141
+2021-10-18 16:56:51,366 - trainer - INFO -     val_masked_rmse_np: 1.973676359653473
+2021-10-18 16:56:51,366 - trainer - INFO -     Time           : 63.7967s
+2021-10-18 16:56:51,394 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch85.pth ...
+2021-10-18 16:56:51,425 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:58:06,809 - trainer - INFO -     epoch          : 86
+2021-10-18 16:58:06,810 - trainer - INFO -     loss           : 0.9160067766904831
+2021-10-18 16:58:06,810 - trainer - INFO -     masked_mae_np  : 0.19264510894815126
+2021-10-18 16:58:06,810 - trainer - INFO -     masked_mape_np : 0.07072611513237158
+2021-10-18 16:58:06,810 - trainer - INFO -     masked_rmse_np : 0.9941885322332382
+2021-10-18 16:58:06,810 - trainer - INFO -     val_loss       : 1.8655794501304626
+2021-10-18 16:58:06,810 - trainer - INFO -     val_masked_mae_np: 0.3923494666814804
+2021-10-18 16:58:06,810 - trainer - INFO -     val_masked_mape_np: 0.09892028197646141
+2021-10-18 16:58:06,810 - trainer - INFO -     val_masked_rmse_np: 1.973676359653473
+2021-10-18 16:58:06,810 - trainer - INFO -     Time           : 64.0756s
+2021-10-18 16:58:06,822 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch86.pth ...
+2021-10-18 16:58:06,851 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 16:59:21,358 - trainer - INFO -     epoch          : 87
+2021-10-18 16:59:21,358 - trainer - INFO -     loss           : 0.9160067687431971
+2021-10-18 16:59:21,359 - trainer - INFO -     masked_mae_np  : 0.19264510745803515
+2021-10-18 16:59:21,359 - trainer - INFO -     masked_mape_np : 0.0707261140147845
+2021-10-18 16:59:21,359 - trainer - INFO -     masked_rmse_np : 0.9941885183254878
+2021-10-18 16:59:21,359 - trainer - INFO -     val_loss       : 1.8655794501304626
+2021-10-18 16:59:21,359 - trainer - INFO -     val_masked_mae_np: 0.3923494637012482
+2021-10-18 16:59:21,359 - trainer - INFO -     val_masked_mape_np: 0.09892028197646141
+2021-10-18 16:59:21,359 - trainer - INFO -     val_masked_rmse_np: 1.973676359653473
+2021-10-18 16:59:21,359 - trainer - INFO -     Time           : 64.6839s
+2021-10-18 16:59:21,379 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch87.pth ...
+2021-10-18 16:59:21,411 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:00:37,875 - trainer - INFO -     epoch          : 88
+2021-10-18 17:00:37,876 - trainer - INFO -     loss           : 0.9160067568222682
+2021-10-18 17:00:37,876 - trainer - INFO -     masked_mae_np  : 0.19264510596791903
+2021-10-18 17:00:37,876 - trainer - INFO -     masked_mape_np : 0.07072611277302106
+2021-10-18 17:00:37,876 - trainer - INFO -     masked_rmse_np : 0.9941885044177373
+2021-10-18 17:00:37,876 - trainer - INFO -     val_loss       : 1.8655794501304626
+2021-10-18 17:00:37,876 - trainer - INFO -     val_masked_mae_np: 0.3923494666814804
+2021-10-18 17:00:37,876 - trainer - INFO -     val_masked_mape_np: 0.0989202804863453
+2021-10-18 17:00:37,876 - trainer - INFO -     val_masked_rmse_np: 1.9736763477325439
+2021-10-18 17:00:37,876 - trainer - INFO -     Time           : 66.6195s
+2021-10-18 17:00:37,888 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch88.pth ...
+2021-10-18 17:00:37,920 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:01:53,678 - trainer - INFO -     epoch          : 89
+2021-10-18 17:01:53,678 - trainer - INFO -     loss           : 0.9160067468881607
+2021-10-18 17:01:53,679 - trainer - INFO -     masked_mae_np  : 0.19264510571956633
+2021-10-18 17:01:53,679 - trainer - INFO -     masked_mape_np : 0.07072611103455226
+2021-10-18 17:01:53,679 - trainer - INFO -     masked_rmse_np : 0.9941885044177373
+2021-10-18 17:01:53,679 - trainer - INFO -     val_loss       : 1.8655794382095336
+2021-10-18 17:01:53,679 - trainer - INFO -     val_masked_mae_np: 0.3923494666814804
+2021-10-18 17:01:53,679 - trainer - INFO -     val_masked_mape_np: 0.09892027899622917
+2021-10-18 17:01:53,679 - trainer - INFO -     val_masked_rmse_np: 1.9736763477325439
+2021-10-18 17:01:53,679 - trainer - INFO -     Time           : 65.5845s
+2021-10-18 17:01:53,691 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch89.pth ...
+2021-10-18 17:01:53,724 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:03:07,268 - trainer - INFO -     epoch          : 90
+2021-10-18 17:03:07,268 - trainer - INFO -     loss           : 0.9160067488749822
+2021-10-18 17:03:07,268 - trainer - INFO -     masked_mae_np  : 0.19264510174592336
+2021-10-18 17:03:07,268 - trainer - INFO -     masked_mape_np : 0.07072611041367054
+2021-10-18 17:03:07,269 - trainer - INFO -     masked_rmse_np : 0.9941884944836299
+2021-10-18 17:03:07,269 - trainer - INFO -     val_loss       : 1.865579402446747
+2021-10-18 17:03:07,269 - trainer - INFO -     val_masked_mae_np: 0.3923494666814804
+2021-10-18 17:03:07,269 - trainer - INFO -     val_masked_mape_np: 0.09892027899622917
+2021-10-18 17:03:07,269 - trainer - INFO -     val_masked_rmse_np: 1.9736763477325439
+2021-10-18 17:03:07,269 - trainer - INFO -     Time           : 63.1353s
+2021-10-18 17:03:07,281 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch90.pth ...
+2021-10-18 17:03:07,313 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:04:22,130 - trainer - INFO -     epoch          : 91
+2021-10-18 17:04:22,131 - trainer - INFO -     loss           : 0.9160067349672317
+2021-10-18 17:04:22,131 - trainer - INFO -     masked_mae_np  : 0.19264510149757066
+2021-10-18 17:04:22,131 - trainer - INFO -     masked_mape_np : 0.07072610979278883
+2021-10-18 17:04:22,131 - trainer - INFO -     masked_rmse_np : 0.9941884885231654
+2021-10-18 17:04:22,131 - trainer - INFO -     val_loss       : 1.8655794262886047
+2021-10-18 17:04:22,131 - trainer - INFO -     val_masked_mae_np: 0.39234946072101595
+2021-10-18 17:04:22,131 - trainer - INFO -     val_masked_mape_np: 0.098920276761055
+2021-10-18 17:04:22,131 - trainer - INFO -     val_masked_rmse_np: 1.973676335811615
+2021-10-18 17:04:22,131 - trainer - INFO -     Time           : 64.5267s
+2021-10-18 17:04:22,155 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch91.pth ...
+2021-10-18 17:05:36,341 - trainer - INFO -     epoch          : 92
+2021-10-18 17:05:36,342 - trainer - INFO -     loss           : 0.9160067270199458
+2021-10-18 17:05:36,342 - trainer - INFO -     masked_mae_np  : 0.19264510000745455
+2021-10-18 17:05:36,342 - trainer - INFO -     masked_mape_np : 0.0707261094202598
+2021-10-18 17:05:36,342 - trainer - INFO -     masked_rmse_np : 0.9941884865363438
+2021-10-18 17:05:36,342 - trainer - INFO -     val_loss       : 1.8655794143676758
+2021-10-18 17:05:36,342 - trainer - INFO -     val_masked_mae_np: 0.39234946072101595
+2021-10-18 17:05:36,342 - trainer - INFO -     val_masked_mape_np: 0.09892027527093887
+2021-10-18 17:05:36,343 - trainer - INFO -     val_masked_rmse_np: 1.973676323890686
+2021-10-18 17:05:36,343 - trainer - INFO -     Time           : 64.1451s
+2021-10-18 17:05:36,354 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch92.pth ...
+2021-10-18 17:06:51,933 - trainer - INFO -     epoch          : 93
+2021-10-18 17:06:51,933 - trainer - INFO -     loss           : 0.9160067150990169
+2021-10-18 17:06:51,933 - trainer - INFO -     masked_mae_np  : 0.19264509777228037
+2021-10-18 17:06:51,933 - trainer - INFO -     masked_mape_np : 0.07072610879937807
+2021-10-18 17:06:51,933 - trainer - INFO -     masked_rmse_np : 0.9941884815692902
+2021-10-18 17:06:51,933 - trainer - INFO -     val_loss       : 1.8655793905258178
+2021-10-18 17:06:51,934 - trainer - INFO -     val_masked_mae_np: 0.39234945476055144
+2021-10-18 17:06:51,934 - trainer - INFO -     val_masked_mape_np: 0.09892027229070663
+2021-10-18 17:06:51,934 - trainer - INFO -     val_masked_rmse_np: 1.9736763000488282
+2021-10-18 17:06:51,934 - trainer - INFO -     Time           : 65.6376s
+2021-10-18 17:06:51,945 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch93.pth ...
+2021-10-18 17:06:51,978 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:08:05,510 - trainer - INFO -     epoch          : 94
+2021-10-18 17:08:05,511 - trainer - INFO -     loss           : 0.9160067071517308
+2021-10-18 17:08:05,511 - trainer - INFO -     masked_mae_np  : 0.19264509677886962
+2021-10-18 17:08:05,511 - trainer - INFO -     masked_mape_np : 0.07072610755761465
+2021-10-18 17:08:05,511 - trainer - INFO -     masked_rmse_np : 0.9941884746154149
+2021-10-18 17:08:05,511 - trainer - INFO -     val_loss       : 1.8655793905258178
+2021-10-18 17:08:05,511 - trainer - INFO -     val_masked_mae_np: 0.392349448800087
+2021-10-18 17:08:05,511 - trainer - INFO -     val_masked_mape_np: 0.09892027229070663
+2021-10-18 17:08:05,511 - trainer - INFO -     val_masked_rmse_np: 1.9736763000488282
+2021-10-18 17:08:05,511 - trainer - INFO -     Time           : 63.3309s
+2021-10-18 17:08:05,523 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch94.pth ...
+2021-10-18 17:08:05,556 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:09:19,544 - trainer - INFO -     epoch          : 95
+2021-10-18 17:09:19,545 - trainer - INFO -     loss           : 0.916006691257159
+2021-10-18 17:09:19,545 - trainer - INFO -     masked_mae_np  : 0.19264509479204814
+2021-10-18 17:09:19,545 - trainer - INFO -     masked_mape_np : 0.07072610681255659
+2021-10-18 17:09:19,545 - trainer - INFO -     masked_rmse_np : 0.9941884746154149
+2021-10-18 17:09:19,545 - trainer - INFO -     val_loss       : 1.86557936668396
+2021-10-18 17:09:19,545 - trainer - INFO -     val_masked_mae_np: 0.3923494428396225
+2021-10-18 17:09:19,545 - trainer - INFO -     val_masked_mape_np: 0.09892027229070663
+2021-10-18 17:09:19,545 - trainer - INFO -     val_masked_rmse_np: 1.9736763000488282
+2021-10-18 17:09:19,545 - trainer - INFO -     Time           : 64.0101s
+2021-10-18 17:09:19,557 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch95.pth ...
+2021-10-18 17:09:19,590 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:10:33,281 - trainer - INFO -     epoch          : 96
+2021-10-18 17:10:33,282 - trainer - INFO -     loss           : 0.9160066773494084
+2021-10-18 17:10:33,282 - trainer - INFO -     masked_mae_np  : 0.19264509305357932
+2021-10-18 17:10:33,282 - trainer - INFO -     masked_mape_np : 0.0707261056949695
+2021-10-18 17:10:33,282 - trainer - INFO -     masked_rmse_np : 0.9941884676615397
+2021-10-18 17:10:33,282 - trainer - INFO -     val_loss       : 1.8655793905258178
+2021-10-18 17:10:33,282 - trainer - INFO -     val_masked_mae_np: 0.39234943985939025
+2021-10-18 17:10:33,282 - trainer - INFO -     val_masked_mape_np: 0.09892027154564857
+2021-10-18 17:10:33,282 - trainer - INFO -     val_masked_rmse_np: 1.9736762762069702
+2021-10-18 17:10:33,282 - trainer - INFO -     Time           : 63.8092s
+2021-10-18 17:10:33,294 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch96.pth ...
+2021-10-18 17:11:46,795 - trainer - INFO -     epoch          : 97
+2021-10-18 17:11:46,795 - trainer - INFO -     loss           : 0.9160066703955333
+2021-10-18 17:11:46,796 - trainer - INFO -     masked_mae_np  : 0.19264509206016858
+2021-10-18 17:11:46,797 - trainer - INFO -     masked_mape_np : 0.07072610519826412
+2021-10-18 17:11:46,797 - trainer - INFO -     masked_rmse_np : 0.9941884636878967
+2021-10-18 17:11:46,797 - trainer - INFO -     val_loss       : 1.8655793428421021
+2021-10-18 17:11:46,797 - trainer - INFO -     val_masked_mae_np: 0.3923494428396225
+2021-10-18 17:11:46,797 - trainer - INFO -     val_masked_mape_np: 0.09892027005553246
+2021-10-18 17:11:46,797 - trainer - INFO -     val_masked_rmse_np: 1.9736762762069702
+2021-10-18 17:11:46,797 - trainer - INFO -     Time           : 63.3040s
+2021-10-18 17:11:46,809 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch97.pth ...
+2021-10-18 17:11:46,841 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:13:00,569 - trainer - INFO -     epoch          : 98
+2021-10-18 17:13:00,569 - trainer - INFO -     loss           : 0.9160066614548366
+2021-10-18 17:13:00,570 - trainer - INFO -     masked_mae_np  : 0.1926450913151105
+2021-10-18 17:13:00,570 - trainer - INFO -     masked_mape_np : 0.07072610420485338
+2021-10-18 17:13:00,570 - trainer - INFO -     masked_rmse_np : 0.994188462694486
+2021-10-18 17:13:00,570 - trainer - INFO -     val_loss       : 1.865579330921173
+2021-10-18 17:13:00,570 - trainer - INFO -     val_masked_mae_np: 0.392349436879158
+2021-10-18 17:13:00,570 - trainer - INFO -     val_masked_mape_np: 0.09892026856541633
+2021-10-18 17:13:00,570 - trainer - INFO -     val_masked_rmse_np: 1.9736762642860413
+2021-10-18 17:13:00,570 - trainer - INFO -     Time           : 63.8211s
+2021-10-18 17:13:00,582 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch98.pth ...
+2021-10-18 17:13:00,614 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:14:16,771 - trainer - INFO -     epoch          : 99
+2021-10-18 17:14:16,771 - trainer - INFO -     loss           : 0.9160066594680151
+2021-10-18 17:14:16,771 - trainer - INFO -     masked_mae_np  : 0.19264509081840514
+2021-10-18 17:14:16,771 - trainer - INFO -     masked_mape_np : 0.07072610296308994
+2021-10-18 17:14:16,771 - trainer - INFO -     masked_rmse_np : 0.994188462694486
+2021-10-18 17:14:16,771 - trainer - INFO -     val_loss       : 1.865579330921173
+2021-10-18 17:14:16,771 - trainer - INFO -     val_masked_mae_np: 0.3923494338989258
+2021-10-18 17:14:16,771 - trainer - INFO -     val_masked_mape_np: 0.09892026707530022
+2021-10-18 17:14:16,771 - trainer - INFO -     val_masked_rmse_np: 1.9736762523651123
+2021-10-18 17:14:16,772 - trainer - INFO -     Time           : 65.8993s
+2021-10-18 17:14:16,783 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch99.pth ...
+2021-10-18 17:14:16,815 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:15:29,977 - trainer - INFO -     epoch          : 100
+2021-10-18 17:15:29,978 - trainer - INFO -     loss           : 0.9160066505273183
+2021-10-18 17:15:29,978 - trainer - INFO -     masked_mae_np  : 0.1926450900733471
+2021-10-18 17:15:29,978 - trainer - INFO -     masked_mape_np : 0.07072610209385553
+2021-10-18 17:15:29,978 - trainer - INFO -     masked_rmse_np : 0.9941884577274323
+2021-10-18 17:15:29,978 - trainer - INFO -     val_loss       : 1.8655793070793152
+2021-10-18 17:15:29,978 - trainer - INFO -     val_masked_mae_np: 0.39234943091869356
+2021-10-18 17:15:29,978 - trainer - INFO -     val_masked_mape_np: 0.09892026633024216
+2021-10-18 17:15:29,978 - trainer - INFO -     val_masked_rmse_np: 1.9736762404441834
+2021-10-18 17:15:29,978 - trainer - INFO -     Time           : 63.0939s
+2021-10-18 17:15:29,995 - trainer - INFO - Saving checkpoint: saved/round2/models/Round2_DCRNN/1018_150933/checkpoint-epoch100.pth ...
+2021-10-18 17:15:30,026 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-18 17:15:30,026 - trainer - INFO - Average training time: 64.8308s

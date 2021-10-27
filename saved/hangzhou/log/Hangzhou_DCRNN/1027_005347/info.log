@@ -1,0 +1,1230 @@
+2021-10-27 00:56:56,032 - train - INFO - DCRNNModel(
+  (encoder): DCRNNEncoder(
+    (encoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+    )
+  )
+  (decoder): DCGRUDecoder(
+    (decoding_cells): ModuleList(
+      (0): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+      )
+      (1): DCGRUCell(
+        (dconv_gate): DiffusionGraphConv()
+        (dconv_candidate): DiffusionGraphConv()
+        (project): Linear(in_features=64, out_features=1, bias=True)
+      )
+    )
+  )
+)
+Trainable parameters: 371393
+2021-10-27 00:56:56,034 - trainer - WARNING - Warning: There's no GPU available on this machine,training will be performed on CPU.
+2021-10-27 00:56:56,038 - trainer - WARNING - Warning: visualization (Tensorboard) is configured to use, but currently not installed on this machine. Please install either TensorboardX with 'pip install tensorboardx', upgrade PyTorch to version >= 1.1 for using 'torch.utils.tensorboard' or turn off the option in the 'config.json' file.
+2021-10-27 00:58:40,774 - trainer - INFO -     epoch          : 1
+2021-10-27 00:58:40,774 - trainer - INFO -     loss           : 1.2777089734872182
+2021-10-27 00:58:40,775 - trainer - INFO -     masked_mae_np  : 0.19139503290255863
+2021-10-27 00:58:40,775 - trainer - INFO -     masked_mape_np : 0.08326917141675949
+2021-10-27 00:58:40,775 - trainer - INFO -     masked_rmse_np : 1.006652577718099
+2021-10-27 00:58:40,775 - trainer - INFO -     val_loss       : 2.7356157302856445
+2021-10-27 00:58:40,775 - trainer - INFO -     val_masked_mae_np: 0.4097828775644302
+2021-10-27 00:58:40,775 - trainer - INFO -     val_masked_mape_np: 0.11960951238870621
+2021-10-27 00:58:40,775 - trainer - INFO -     val_masked_rmse_np: 2.1074888110160828
+2021-10-27 00:58:40,775 - trainer - INFO -     Time           : 91.2032s
+2021-10-27 00:58:40,787 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch1.pth ...
+2021-10-27 00:58:40,799 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:00:23,631 - trainer - INFO -     epoch          : 2
+2021-10-27 01:00:23,631 - trainer - INFO -     loss           : 1.275470750530561
+2021-10-27 01:00:23,631 - trainer - INFO -     masked_mae_np  : 0.19105975776910783
+2021-10-27 01:00:23,632 - trainer - INFO -     masked_mape_np : 0.08308417735000452
+2021-10-27 01:00:23,632 - trainer - INFO -     masked_rmse_np : 1.0054063975811005
+2021-10-27 01:00:23,632 - trainer - INFO -     val_loss       : 2.7319010734558105
+2021-10-27 01:00:23,632 - trainer - INFO -     val_masked_mae_np: 0.40922642648220064
+2021-10-27 01:00:23,632 - trainer - INFO -     val_masked_mape_np: 0.1193605899810791
+2021-10-27 01:00:23,632 - trainer - INFO -     val_masked_rmse_np: 2.105923223495483
+2021-10-27 01:00:23,632 - trainer - INFO -     Time           : 89.2944s
+2021-10-27 01:00:23,686 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch2.pth ...
+2021-10-27 01:00:23,718 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:02:05,258 - trainer - INFO -     epoch          : 3
+2021-10-27 01:02:05,259 - trainer - INFO -     loss           : 1.273224334915479
+2021-10-27 01:02:05,259 - trainer - INFO -     masked_mae_np  : 0.19072325477997462
+2021-10-27 01:02:05,259 - trainer - INFO -     masked_mape_np : 0.08289852651456991
+2021-10-27 01:02:05,259 - trainer - INFO -     masked_rmse_np : 1.0041563967863718
+2021-10-27 01:02:05,259 - trainer - INFO -     val_loss       : 2.728182649612427
+2021-10-27 01:02:05,259 - trainer - INFO -     val_masked_mae_np: 0.4086694300174713
+2021-10-27 01:02:05,259 - trainer - INFO -     val_masked_mape_np: 0.11911145150661469
+2021-10-27 01:02:05,259 - trainer - INFO -     val_masked_rmse_np: 2.104357051849365
+2021-10-27 01:02:05,260 - trainer - INFO -     Time           : 87.7844s
+2021-10-27 01:02:05,271 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch3.pth ...
+2021-10-27 01:02:05,303 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:03:49,017 - trainer - INFO -     epoch          : 4
+2021-10-27 01:03:49,017 - trainer - INFO -     loss           : 1.2709766775369644
+2021-10-27 01:03:49,017 - trainer - INFO -     masked_mae_np  : 0.1903865598142147
+2021-10-27 01:03:49,017 - trainer - INFO -     masked_mape_np : 0.08271279223263264
+2021-10-27 01:03:49,018 - trainer - INFO -     masked_rmse_np : 1.0029064337412517
+2021-10-27 01:03:49,018 - trainer - INFO -     val_loss       : 2.724462652206421
+2021-10-27 01:03:49,018 - trainer - INFO -     val_masked_mae_np: 0.4081121861934662
+2021-10-27 01:03:49,018 - trainer - INFO -     val_masked_mape_np: 0.11886223629117013
+2021-10-27 01:03:49,018 - trainer - INFO -     val_masked_rmse_np: 2.1027910113334656
+2021-10-27 01:03:49,018 - trainer - INFO -     Time           : 89.7208s
+2021-10-27 01:03:49,092 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch4.pth ...
+2021-10-27 01:03:49,127 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:05:32,689 - trainer - INFO -     epoch          : 5
+2021-10-27 01:05:32,690 - trainer - INFO -     loss           : 1.2687282154957453
+2021-10-27 01:05:32,690 - trainer - INFO -     masked_mae_np  : 0.1900497518479824
+2021-10-27 01:05:32,690 - trainer - INFO -     masked_mape_np : 0.08252701262633005
+2021-10-27 01:05:32,690 - trainer - INFO -     masked_rmse_np : 1.001656769712766
+2021-10-27 01:05:32,690 - trainer - INFO -     val_loss       : 2.7207414865493775
+2021-10-27 01:05:32,690 - trainer - INFO -     val_masked_mae_np: 0.40755477249622346
+2021-10-27 01:05:32,690 - trainer - INFO -     val_masked_mape_np: 0.11861296966671944
+2021-10-27 01:05:32,690 - trainer - INFO -     val_masked_rmse_np: 2.1012253642082213
+2021-10-27 01:05:32,690 - trainer - INFO -     Time           : 89.9679s
+2021-10-27 01:05:32,715 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch5.pth ...
+2021-10-27 01:05:32,747 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:07:16,216 - trainer - INFO -     epoch          : 6
+2021-10-27 01:07:16,216 - trainer - INFO -     loss           : 1.2664791703224183
+2021-10-27 01:07:16,217 - trainer - INFO -     masked_mae_np  : 0.18971285670995713
+2021-10-27 01:07:16,217 - trainer - INFO -     masked_mape_np : 0.08234119676053524
+2021-10-27 01:07:16,217 - trainer - INFO -     masked_rmse_np : 1.0004075070222218
+2021-10-27 01:07:16,217 - trainer - INFO -     val_loss       : 2.717019295692444
+2021-10-27 01:07:16,217 - trainer - INFO -     val_masked_mae_np: 0.40699719488620756
+2021-10-27 01:07:16,217 - trainer - INFO -     val_masked_mape_np: 0.11836366951465607
+2021-10-27 01:07:16,217 - trainer - INFO -     val_masked_rmse_np: 2.0996601581573486
+2021-10-27 01:07:16,217 - trainer - INFO -     Time           : 90.0496s
+2021-10-27 01:07:16,257 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch6.pth ...
+2021-10-27 01:07:16,271 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:08:57,976 - trainer - INFO -     epoch          : 7
+2021-10-27 01:08:57,977 - trainer - INFO -     loss           : 1.2642295122146607
+2021-10-27 01:08:57,977 - trainer - INFO -     masked_mae_np  : 0.18937586521108946
+2021-10-27 01:08:57,977 - trainer - INFO -     masked_mape_np : 0.08215535047153631
+2021-10-27 01:08:57,977 - trainer - INFO -     masked_rmse_np : 0.9991586228211721
+2021-10-27 01:08:57,977 - trainer - INFO -     val_loss       : 2.7132959365844727
+2021-10-27 01:08:57,977 - trainer - INFO -     val_masked_mae_np: 0.40643946528434755
+2021-10-27 01:08:57,977 - trainer - INFO -     val_masked_mape_np: 0.11811432614922523
+2021-10-27 01:08:57,977 - trainer - INFO -     val_masked_rmse_np: 2.0980953216552733
+2021-10-27 01:08:57,977 - trainer - INFO -     Time           : 88.0927s
+2021-10-27 01:08:58,010 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch7.pth ...
+2021-10-27 01:08:58,042 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:10:41,776 - trainer - INFO -     epoch          : 8
+2021-10-27 01:10:41,776 - trainer - INFO -     loss           : 1.2619791825612385
+2021-10-27 01:10:41,776 - trainer - INFO -     masked_mae_np  : 0.18903877486785253
+2021-10-27 01:10:41,776 - trainer - INFO -     masked_mape_np : 0.08196946382522582
+2021-10-27 01:10:41,776 - trainer - INFO -     masked_rmse_np : 0.9979101538658142
+2021-10-27 01:10:41,777 - trainer - INFO -     val_loss       : 2.7095715522766115
+2021-10-27 01:10:41,777 - trainer - INFO -     val_masked_mae_np: 0.4058815658092499
+2021-10-27 01:10:41,777 - trainer - INFO -     val_masked_mape_np: 0.11786494627594948
+2021-10-27 01:10:41,777 - trainer - INFO -     val_masked_rmse_np: 2.096531021595001
+2021-10-27 01:10:41,777 - trainer - INFO -     Time           : 90.5369s
+2021-10-27 01:10:41,789 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch8.pth ...
+2021-10-27 01:10:41,824 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:12:24,784 - trainer - INFO -     epoch          : 9
+2021-10-27 01:12:24,784 - trainer - INFO -     loss           : 1.2597281833489735
+2021-10-27 01:12:24,785 - trainer - INFO -     masked_mae_np  : 0.1887015889088313
+2021-10-27 01:12:24,785 - trainer - INFO -     masked_mape_np : 0.08178353533148766
+2021-10-27 01:12:24,785 - trainer - INFO -     masked_rmse_np : 0.9966620683670044
+2021-10-27 01:12:24,785 - trainer - INFO -     val_loss       : 2.705846166610718
+2021-10-27 01:12:24,785 - trainer - INFO -     val_masked_mae_np: 0.40532352924346926
+2021-10-27 01:12:24,785 - trainer - INFO -     val_masked_mape_np: 0.11761551722884178
+2021-10-27 01:12:24,785 - trainer - INFO -     val_masked_rmse_np: 2.0949671626091004
+2021-10-27 01:12:24,785 - trainer - INFO -     Time           : 89.4614s
+2021-10-27 01:12:24,797 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch9.pth ...
+2021-10-27 01:12:24,828 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:14:08,031 - trainer - INFO -     epoch          : 10
+2021-10-27 01:14:08,032 - trainer - INFO -     loss           : 1.2574764957030615
+2021-10-27 01:14:08,032 - trainer - INFO -     masked_mae_np  : 0.18836429665486018
+2021-10-27 01:14:08,032 - trainer - INFO -     masked_mape_np : 0.08159755989909172
+2021-10-27 01:14:08,032 - trainer - INFO -     masked_rmse_np : 0.9954143683115642
+2021-10-27 01:14:08,032 - trainer - INFO -     val_loss       : 2.7021194458007813
+2021-10-27 01:14:08,032 - trainer - INFO -     val_masked_mae_np: 0.40476528108119963
+2021-10-27 01:14:08,032 - trainer - INFO -     val_masked_mape_np: 0.1173660397529602
+2021-10-27 01:14:08,032 - trainer - INFO -     val_masked_rmse_np: 2.0934037566184998
+2021-10-27 01:14:08,032 - trainer - INFO -     Time           : 89.7374s
+2021-10-27 01:14:08,058 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch10.pth ...
+2021-10-27 01:14:08,092 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:15:50,000 - trainer - INFO -     epoch          : 11
+2021-10-27 01:15:50,000 - trainer - INFO -     loss           : 1.2552240500847498
+2021-10-27 01:15:50,000 - trainer - INFO -     masked_mae_np  : 0.1880268894135952
+2021-10-27 01:15:50,001 - trainer - INFO -     masked_mape_np : 0.08141153566539287
+2021-10-27 01:15:50,001 - trainer - INFO -     masked_rmse_np : 0.9941670626401902
+2021-10-27 01:15:50,001 - trainer - INFO -     val_loss       : 2.6983917236328123
+2021-10-27 01:15:50,001 - trainer - INFO -     val_masked_mae_np: 0.4042068839073181
+2021-10-27 01:15:50,001 - trainer - INFO -     val_masked_mape_np: 0.11711650490760803
+2021-10-27 01:15:50,001 - trainer - INFO -     val_masked_rmse_np: 2.0918408274650573
+2021-10-27 01:15:50,001 - trainer - INFO -     Time           : 88.0483s
+2021-10-27 01:15:50,013 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch11.pth ...
+2021-10-27 01:15:50,045 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:17:31,384 - trainer - INFO -     epoch          : 12
+2021-10-27 01:17:31,385 - trainer - INFO -     loss           : 1.2529708514610927
+2021-10-27 01:17:31,385 - trainer - INFO -     masked_mae_np  : 0.18768936668833097
+2021-10-27 01:17:31,385 - trainer - INFO -     masked_mape_np : 0.08122545282046
+2021-10-27 01:17:31,385 - trainer - INFO -     masked_rmse_np : 0.9929201026757558
+2021-10-27 01:17:31,385 - trainer - INFO -     val_loss       : 2.694662618637085
+2021-10-27 01:17:31,385 - trainer - INFO -     val_masked_mae_np: 0.40364827811717985
+2021-10-27 01:17:31,385 - trainer - INFO -     val_masked_mape_np: 0.11686690598726272
+2021-10-27 01:17:31,385 - trainer - INFO -     val_masked_rmse_np: 2.0902783036231996
+2021-10-27 01:17:31,385 - trainer - INFO -     Time           : 87.9195s
+2021-10-27 01:17:31,397 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch12.pth ...
+2021-10-27 01:17:31,431 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:19:15,358 - trainer - INFO -     epoch          : 13
+2021-10-27 01:19:15,358 - trainer - INFO -     loss           : 1.250716765721639
+2021-10-27 01:19:15,359 - trainer - INFO -     masked_mae_np  : 0.18735171792407831
+2021-10-27 01:19:15,359 - trainer - INFO -     masked_mape_np : 0.08103930975000063
+2021-10-27 01:19:15,359 - trainer - INFO -     masked_rmse_np : 0.9916735271612803
+2021-10-27 01:19:15,359 - trainer - INFO -     val_loss       : 2.69093234539032
+2021-10-27 01:19:15,359 - trainer - INFO -     val_masked_mae_np: 0.4030894935131073
+2021-10-27 01:19:15,359 - trainer - INFO -     val_masked_mape_np: 0.11661723405122756
+2021-10-27 01:19:15,359 - trainer - INFO -     val_masked_rmse_np: 2.088716244697571
+2021-10-27 01:19:15,359 - trainer - INFO -     Time           : 89.8398s
+2021-10-27 01:19:15,371 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch13.pth ...
+2021-10-27 01:19:15,402 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:20:56,925 - trainer - INFO -     epoch          : 14
+2021-10-27 01:20:56,925 - trainer - INFO -     loss           : 1.248461804787318
+2021-10-27 01:20:56,925 - trainer - INFO -     masked_mae_np  : 0.18701393778125444
+2021-10-27 01:20:56,925 - trainer - INFO -     masked_mape_np : 0.08085309999684492
+2021-10-27 01:20:56,925 - trainer - INFO -     masked_rmse_np : 0.9904272973537445
+2021-10-27 01:20:56,925 - trainer - INFO -     val_loss       : 2.6872005462646484
+2021-10-27 01:20:56,926 - trainer - INFO -     val_masked_mae_np: 0.4025304913520813
+2021-10-27 01:20:56,926 - trainer - INFO -     val_masked_mape_np: 0.11636748760938645
+2021-10-27 01:20:56,926 - trainer - INFO -     val_masked_rmse_np: 2.0871546030044557
+2021-10-27 01:20:56,926 - trainer - INFO -     Time           : 88.3235s
+2021-10-27 01:20:56,937 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch14.pth ...
+2021-10-27 01:20:56,972 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:22:41,629 - trainer - INFO -     epoch          : 15
+2021-10-27 01:22:41,629 - trainer - INFO -     loss           : 1.2462059328953425
+2021-10-27 01:22:41,630 - trainer - INFO -     masked_mae_np  : 0.1866760142147541
+2021-10-27 01:22:41,630 - trainer - INFO -     masked_mape_np : 0.08066681548953056
+2021-10-27 01:22:41,630 - trainer - INFO -     masked_rmse_np : 0.9891814192136129
+2021-10-27 01:22:41,630 - trainer - INFO -     val_loss       : 2.6834672927856444
+2021-10-27 01:22:41,630 - trainer - INFO -     val_masked_mae_np: 0.40197127461433413
+2021-10-27 01:22:41,630 - trainer - INFO -     val_masked_mape_np: 0.11611765325069427
+2021-10-27 01:22:41,630 - trainer - INFO -     val_masked_rmse_np: 2.0855933666229247
+2021-10-27 01:22:41,630 - trainer - INFO -     Time           : 88.5716s
+2021-10-27 01:22:41,642 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch15.pth ...
+2021-10-27 01:22:41,674 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:24:25,368 - trainer - INFO -     epoch          : 16
+2021-10-27 01:24:25,368 - trainer - INFO -     loss           : 1.243949051698049
+2021-10-27 01:24:25,369 - trainer - INFO -     masked_mae_np  : 0.18633794548610846
+2021-10-27 01:24:25,369 - trainer - INFO -     masked_mape_np : 0.08048045362035433
+2021-10-27 01:24:25,369 - trainer - INFO -     masked_rmse_np : 0.9879358679056167
+2021-10-27 01:24:25,369 - trainer - INFO -     val_loss       : 2.6797324895858763
+2021-10-27 01:24:25,369 - trainer - INFO -     val_masked_mae_np: 0.4014118164777756
+2021-10-27 01:24:25,369 - trainer - INFO -     val_masked_mape_np: 0.11586772799491882
+2021-10-27 01:24:25,369 - trainer - INFO -     val_masked_rmse_np: 2.0840326070785524
+2021-10-27 01:24:25,369 - trainer - INFO -     Time           : 89.4678s
+2021-10-27 01:24:25,381 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch16.pth ...
+2021-10-27 01:24:25,415 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:26:07,083 - trainer - INFO -     epoch          : 17
+2021-10-27 01:26:07,083 - trainer - INFO -     loss           : 1.2416911403338113
+2021-10-27 01:26:07,084 - trainer - INFO -     masked_mae_np  : 0.18599972104032833
+2021-10-27 01:26:07,084 - trainer - INFO -     masked_mape_np : 0.08029400557279587
+2021-10-27 01:26:07,084 - trainer - INFO -     masked_rmse_np : 0.9866906394561131
+2021-10-27 01:26:07,084 - trainer - INFO -     val_loss       : 2.6759960651397705
+2021-10-27 01:26:07,084 - trainer - INFO -     val_masked_mae_np: 0.40085212886333466
+2021-10-27 01:26:07,084 - trainer - INFO -     val_masked_mape_np: 0.11561769843101502
+2021-10-27 01:26:07,084 - trainer - INFO -     val_masked_rmse_np: 2.082472229003906
+2021-10-27 01:26:07,084 - trainer - INFO -     Time           : 87.8838s
+2021-10-27 01:26:07,096 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch17.pth ...
+2021-10-27 01:26:07,128 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:27:49,203 - trainer - INFO -     epoch          : 18
+2021-10-27 01:27:49,203 - trainer - INFO -     loss           : 1.2394321491320928
+2021-10-27 01:27:49,203 - trainer - INFO -     masked_mae_np  : 0.1856613341718912
+2021-10-27 01:27:49,203 - trainer - INFO -     masked_mape_np : 0.08010746861497561
+2021-10-27 01:27:49,203 - trainer - INFO -     masked_rmse_np : 0.9854457348585128
+2021-10-27 01:27:49,203 - trainer - INFO -     val_loss       : 2.6722580671310423
+2021-10-27 01:27:49,203 - trainer - INFO -     val_masked_mae_np: 0.400292181968689
+2021-10-27 01:27:49,203 - trainer - INFO -     val_masked_mape_np: 0.11536756157875061
+2021-10-27 01:27:49,203 - trainer - INFO -     val_masked_rmse_np: 2.0809122800827025
+2021-10-27 01:27:49,203 - trainer - INFO -     Time           : 88.6831s
+2021-10-27 01:27:49,215 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch18.pth ...
+2021-10-27 01:27:49,251 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:29:33,773 - trainer - INFO -     epoch          : 19
+2021-10-27 01:29:33,774 - trainer - INFO -     loss           : 1.2371720244487128
+2021-10-27 01:29:33,774 - trainer - INFO -     masked_mae_np  : 0.1853227775543928
+2021-10-27 01:29:33,774 - trainer - INFO -     masked_mape_np : 0.07992083554466566
+2021-10-27 01:29:33,774 - trainer - INFO -     masked_rmse_np : 0.9842011272907257
+2021-10-27 01:29:33,774 - trainer - INFO -     val_loss       : 2.6685181617736817
+2021-10-27 01:29:33,774 - trainer - INFO -     val_masked_mae_np: 0.399731969833374
+2021-10-27 01:29:33,774 - trainer - INFO -     val_masked_mape_np: 0.11511731371283532
+2021-10-27 01:29:33,774 - trainer - INFO -     val_masked_rmse_np: 2.079352688789368
+2021-10-27 01:29:33,774 - trainer - INFO -     Time           : 90.9513s
+2021-10-27 01:29:33,797 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch19.pth ...
+2021-10-27 01:29:33,829 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:31:17,177 - trainer - INFO -     epoch          : 20
+2021-10-27 01:31:17,177 - trainer - INFO -     loss           : 1.234910743435224
+2021-10-27 01:31:17,177 - trainer - INFO -     masked_mae_np  : 0.18498404671748478
+2021-10-27 01:31:17,178 - trainer - INFO -     masked_mape_np : 0.07973410201569399
+2021-10-27 01:31:17,178 - trainer - INFO -     masked_rmse_np : 0.9829568455616633
+2021-10-27 01:31:17,178 - trainer - INFO -     val_loss       : 2.664776659011841
+2021-10-27 01:31:17,178 - trainer - INFO -     val_masked_mae_np: 0.3991714924573898
+2021-10-27 01:31:17,178 - trainer - INFO -     val_masked_mape_np: 0.1148669384419918
+2021-10-27 01:31:17,178 - trainer - INFO -     val_masked_rmse_np: 2.077793550491333
+2021-10-27 01:31:17,178 - trainer - INFO -     Time           : 89.9276s
+2021-10-27 01:31:17,233 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch20.pth ...
+2021-10-27 01:31:17,269 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:33:00,373 - trainer - INFO -     epoch          : 21
+2021-10-27 01:33:00,373 - trainer - INFO -     loss           : 1.2336455315351487
+2021-10-27 01:33:00,373 - trainer - INFO -     masked_mae_np  : 0.18479452257355053
+2021-10-27 01:33:00,373 - trainer - INFO -     masked_mape_np : 0.07962984877328078
+2021-10-27 01:33:00,373 - trainer - INFO -     masked_rmse_np : 0.9822634349266688
+2021-10-27 01:33:00,373 - trainer - INFO -     val_loss       : 2.664402437210083
+2021-10-27 01:33:00,373 - trainer - INFO -     val_masked_mae_np: 0.3991154432296753
+2021-10-27 01:33:00,373 - trainer - INFO -     val_masked_mape_np: 0.11484190374612809
+2021-10-27 01:33:00,373 - trainer - INFO -     val_masked_rmse_np: 2.0776376724243164
+2021-10-27 01:33:00,373 - trainer - INFO -     Time           : 89.9987s
+2021-10-27 01:33:00,455 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch21.pth ...
+2021-10-27 01:33:00,489 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:34:43,160 - trainer - INFO -     epoch          : 22
+2021-10-27 01:34:43,160 - trainer - INFO -     loss           : 1.2334193289279938
+2021-10-27 01:34:43,160 - trainer - INFO -     masked_mae_np  : 0.18476063658793768
+2021-10-27 01:34:43,160 - trainer - INFO -     masked_mape_np : 0.07961117016772429
+2021-10-27 01:34:43,160 - trainer - INFO -     masked_rmse_np : 0.9821390708287557
+2021-10-27 01:34:43,160 - trainer - INFO -     val_loss       : 2.6640283823013307
+2021-10-27 01:34:43,160 - trainer - INFO -     val_masked_mae_np: 0.39905942380428316
+2021-10-27 01:34:43,160 - trainer - INFO -     val_masked_mape_np: 0.114816864579916
+2021-10-27 01:34:43,161 - trainer - INFO -     val_masked_rmse_np: 2.0774818301200866
+2021-10-27 01:34:43,161 - trainer - INFO -     Time           : 89.4267s
+2021-10-27 01:34:43,172 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch22.pth ...
+2021-10-27 01:34:43,204 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:36:26,070 - trainer - INFO -     epoch          : 23
+2021-10-27 01:36:26,070 - trainer - INFO -     loss           : 1.2331931382417678
+2021-10-27 01:36:26,070 - trainer - INFO -     masked_mae_np  : 0.18472676426172258
+2021-10-27 01:36:26,070 - trainer - INFO -     masked_mape_np : 0.07959249305228393
+2021-10-27 01:36:26,070 - trainer - INFO -     masked_rmse_np : 0.9820147355397543
+2021-10-27 01:36:26,070 - trainer - INFO -     val_loss       : 2.663654255867004
+2021-10-27 01:36:26,071 - trainer - INFO -     val_masked_mae_np: 0.39900335669517517
+2021-10-27 01:36:26,071 - trainer - INFO -     val_masked_mape_np: 0.11479183062911033
+2021-10-27 01:36:26,071 - trainer - INFO -     val_masked_rmse_np: 2.0773260831832885
+2021-10-27 01:36:26,071 - trainer - INFO -     Time           : 89.5395s
+2021-10-27 01:36:26,106 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch23.pth ...
+2021-10-27 01:36:26,138 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:38:09,068 - trainer - INFO -     epoch          : 24
+2021-10-27 01:38:09,069 - trainer - INFO -     loss           : 1.2329669803380967
+2021-10-27 01:38:09,069 - trainer - INFO -     masked_mae_np  : 0.1846928865959247
+2021-10-27 01:38:09,069 - trainer - INFO -     masked_mape_np : 0.07957381804784139
+2021-10-27 01:38:09,069 - trainer - INFO -     masked_rmse_np : 0.9818904330333074
+2021-10-27 01:38:09,069 - trainer - INFO -     val_loss       : 2.6632801294326782
+2021-10-27 01:38:09,069 - trainer - INFO -     val_masked_mae_np: 0.3989473283290863
+2021-10-27 01:38:09,069 - trainer - INFO -     val_masked_mape_np: 0.11476680114865304
+2021-10-27 01:38:09,069 - trainer - INFO -     val_masked_rmse_np: 2.0771703004837034
+2021-10-27 01:38:09,069 - trainer - INFO -     Time           : 89.2191s
+2021-10-27 01:38:09,117 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch24.pth ...
+2021-10-27 01:38:09,147 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:39:51,823 - trainer - INFO -     epoch          : 25
+2021-10-27 01:39:51,824 - trainer - INFO -     loss           : 1.2327408760786056
+2021-10-27 01:39:51,824 - trainer - INFO -     masked_mae_np  : 0.18465900930265586
+2021-10-27 01:39:51,824 - trainer - INFO -     masked_mape_np : 0.07955514503022035
+2021-10-27 01:39:51,824 - trainer - INFO -     masked_rmse_np : 0.9817661235729853
+2021-10-27 01:39:51,824 - trainer - INFO -     val_loss       : 2.6629061937332152
+2021-10-27 01:39:51,824 - trainer - INFO -     val_masked_mae_np: 0.39889129996299744
+2021-10-27 01:39:51,824 - trainer - INFO -     val_masked_mape_np: 0.11474177241325378
+2021-10-27 01:39:51,824 - trainer - INFO -     val_masked_rmse_np: 2.0770145058631897
+2021-10-27 01:39:51,824 - trainer - INFO -     Time           : 89.4419s
+2021-10-27 01:39:51,892 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch25.pth ...
+2021-10-27 01:39:51,906 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:41:35,375 - trainer - INFO -     epoch          : 26
+2021-10-27 01:41:35,375 - trainer - INFO -     loss           : 1.2325147767861684
+2021-10-27 01:41:35,375 - trainer - INFO -     masked_mae_np  : 0.18462514032920202
+2021-10-27 01:41:35,376 - trainer - INFO -     masked_mape_np : 0.07953646965324879
+2021-10-27 01:41:35,376 - trainer - INFO -     masked_rmse_np : 0.9816418409347534
+2021-10-27 01:41:35,376 - trainer - INFO -     val_loss       : 2.662532091140747
+2021-10-27 01:41:35,376 - trainer - INFO -     val_masked_mae_np: 0.398835277557373
+2021-10-27 01:41:35,376 - trainer - INFO -     val_masked_mape_np: 0.11471674516797066
+2021-10-27 01:41:35,376 - trainer - INFO -     val_masked_rmse_np: 2.0768587708473207
+2021-10-27 01:41:35,376 - trainer - INFO -     Time           : 90.4057s
+2021-10-27 01:41:35,416 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch26.pth ...
+2021-10-27 01:41:35,451 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:43:19,993 - trainer - INFO -     epoch          : 27
+2021-10-27 01:43:19,993 - trainer - INFO -     loss           : 1.2322886417309442
+2021-10-27 01:43:19,993 - trainer - INFO -     masked_mae_np  : 0.18459127048651378
+2021-10-27 01:43:19,993 - trainer - INFO -     masked_mape_np : 0.07951779800156752
+2021-10-27 01:43:19,993 - trainer - INFO -     masked_rmse_np : 0.9815175880988439
+2021-10-27 01:43:19,993 - trainer - INFO -     val_loss       : 2.6621580600738524
+2021-10-27 01:43:19,993 - trainer - INFO -     val_masked_mae_np: 0.39877924919128416
+2021-10-27 01:43:19,993 - trainer - INFO -     val_masked_mape_np: 0.11469171196222305
+2021-10-27 01:43:19,993 - trainer - INFO -     val_masked_rmse_np: 2.0767030835151674
+2021-10-27 01:43:19,993 - trainer - INFO -     Time           : 91.2939s
+2021-10-27 01:43:20,005 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch27.pth ...
+2021-10-27 01:43:20,036 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:45:01,925 - trainer - INFO -     epoch          : 28
+2021-10-27 01:45:01,926 - trainer - INFO -     loss           : 1.2320625573396682
+2021-10-27 01:45:01,926 - trainer - INFO -     masked_mae_np  : 0.18455739989876746
+2021-10-27 01:45:01,926 - trainer - INFO -     masked_mape_np : 0.07949912759164969
+2021-10-27 01:45:01,926 - trainer - INFO -     masked_rmse_np : 0.9813933352629344
+2021-10-27 01:45:01,926 - trainer - INFO -     val_loss       : 2.6617841005325316
+2021-10-27 01:45:01,926 - trainer - INFO -     val_masked_mae_np: 0.3987232208251953
+2021-10-27 01:45:01,926 - trainer - INFO -     val_masked_mape_np: 0.11466668918728828
+2021-10-27 01:45:01,926 - trainer - INFO -     val_masked_rmse_np: 2.0765474319458006
+2021-10-27 01:45:01,926 - trainer - INFO -     Time           : 88.1750s
+2021-10-27 01:45:01,938 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch28.pth ...
+2021-10-27 01:45:01,974 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:46:45,235 - trainer - INFO -     epoch          : 29
+2021-10-27 01:46:45,235 - trainer - INFO -     loss           : 1.2318364729483922
+2021-10-27 01:46:45,236 - trainer - INFO -     masked_mae_np  : 0.18452353191872436
+2021-10-27 01:46:45,236 - trainer - INFO -     masked_mape_np : 0.07948045482238134
+2021-10-27 01:46:45,236 - trainer - INFO -     masked_rmse_np : 0.9812691062688828
+2021-10-27 01:46:45,236 - trainer - INFO -     val_loss       : 2.661410117149353
+2021-10-27 01:46:45,236 - trainer - INFO -     val_masked_mae_np: 0.3986672192811966
+2021-10-27 01:46:45,236 - trainer - INFO -     val_masked_mape_np: 0.11464166268706322
+2021-10-27 01:46:45,236 - trainer - INFO -     val_masked_rmse_np: 2.0763917565345764
+2021-10-27 01:46:45,236 - trainer - INFO -     Time           : 89.1185s
+2021-10-27 01:46:45,259 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch29.pth ...
+2021-10-27 01:46:45,290 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:48:29,661 - trainer - INFO -     epoch          : 30
+2021-10-27 01:48:29,661 - trainer - INFO -     loss           : 1.231610397497813
+2021-10-27 01:48:29,662 - trainer - INFO -     masked_mae_np  : 0.18448966840902964
+2021-10-27 01:48:29,662 - trainer - INFO -     masked_mape_np : 0.07946178590257963
+2021-10-27 01:48:29,662 - trainer - INFO -     masked_rmse_np : 0.9811448971430461
+2021-10-27 01:48:29,662 - trainer - INFO -     val_loss       : 2.661036157608032
+2021-10-27 01:48:29,662 - trainer - INFO -     val_masked_mae_np: 0.39861119389533994
+2021-10-27 01:48:29,662 - trainer - INFO -     val_masked_mape_np: 0.11461663842201233
+2021-10-27 01:48:29,662 - trainer - INFO -     val_masked_rmse_np: 2.076236057281494
+2021-10-27 01:48:29,662 - trainer - INFO -     Time           : 90.7975s
+2021-10-27 01:48:29,688 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch30.pth ...
+2021-10-27 01:48:29,719 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:50:12,297 - trainer - INFO -     epoch          : 31
+2021-10-27 01:50:12,297 - trainer - INFO -     loss           : 1.2314846128225327
+2021-10-27 01:50:12,297 - trainer - INFO -     masked_mae_np  : 0.18447082961599032
+2021-10-27 01:50:12,298 - trainer - INFO -     masked_mape_np : 0.0794514204065005
+2021-10-27 01:50:12,298 - trainer - INFO -     masked_rmse_np : 0.9810760309298833
+2021-10-27 01:50:12,298 - trainer - INFO -     val_loss       : 2.6610010385513307
+2021-10-27 01:50:12,298 - trainer - INFO -     val_masked_mae_np: 0.398605951666832
+2021-10-27 01:50:12,298 - trainer - INFO -     val_masked_mape_np: 0.11461430191993713
+2021-10-27 01:50:12,298 - trainer - INFO -     val_masked_rmse_np: 2.0762214779853823
+2021-10-27 01:50:12,298 - trainer - INFO -     Time           : 88.8580s
+2021-10-27 01:50:12,385 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch31.pth ...
+2021-10-27 01:50:12,417 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:51:57,340 - trainer - INFO -     epoch          : 32
+2021-10-27 01:51:57,341 - trainer - INFO -     loss           : 1.231463352839152
+2021-10-27 01:51:57,341 - trainer - INFO -     masked_mae_np  : 0.18446764362355073
+2021-10-27 01:51:57,341 - trainer - INFO -     masked_mape_np : 0.07944966269036134
+2021-10-27 01:51:57,341 - trainer - INFO -     masked_rmse_np : 0.9810643682877223
+2021-10-27 01:51:57,341 - trainer - INFO -     val_loss       : 2.6609661102294924
+2021-10-27 01:51:57,341 - trainer - INFO -     val_masked_mae_np: 0.39860070645809176
+2021-10-27 01:51:57,341 - trainer - INFO -     val_masked_mape_np: 0.11461196318268776
+2021-10-27 01:51:57,341 - trainer - INFO -     val_masked_rmse_np: 2.07620689868927
+2021-10-27 01:51:57,341 - trainer - INFO -     Time           : 90.4825s
+2021-10-27 01:51:57,353 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch32.pth ...
+2021-10-27 01:51:57,388 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:53:39,585 - trainer - INFO -     epoch          : 33
+2021-10-27 01:53:39,586 - trainer - INFO -     loss           : 1.2314421355724334
+2021-10-27 01:53:39,586 - trainer - INFO -     masked_mae_np  : 0.18446446383992832
+2021-10-27 01:53:39,586 - trainer - INFO -     masked_mape_np : 0.0794479075819254
+2021-10-27 01:53:39,586 - trainer - INFO -     masked_rmse_np : 0.981052718559901
+2021-10-27 01:53:39,586 - trainer - INFO -     val_loss       : 2.660931181907654
+2021-10-27 01:53:39,586 - trainer - INFO -     val_masked_mae_np: 0.39859546422958375
+2021-10-27 01:53:39,586 - trainer - INFO -     val_masked_mape_np: 0.11460962444543839
+2021-10-27 01:53:39,586 - trainer - INFO -     val_masked_rmse_np: 2.076192355155945
+2021-10-27 01:53:39,586 - trainer - INFO -     Time           : 88.6772s
+2021-10-27 01:53:39,610 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch33.pth ...
+2021-10-27 01:53:39,642 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:55:20,560 - trainer - INFO -     epoch          : 34
+2021-10-27 01:55:20,561 - trainer - INFO -     loss           : 1.2314208855231603
+2021-10-27 01:55:20,561 - trainer - INFO -     masked_mae_np  : 0.18446128157277902
+2021-10-27 01:55:20,561 - trainer - INFO -     masked_mape_np : 0.07944614998996258
+2021-10-27 01:55:20,561 - trainer - INFO -     masked_rmse_np : 0.9810410588979721
+2021-10-27 01:55:20,561 - trainer - INFO -     val_loss       : 2.6608962059020995
+2021-10-27 01:55:20,561 - trainer - INFO -     val_masked_mae_np: 0.3985902339220047
+2021-10-27 01:55:20,561 - trainer - INFO -     val_masked_mape_np: 0.11460729092359542
+2021-10-27 01:55:20,561 - trainer - INFO -     val_masked_rmse_np: 2.0761778235435484
+2021-10-27 01:55:20,561 - trainer - INFO -     Time           : 87.2163s
+2021-10-27 01:55:20,593 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch34.pth ...
+2021-10-27 01:55:20,626 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:57:03,755 - trainer - INFO -     epoch          : 35
+2021-10-27 01:57:03,755 - trainer - INFO -     loss           : 1.2313996364672979
+2021-10-27 01:57:03,755 - trainer - INFO -     masked_mae_np  : 0.18445809843639532
+2021-10-27 01:57:03,755 - trainer - INFO -     masked_mape_np : 0.07944439587493737
+2021-10-27 01:57:03,755 - trainer - INFO -     masked_rmse_np : 0.9810294061899185
+2021-10-27 01:57:03,755 - trainer - INFO -     val_loss       : 2.660861301422119
+2021-10-27 01:57:03,756 - trainer - INFO -     val_masked_mae_np: 0.39858499467372893
+2021-10-27 01:57:03,756 - trainer - INFO -     val_masked_mape_np: 0.11460495367646217
+2021-10-27 01:57:03,756 - trainer - INFO -     val_masked_rmse_np: 2.0761632084846497
+2021-10-27 01:57:03,756 - trainer - INFO -     Time           : 89.0563s
+2021-10-27 01:57:03,780 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch35.pth ...
+2021-10-27 01:57:03,812 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 01:58:48,334 - trainer - INFO -     epoch          : 36
+2021-10-27 01:58:48,334 - trainer - INFO -     loss           : 1.231378377477328
+2021-10-27 01:58:48,334 - trainer - INFO -     masked_mae_np  : 0.1844549200187127
+2021-10-27 01:58:48,334 - trainer - INFO -     masked_mape_np : 0.07944263927638531
+2021-10-27 01:58:48,334 - trainer - INFO -     masked_rmse_np : 0.9810177405675252
+2021-10-27 01:58:48,334 - trainer - INFO -     val_loss       : 2.6608262777328493
+2021-10-27 01:58:48,334 - trainer - INFO -     val_masked_mae_np: 0.39857975840568544
+2021-10-27 01:58:48,335 - trainer - INFO -     val_masked_mape_np: 0.11460261419415474
+2021-10-27 01:58:48,335 - trainer - INFO -     val_masked_rmse_np: 2.0761486172676085
+2021-10-27 01:58:48,335 - trainer - INFO -     Time           : 90.1842s
+2021-10-27 01:58:48,346 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch36.pth ...
+2021-10-27 01:58:48,378 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:00:29,983 - trainer - INFO -     epoch          : 37
+2021-10-27 02:00:29,983 - trainer - INFO -     loss           : 1.2313571651776631
+2021-10-27 02:00:29,984 - trainer - INFO -     masked_mae_np  : 0.1844517381240924
+2021-10-27 02:00:29,984 - trainer - INFO -     masked_mape_np : 0.07944088404377302
+2021-10-27 02:00:29,984 - trainer - INFO -     masked_rmse_np : 0.9810060838858287
+2021-10-27 02:00:29,984 - trainer - INFO -     val_loss       : 2.6607913732528687
+2021-10-27 02:00:29,984 - trainer - INFO -     val_masked_mae_np: 0.39857451617717743
+2021-10-27 02:00:29,984 - trainer - INFO -     val_masked_mape_np: 0.11460027918219566
+2021-10-27 02:00:29,984 - trainer - INFO -     val_masked_rmse_np: 2.0761341094970702
+2021-10-27 02:00:29,984 - trainer - INFO -     Time           : 88.2063s
+2021-10-27 02:00:30,027 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch37.pth ...
+2021-10-27 02:00:30,061 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:02:14,047 - trainer - INFO -     epoch          : 38
+2021-10-27 02:02:14,048 - trainer - INFO -     loss           : 1.2313359210888544
+2021-10-27 02:02:14,048 - trainer - INFO -     masked_mae_np  : 0.1844485561052958
+2021-10-27 02:02:14,048 - trainer - INFO -     masked_mape_np : 0.07943912893533707
+2021-10-27 02:02:14,048 - trainer - INFO -     masked_rmse_np : 0.9809944202502568
+2021-10-27 02:02:14,048 - trainer - INFO -     val_loss       : 2.660756325721741
+2021-10-27 02:02:14,048 - trainer - INFO -     val_masked_mae_np: 0.39856927990913393
+2021-10-27 02:02:14,048 - trainer - INFO -     val_masked_mape_np: 0.11459793895483017
+2021-10-27 02:02:14,048 - trainer - INFO -     val_masked_rmse_np: 2.076119589805603
+2021-10-27 02:02:14,048 - trainer - INFO -     Time           : 90.2734s
+2021-10-27 02:02:14,076 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch38.pth ...
+2021-10-27 02:02:14,107 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:03:57,454 - trainer - INFO -     epoch          : 39
+2021-10-27 02:03:57,454 - trainer - INFO -     loss           : 1.231314703822136
+2021-10-27 02:03:57,454 - trainer - INFO -     masked_mae_np  : 0.18444537135461966
+2021-10-27 02:03:57,454 - trainer - INFO -     masked_mape_np : 0.07943737295766672
+2021-10-27 02:03:57,455 - trainer - INFO -     masked_rmse_np : 0.9809827695290247
+2021-10-27 02:03:57,455 - trainer - INFO -     val_loss       : 2.6607213735580446
+2021-10-27 02:03:57,455 - trainer - INFO -     val_masked_mae_np: 0.3985640347003937
+2021-10-27 02:03:57,455 - trainer - INFO -     val_masked_mape_np: 0.11459560468792915
+2021-10-27 02:03:57,455 - trainer - INFO -     val_masked_rmse_np: 2.076104998588562
+2021-10-27 02:03:57,455 - trainer - INFO -     Time           : 89.9596s
+2021-10-27 02:03:57,467 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch39.pth ...
+2021-10-27 02:03:57,499 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:05:40,835 - trainer - INFO -     epoch          : 40
+2021-10-27 02:05:40,835 - trainer - INFO -     loss           : 1.2312934587399165
+2021-10-27 02:05:40,835 - trainer - INFO -     masked_mae_np  : 0.18444219045341015
+2021-10-27 02:05:40,836 - trainer - INFO -     masked_mape_np : 0.07943561710417271
+2021-10-27 02:05:40,836 - trainer - INFO -     masked_rmse_np : 0.9809711088736852
+2021-10-27 02:05:40,836 - trainer - INFO -     val_loss       : 2.6606863737106323
+2021-10-27 02:05:40,836 - trainer - INFO -     val_masked_mae_np: 0.3985588014125824
+2021-10-27 02:05:40,836 - trainer - INFO -     val_masked_mape_np: 0.11459326595067978
+2021-10-27 02:05:40,836 - trainer - INFO -     val_masked_rmse_np: 2.076090466976166
+2021-10-27 02:05:40,836 - trainer - INFO -     Time           : 89.9294s
+2021-10-27 02:05:40,852 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch40.pth ...
+2021-10-27 02:05:40,888 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:07:24,407 - trainer - INFO -     epoch          : 41
+2021-10-27 02:07:24,407 - trainer - INFO -     loss           : 1.231282392144203
+2021-10-27 02:07:24,407 - trainer - INFO -     masked_mae_np  : 0.18444053903222085
+2021-10-27 02:07:24,407 - trainer - INFO -     masked_mape_np : 0.07943470465640227
+2021-10-27 02:07:24,407 - trainer - INFO -     masked_rmse_np : 0.980965080857277
+2021-10-27 02:07:24,407 - trainer - INFO -     val_loss       : 2.6606856107711794
+2021-10-27 02:07:24,408 - trainer - INFO -     val_masked_mae_np: 0.3985586851835251
+2021-10-27 02:07:24,408 - trainer - INFO -     val_masked_mape_np: 0.1145932137966156
+2021-10-27 02:07:24,408 - trainer - INFO -     val_masked_rmse_np: 2.076090157032013
+2021-10-27 02:07:24,408 - trainer - INFO -     Time           : 90.2145s
+2021-10-27 02:07:24,505 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch41.pth ...
+2021-10-27 02:07:24,537 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:09:09,715 - trainer - INFO -     epoch          : 42
+2021-10-27 02:09:09,716 - trainer - INFO -     loss           : 1.2312819461027782
+2021-10-27 02:09:09,716 - trainer - INFO -     masked_mae_np  : 0.18444046825170518
+2021-10-27 02:09:09,716 - trainer - INFO -     masked_mape_np : 0.07943466467161973
+2021-10-27 02:09:09,716 - trainer - INFO -     masked_rmse_np : 0.9809648364782333
+2021-10-27 02:09:09,716 - trainer - INFO -     val_loss       : 2.6606849670410155
+2021-10-27 02:09:09,716 - trainer - INFO -     val_masked_mae_np: 0.3985585719347
+2021-10-27 02:09:09,716 - trainer - INFO -     val_masked_mape_np: 0.11459316164255143
+2021-10-27 02:09:09,716 - trainer - INFO -     val_masked_rmse_np: 2.0760899066925047
+2021-10-27 02:09:09,716 - trainer - INFO -     Time           : 90.1407s
+2021-10-27 02:09:09,728 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch42.pth ...
+2021-10-27 02:09:09,760 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:10:50,647 - trainer - INFO -     epoch          : 43
+2021-10-27 02:10:50,647 - trainer - INFO -     loss           : 1.2312814881404242
+2021-10-27 02:10:50,648 - trainer - INFO -     masked_mae_np  : 0.1844403992096583
+2021-10-27 02:10:50,648 - trainer - INFO -     masked_mape_np : 0.07943462381760279
+2021-10-27 02:10:50,648 - trainer - INFO -     masked_rmse_np : 0.9809646149476369
+2021-10-27 02:10:50,648 - trainer - INFO -     val_loss       : 2.6606841325759887
+2021-10-27 02:10:50,648 - trainer - INFO -     val_masked_mae_np: 0.3985584646463394
+2021-10-27 02:10:50,648 - trainer - INFO -     val_masked_mape_np: 0.11459310874342918
+2021-10-27 02:10:50,648 - trainer - INFO -     val_masked_rmse_np: 2.076089632511139
+2021-10-27 02:10:50,648 - trainer - INFO -     Time           : 87.2318s
+2021-10-27 02:10:50,660 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch43.pth ...
+2021-10-27 02:10:50,692 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:12:32,741 - trainer - INFO -     epoch          : 44
+2021-10-27 02:12:32,742 - trainer - INFO -     loss           : 1.2312810371319454
+2021-10-27 02:12:32,742 - trainer - INFO -     masked_mae_np  : 0.18444033277531466
+2021-10-27 02:12:32,742 - trainer - INFO -     masked_mape_np : 0.07943458333611489
+2021-10-27 02:12:32,742 - trainer - INFO -     masked_rmse_np : 0.9809643695751826
+2021-10-27 02:12:32,742 - trainer - INFO -     val_loss       : 2.6606834650039675
+2021-10-27 02:12:32,742 - trainer - INFO -     val_masked_mae_np: 0.3985583662986755
+2021-10-27 02:12:32,742 - trainer - INFO -     val_masked_mape_np: 0.11459305956959724
+2021-10-27 02:12:32,742 - trainer - INFO -     val_masked_rmse_np: 2.076089286804199
+2021-10-27 02:12:32,742 - trainer - INFO -     Time           : 88.3828s
+2021-10-27 02:12:32,754 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch44.pth ...
+2021-10-27 02:12:32,786 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:14:15,469 - trainer - INFO -     epoch          : 45
+2021-10-27 02:14:15,470 - trainer - INFO -     loss           : 1.2312805781761804
+2021-10-27 02:14:15,470 - trainer - INFO -     masked_mae_np  : 0.1844402689486742
+2021-10-27 02:14:15,470 - trainer - INFO -     masked_mape_np : 0.07943454310297966
+2021-10-27 02:14:15,470 - trainer - INFO -     masked_rmse_np : 0.980964129169782
+2021-10-27 02:14:15,470 - trainer - INFO -     val_loss       : 2.6606828451156614
+2021-10-27 02:14:15,470 - trainer - INFO -     val_masked_mae_np: 0.3985582649707794
+2021-10-27 02:14:15,470 - trainer - INFO -     val_masked_mape_np: 0.11459300592541695
+2021-10-27 02:14:15,470 - trainer - INFO -     val_masked_rmse_np: 2.076089024543762
+2021-10-27 02:14:15,470 - trainer - INFO -     Time           : 89.3002s
+2021-10-27 02:14:15,483 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch45.pth ...
+2021-10-27 02:14:15,515 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:15:58,065 - trainer - INFO -     epoch          : 46
+2021-10-27 02:15:58,065 - trainer - INFO -     loss           : 1.2312801162401834
+2021-10-27 02:15:58,066 - trainer - INFO -     masked_mae_np  : 0.18444020052750906
+2021-10-27 02:15:58,066 - trainer - INFO -     masked_mape_np : 0.0794345024973154
+2021-10-27 02:15:58,066 - trainer - INFO -     masked_rmse_np : 0.9809638967116674
+2021-10-27 02:15:58,066 - trainer - INFO -     val_loss       : 2.6606819868087768
+2021-10-27 02:15:58,066 - trainer - INFO -     val_masked_mae_np: 0.3985581427812576
+2021-10-27 02:15:58,066 - trainer - INFO -     val_masked_mape_np: 0.11459295451641083
+2021-10-27 02:15:58,066 - trainer - INFO -     val_masked_rmse_np: 2.076088750362396
+2021-10-27 02:15:58,066 - trainer - INFO -     Time           : 89.1280s
+2021-10-27 02:15:58,091 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch46.pth ...
+2021-10-27 02:15:58,122 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:17:41,729 - trainer - INFO -     epoch          : 47
+2021-10-27 02:17:41,729 - trainer - INFO -     loss           : 1.2312796672185262
+2021-10-27 02:17:41,729 - trainer - INFO -     masked_mae_np  : 0.18444012875358265
+2021-10-27 02:17:41,729 - trainer - INFO -     masked_mape_np : 0.07943446139494578
+2021-10-27 02:17:41,729 - trainer - INFO -     masked_rmse_np : 0.9809636642535527
+2021-10-27 02:17:41,729 - trainer - INFO -     val_loss       : 2.6606813192367555
+2021-10-27 02:17:41,729 - trainer - INFO -     val_masked_mae_np: 0.3985580414533615
+2021-10-27 02:17:41,730 - trainer - INFO -     val_masked_mape_np: 0.11459290087223054
+2021-10-27 02:17:41,730 - trainer - INFO -     val_masked_rmse_np: 2.0760884284973145
+2021-10-27 02:17:41,730 - trainer - INFO -     Time           : 89.2610s
+2021-10-27 02:17:41,785 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch47.pth ...
+2021-10-27 02:17:41,817 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:19:25,713 - trainer - INFO -     epoch          : 48
+2021-10-27 02:19:25,714 - trainer - INFO -     loss           : 1.231279221177101
+2021-10-27 02:19:25,714 - trainer - INFO -     masked_mae_np  : 0.18444006194670995
+2021-10-27 02:19:25,714 - trainer - INFO -     masked_mape_np : 0.07943442066510518
+2021-10-27 02:19:25,714 - trainer - INFO -     masked_rmse_np : 0.9809634327888489
+2021-10-27 02:19:25,714 - trainer - INFO -     val_loss       : 2.66068058013916
+2021-10-27 02:19:25,714 - trainer - INFO -     val_masked_mae_np: 0.3985579311847687
+2021-10-27 02:19:25,714 - trainer - INFO -     val_masked_mape_np: 0.11459285244345666
+2021-10-27 02:19:25,714 - trainer - INFO -     val_masked_rmse_np: 2.0760881066322328
+2021-10-27 02:19:25,714 - trainer - INFO -     Time           : 90.3501s
+2021-10-27 02:19:25,726 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch48.pth ...
+2021-10-27 02:19:25,759 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:21:11,089 - trainer - INFO -     epoch          : 49
+2021-10-27 02:21:11,089 - trainer - INFO -     loss           : 1.2312787622213364
+2021-10-27 02:21:11,089 - trainer - INFO -     masked_mae_np  : 0.1844399906694889
+2021-10-27 02:21:11,089 - trainer - INFO -     masked_mape_np : 0.07943437782426675
+2021-10-27 02:21:11,089 - trainer - INFO -     masked_rmse_np : 0.9809631913900375
+2021-10-27 02:21:11,089 - trainer - INFO -     val_loss       : 2.660679888725281
+2021-10-27 02:21:11,089 - trainer - INFO -     val_masked_mae_np: 0.39855782091617586
+2021-10-27 02:21:11,090 - trainer - INFO -     val_masked_mape_np: 0.11459279805421829
+2021-10-27 02:21:11,090 - trainer - INFO -     val_masked_rmse_np: 2.0760878801345823
+2021-10-27 02:21:11,090 - trainer - INFO -     Time           : 91.8070s
+2021-10-27 02:21:11,125 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch49.pth ...
+2021-10-27 02:21:11,139 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:22:54,688 - trainer - INFO -     epoch          : 50
+2021-10-27 02:22:54,688 - trainer - INFO -     loss           : 1.2312783151865005
+2021-10-27 02:22:54,688 - trainer - INFO -     masked_mae_np  : 0.1844399232417345
+2021-10-27 02:22:54,688 - trainer - INFO -     masked_mape_np : 0.07943433821201325
+2021-10-27 02:22:54,688 - trainer - INFO -     masked_rmse_np : 0.9809629559516907
+2021-10-27 02:22:54,688 - trainer - INFO -     val_loss       : 2.660679078102112
+2021-10-27 02:22:54,688 - trainer - INFO -     val_masked_mae_np: 0.398557710647583
+2021-10-27 02:22:54,688 - trainer - INFO -     val_masked_mape_np: 0.11459274515509606
+2021-10-27 02:22:54,688 - trainer - INFO -     val_masked_rmse_np: 2.0760875821113585
+2021-10-27 02:22:54,688 - trainer - INFO -     Time           : 89.9130s
+2021-10-27 02:22:54,700 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch50.pth ...
+2021-10-27 02:22:54,732 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:24:37,136 - trainer - INFO -     epoch          : 51
+2021-10-27 02:24:37,136 - trainer - INFO -     loss           : 1.2312780499458313
+2021-10-27 02:24:37,136 - trainer - INFO -     masked_mae_np  : 0.18443988698224226
+2021-10-27 02:24:37,136 - trainer - INFO -     masked_mape_np : 0.07943431821962198
+2021-10-27 02:24:37,136 - trainer - INFO -     masked_rmse_np : 0.9809628387292226
+2021-10-27 02:24:37,136 - trainer - INFO -     val_loss       : 2.660679054260254
+2021-10-27 02:24:37,136 - trainer - INFO -     val_masked_mae_np: 0.398557710647583
+2021-10-27 02:24:37,136 - trainer - INFO -     val_masked_mape_np: 0.11459274291992187
+2021-10-27 02:24:37,136 - trainer - INFO -     val_masked_rmse_np: 2.0760875821113585
+2021-10-27 02:24:37,136 - trainer - INFO -     Time           : 88.4155s
+2021-10-27 02:24:37,148 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch51.pth ...
+2021-10-27 02:24:37,180 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:26:20,897 - trainer - INFO -     epoch          : 52
+2021-10-27 02:26:20,897 - trainer - INFO -     loss           : 1.2312780380249024
+2021-10-27 02:26:20,897 - trainer - INFO -     masked_mae_np  : 0.18443988549212614
+2021-10-27 02:26:20,897 - trainer - INFO -     masked_mape_np : 0.07943431722621123
+2021-10-27 02:26:20,897 - trainer - INFO -     masked_rmse_np : 0.9809628367424011
+2021-10-27 02:26:20,897 - trainer - INFO -     val_loss       : 2.660679030418396
+2021-10-27 02:26:20,898 - trainer - INFO -     val_masked_mae_np: 0.398557710647583
+2021-10-27 02:26:20,898 - trainer - INFO -     val_masked_mape_np: 0.11459274142980576
+2021-10-27 02:26:20,898 - trainer - INFO -     val_masked_rmse_np: 2.0760875701904298
+2021-10-27 02:26:20,898 - trainer - INFO -     Time           : 89.4088s
+2021-10-27 02:26:20,909 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch52.pth ...
+2021-10-27 02:26:20,942 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:28:07,713 - trainer - INFO -     epoch          : 53
+2021-10-27 02:28:07,713 - trainer - INFO -     loss           : 1.2312779992818832
+2021-10-27 02:28:07,713 - trainer - INFO -     masked_mae_np  : 0.18443988226354122
+2021-10-27 02:28:07,713 - trainer - INFO -     masked_mape_np : 0.07943431548774242
+2021-10-27 02:28:07,713 - trainer - INFO -     masked_rmse_np : 0.9809628327687582
+2021-10-27 02:28:07,714 - trainer - INFO -     val_loss       : 2.660679030418396
+2021-10-27 02:28:07,714 - trainer - INFO -     val_masked_mae_np: 0.39855770766735077
+2021-10-27 02:28:07,714 - trainer - INFO -     val_masked_mape_np: 0.11459273919463157
+2021-10-27 02:28:07,714 - trainer - INFO -     val_masked_rmse_np: 2.0760875582695006
+2021-10-27 02:28:07,714 - trainer - INFO -     Time           : 91.6752s
+2021-10-27 02:28:07,751 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch53.pth ...
+2021-10-27 02:28:07,784 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:29:55,218 - trainer - INFO -     epoch          : 54
+2021-10-27 02:29:55,218 - trainer - INFO -     loss           : 1.2312779903411866
+2021-10-27 02:29:55,218 - trainer - INFO -     masked_mae_np  : 0.18443988127013047
+2021-10-27 02:29:55,218 - trainer - INFO -     masked_mape_np : 0.07943431362509727
+2021-10-27 02:29:55,218 - trainer - INFO -     masked_rmse_np : 0.9809628228346506
+2021-10-27 02:29:55,218 - trainer - INFO -     val_loss       : 2.66067898273468
+2021-10-27 02:29:55,218 - trainer - INFO -     val_masked_mae_np: 0.3985577017068863
+2021-10-27 02:29:55,218 - trainer - INFO -     val_masked_mape_np: 0.11459273770451546
+2021-10-27 02:29:55,219 - trainer - INFO -     val_masked_rmse_np: 2.076087546348572
+2021-10-27 02:29:55,219 - trainer - INFO -     Time           : 92.7543s
+2021-10-27 02:29:55,230 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch54.pth ...
+2021-10-27 02:29:55,262 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:31:37,479 - trainer - INFO -     epoch          : 55
+2021-10-27 02:31:37,480 - trainer - INFO -     loss           : 1.2312779625256856
+2021-10-27 02:31:37,480 - trainer - INFO -     masked_mae_np  : 0.18443987891077995
+2021-10-27 02:31:37,480 - trainer - INFO -     masked_mape_np : 0.07943431064486503
+2021-10-27 02:31:37,480 - trainer - INFO -     masked_rmse_np : 0.9809628148873647
+2021-10-27 02:31:37,480 - trainer - INFO -     val_loss       : 2.6606789588928224
+2021-10-27 02:31:37,480 - trainer - INFO -     val_masked_mae_np: 0.39855769872665403
+2021-10-27 02:31:37,480 - trainer - INFO -     val_masked_mape_np: 0.11459273770451546
+2021-10-27 02:31:37,480 - trainer - INFO -     val_masked_rmse_np: 2.0760875582695006
+2021-10-27 02:31:37,480 - trainer - INFO -     Time           : 89.0207s
+2021-10-27 02:31:37,492 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch55.pth ...
+2021-10-27 02:31:37,524 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:33:21,798 - trainer - INFO -     epoch          : 56
+2021-10-27 02:33:21,798 - trainer - INFO -     loss           : 1.2312779525915782
+2021-10-27 02:33:21,798 - trainer - INFO -     masked_mae_np  : 0.1844398761789004
+2021-10-27 02:33:21,798 - trainer - INFO -     masked_mape_np : 0.07943430927892527
+2021-10-27 02:33:21,798 - trainer - INFO -     masked_rmse_np : 0.9809628109137217
+2021-10-27 02:33:21,798 - trainer - INFO -     val_loss       : 2.6606789588928224
+2021-10-27 02:33:21,798 - trainer - INFO -     val_masked_mae_np: 0.39855769872665403
+2021-10-27 02:33:21,798 - trainer - INFO -     val_masked_mape_np: 0.1145927369594574
+2021-10-27 02:33:21,798 - trainer - INFO -     val_masked_rmse_np: 2.076087546348572
+2021-10-27 02:33:21,799 - trainer - INFO -     Time           : 90.8391s
+2021-10-27 02:33:21,810 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch56.pth ...
+2021-10-27 02:33:21,871 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:35:04,643 - trainer - INFO -     epoch          : 57
+2021-10-27 02:35:04,644 - trainer - INFO -     loss           : 1.2312779466311137
+2021-10-27 02:35:04,644 - trainer - INFO -     masked_mae_np  : 0.18443987295031547
+2021-10-27 02:35:04,644 - trainer - INFO -     masked_mape_np : 0.0794343076646328
+2021-10-27 02:35:04,644 - trainer - INFO -     masked_rmse_np : 0.980962801973025
+2021-10-27 02:35:04,644 - trainer - INFO -     val_loss       : 2.6606789350509645
+2021-10-27 02:35:04,644 - trainer - INFO -     val_masked_mae_np: 0.39855768978595735
+2021-10-27 02:35:04,644 - trainer - INFO -     val_masked_mape_np: 0.11459273248910903
+2021-10-27 02:35:04,644 - trainer - INFO -     val_masked_rmse_np: 2.076087546348572
+2021-10-27 02:35:04,644 - trainer - INFO -     Time           : 89.2413s
+2021-10-27 02:35:04,667 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch57.pth ...
+2021-10-27 02:35:04,699 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:36:49,176 - trainer - INFO -     epoch          : 58
+2021-10-27 02:36:49,176 - trainer - INFO -     loss           : 1.231277940670649
+2021-10-27 02:36:49,176 - trainer - INFO -     masked_mae_np  : 0.1844398715843757
+2021-10-27 02:36:49,176 - trainer - INFO -     masked_mape_np : 0.07943430629869302
+2021-10-27 02:36:49,176 - trainer - INFO -     masked_rmse_np : 0.980962797999382
+2021-10-27 02:36:49,176 - trainer - INFO -     val_loss       : 2.6606789112091063
+2021-10-27 02:36:49,176 - trainer - INFO -     val_masked_mae_np: 0.3985576868057251
+2021-10-27 02:36:49,177 - trainer - INFO -     val_masked_mape_np: 0.11459273099899292
+2021-10-27 02:36:49,177 - trainer - INFO -     val_masked_rmse_np: 2.076087546348572
+2021-10-27 02:36:49,177 - trainer - INFO -     Time           : 90.1940s
+2021-10-27 02:36:49,188 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch58.pth ...
+2021-10-27 02:36:49,222 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:38:31,690 - trainer - INFO -     epoch          : 59
+2021-10-27 02:38:31,691 - trainer - INFO -     loss           : 1.2312779247760772
+2021-10-27 02:38:31,691 - trainer - INFO -     masked_mae_np  : 0.18443986835579076
+2021-10-27 02:38:31,691 - trainer - INFO -     masked_mape_np : 0.07943430418769519
+2021-10-27 02:38:31,691 - trainer - INFO -     masked_rmse_np : 0.9809627920389176
+2021-10-27 02:38:31,691 - trainer - INFO -     val_loss       : 2.6606788873672484
+2021-10-27 02:38:31,691 - trainer - INFO -     val_masked_mae_np: 0.39855768978595735
+2021-10-27 02:38:31,691 - trainer - INFO -     val_masked_mape_np: 0.1145927295088768
+2021-10-27 02:38:31,691 - trainer - INFO -     val_masked_rmse_np: 2.076087546348572
+2021-10-27 02:38:31,691 - trainer - INFO -     Time           : 89.1787s
+2021-10-27 02:38:31,703 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch59.pth ...
+2021-10-27 02:38:31,734 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:40:13,791 - trainer - INFO -     epoch          : 60
+2021-10-27 02:40:13,791 - trainer - INFO -     loss           : 1.2312779188156129
+2021-10-27 02:40:13,791 - trainer - INFO -     masked_mae_np  : 0.1844398678590854
+2021-10-27 02:40:13,791 - trainer - INFO -     masked_mape_np : 0.0794343030701081
+2021-10-27 02:40:13,792 - trainer - INFO -     masked_rmse_np : 0.9809627910455068
+2021-10-27 02:40:13,792 - trainer - INFO -     val_loss       : 2.6606788873672484
+2021-10-27 02:40:13,792 - trainer - INFO -     val_masked_mae_np: 0.39855768382549284
+2021-10-27 02:40:13,792 - trainer - INFO -     val_masked_mape_np: 0.11459272578358651
+2021-10-27 02:40:13,792 - trainer - INFO -     val_masked_rmse_np: 2.076087510585785
+2021-10-27 02:40:13,792 - trainer - INFO -     Time           : 88.0707s
+2021-10-27 02:40:13,803 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch60.pth ...
+2021-10-27 02:40:13,838 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:41:55,705 - trainer - INFO -     epoch          : 61
+2021-10-27 02:41:55,706 - trainer - INFO -     loss           : 1.2312778989473978
+2021-10-27 02:41:55,706 - trainer - INFO -     masked_mae_np  : 0.18443986487885317
+2021-10-27 02:41:55,706 - trainer - INFO -     masked_mape_np : 0.07943430182834467
+2021-10-27 02:41:55,706 - trainer - INFO -     masked_rmse_np : 0.98096278210481
+2021-10-27 02:41:55,706 - trainer - INFO -     val_loss       : 2.6606788635253906
+2021-10-27 02:41:55,706 - trainer - INFO -     val_masked_mae_np: 0.3985576808452606
+2021-10-27 02:41:55,706 - trainer - INFO -     val_masked_mape_np: 0.11459272503852844
+2021-10-27 02:41:55,706 - trainer - INFO -     val_masked_rmse_np: 2.076087510585785
+2021-10-27 02:41:55,706 - trainer - INFO -     Time           : 88.4996s
+2021-10-27 02:41:55,718 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch61.pth ...
+2021-10-27 02:41:55,750 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:43:37,987 - trainer - INFO -     epoch          : 62
+2021-10-27 02:43:37,987 - trainer - INFO -     loss           : 1.2312778800725936
+2021-10-27 02:43:37,987 - trainer - INFO -     masked_mae_np  : 0.18443986363708972
+2021-10-27 02:43:37,987 - trainer - INFO -     masked_mape_np : 0.07943430008987586
+2021-10-27 02:43:37,987 - trainer - INFO -     masked_rmse_np : 0.9809627860784531
+2021-10-27 02:43:37,988 - trainer - INFO -     val_loss       : 2.6606788635253906
+2021-10-27 02:43:37,988 - trainer - INFO -     val_masked_mae_np: 0.3985576778650284
+2021-10-27 02:43:37,988 - trainer - INFO -     val_masked_mape_np: 0.11459272429347038
+2021-10-27 02:43:37,988 - trainer - INFO -     val_masked_rmse_np: 2.076087510585785
+2021-10-27 02:43:37,988 - trainer - INFO -     Time           : 88.7031s
+2021-10-27 02:43:38,041 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch62.pth ...
+2021-10-27 02:43:38,076 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:45:20,927 - trainer - INFO -     epoch          : 63
+2021-10-27 02:45:20,927 - trainer - INFO -     loss           : 1.231277867158254
+2021-10-27 02:45:20,928 - trainer - INFO -     masked_mae_np  : 0.1844398618986209
+2021-10-27 02:45:20,928 - trainer - INFO -     masked_mape_np : 0.07943429897228876
+2021-10-27 02:45:20,928 - trainer - INFO -     masked_rmse_np : 0.9809627801179885
+2021-10-27 02:45:20,928 - trainer - INFO -     val_loss       : 2.6606788635253906
+2021-10-27 02:45:20,928 - trainer - INFO -     val_masked_mae_np: 0.3985576778650284
+2021-10-27 02:45:20,928 - trainer - INFO -     val_masked_mape_np: 0.11459272131323814
+2021-10-27 02:45:20,928 - trainer - INFO -     val_masked_rmse_np: 2.076087510585785
+2021-10-27 02:45:20,928 - trainer - INFO -     Time           : 89.0891s
+2021-10-27 02:45:20,940 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch63.pth ...
+2021-10-27 02:45:20,953 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:47:03,409 - trainer - INFO -     epoch          : 64
+2021-10-27 02:47:03,410 - trainer - INFO -     loss           : 1.231277851263682
+2021-10-27 02:47:03,410 - trainer - INFO -     masked_mae_np  : 0.1844398581733306
+2021-10-27 02:47:03,410 - trainer - INFO -     masked_mape_np : 0.07943429611623287
+2021-10-27 02:47:03,410 - trainer - INFO -     masked_rmse_np : 0.9809627791245779
+2021-10-27 02:47:03,410 - trainer - INFO -     val_loss       : 2.6606788635253906
+2021-10-27 02:47:03,410 - trainer - INFO -     val_masked_mae_np: 0.39855767488479615
+2021-10-27 02:47:03,410 - trainer - INFO -     val_masked_mape_np: 0.11459272056818008
+2021-10-27 02:47:03,410 - trainer - INFO -     val_masked_rmse_np: 2.076087510585785
+2021-10-27 02:47:03,410 - trainer - INFO -     Time           : 88.9064s
+2021-10-27 02:47:03,480 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch64.pth ...
+2021-10-27 02:47:03,515 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:48:46,687 - trainer - INFO -     epoch          : 65
+2021-10-27 02:48:46,687 - trainer - INFO -     loss           : 1.2312778333822887
+2021-10-27 02:48:46,687 - trainer - INFO -     masked_mae_np  : 0.18443985556562742
+2021-10-27 02:48:46,687 - trainer - INFO -     masked_mape_np : 0.07943429313600063
+2021-10-27 02:48:46,688 - trainer - INFO -     masked_rmse_np : 0.9809627691904704
+2021-10-27 02:48:46,688 - trainer - INFO -     val_loss       : 2.660678839683533
+2021-10-27 02:48:46,688 - trainer - INFO -     val_masked_mae_np: 0.3985576778650284
+2021-10-27 02:48:46,688 - trainer - INFO -     val_masked_mape_np: 0.11459271833300591
+2021-10-27 02:48:46,688 - trainer - INFO -     val_masked_rmse_np: 2.076087510585785
+2021-10-27 02:48:46,688 - trainer - INFO -     Time           : 89.9513s
+2021-10-27 02:48:46,713 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch65.pth ...
+2021-10-27 02:48:46,745 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:50:30,777 - trainer - INFO -     epoch          : 66
+2021-10-27 02:50:30,778 - trainer - INFO -     loss           : 1.2312778204679489
+2021-10-27 02:50:30,778 - trainer - INFO -     masked_mae_np  : 0.18443985432386398
+2021-10-27 02:50:30,778 - trainer - INFO -     masked_mape_np : 0.07943429114917915
+2021-10-27 02:50:30,778 - trainer - INFO -     masked_rmse_np : 0.9809627592563629
+2021-10-27 02:50:30,778 - trainer - INFO -     val_loss       : 2.660678839683533
+2021-10-27 02:50:30,778 - trainer - INFO -     val_masked_mae_np: 0.39855766892433164
+2021-10-27 02:50:30,778 - trainer - INFO -     val_masked_mape_np: 0.11459271833300591
+2021-10-27 02:50:30,778 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 02:50:30,778 - trainer - INFO -     Time           : 90.0101s
+2021-10-27 02:50:30,854 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch66.pth ...
+2021-10-27 02:50:30,888 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:52:18,986 - trainer - INFO -     epoch          : 67
+2021-10-27 02:52:18,987 - trainer - INFO -     loss           : 1.2312778065601984
+2021-10-27 02:52:18,987 - trainer - INFO -     masked_mae_np  : 0.18443985333045324
+2021-10-27 02:52:18,987 - trainer - INFO -     masked_mape_np : 0.0794342899074157
+2021-10-27 02:52:18,987 - trainer - INFO -     masked_rmse_np : 0.9809627552827199
+2021-10-27 02:52:18,987 - trainer - INFO -     val_loss       : 2.6606787919998167
+2021-10-27 02:52:18,987 - trainer - INFO -     val_masked_mae_np: 0.39855767488479615
+2021-10-27 02:52:18,987 - trainer - INFO -     val_masked_mape_np: 0.11459271088242531
+2021-10-27 02:52:18,987 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 02:52:18,987 - trainer - INFO -     Time           : 93.2905s
+2021-10-27 02:52:18,999 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch67.pth ...
+2021-10-27 02:52:19,012 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:54:01,492 - trainer - INFO -     epoch          : 68
+2021-10-27 02:54:01,492 - trainer - INFO -     loss           : 1.2312777946392695
+2021-10-27 02:54:01,492 - trainer - INFO -     masked_mae_np  : 0.18443984699745972
+2021-10-27 02:54:01,492 - trainer - INFO -     masked_mape_np : 0.07943428854147593
+2021-10-27 02:54:01,492 - trainer - INFO -     masked_rmse_np : 0.9809627383947372
+2021-10-27 02:54:01,492 - trainer - INFO -     val_loss       : 2.6606787919998167
+2021-10-27 02:54:01,492 - trainer - INFO -     val_masked_mae_np: 0.3985576629638672
+2021-10-27 02:54:01,493 - trainer - INFO -     val_masked_mape_np: 0.11459270790219307
+2021-10-27 02:54:01,493 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 02:54:01,493 - trainer - INFO -     Time           : 88.9015s
+2021-10-27 02:54:01,527 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch68.pth ...
+2021-10-27 02:54:01,562 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:55:48,386 - trainer - INFO -     epoch          : 69
+2021-10-27 02:55:48,386 - trainer - INFO -     loss           : 1.2312777807315192
+2021-10-27 02:55:48,386 - trainer - INFO -     masked_mae_np  : 0.18443984625240167
+2021-10-27 02:55:48,386 - trainer - INFO -     masked_mape_np : 0.07943428692718348
+2021-10-27 02:55:48,386 - trainer - INFO -     masked_rmse_np : 0.9809627284606298
+2021-10-27 02:55:48,386 - trainer - INFO -     val_loss       : 2.660678815841675
+2021-10-27 02:55:48,387 - trainer - INFO -     val_masked_mae_np: 0.3985576510429382
+2021-10-27 02:55:48,387 - trainer - INFO -     val_masked_mape_np: 0.11459270715713502
+2021-10-27 02:55:48,387 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 02:55:48,387 - trainer - INFO -     Time           : 92.3648s
+2021-10-27 02:55:48,452 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch69.pth ...
+2021-10-27 02:57:31,607 - trainer - INFO -     epoch          : 70
+2021-10-27 02:57:31,607 - trainer - INFO -     loss           : 1.2312777827183405
+2021-10-27 02:57:31,607 - trainer - INFO -     masked_mae_np  : 0.18443984451393286
+2021-10-27 02:57:31,607 - trainer - INFO -     masked_mape_np : 0.07943428655465444
+2021-10-27 02:57:31,607 - trainer - INFO -     masked_rmse_np : 0.9809627205133438
+2021-10-27 02:57:31,607 - trainer - INFO -     val_loss       : 2.660678744316101
+2021-10-27 02:57:31,607 - trainer - INFO -     val_masked_mae_np: 0.3985576510429382
+2021-10-27 02:57:31,608 - trainer - INFO -     val_masked_mape_np: 0.11459270343184472
+2021-10-27 02:57:31,608 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 02:57:31,608 - trainer - INFO -     Time           : 89.4105s
+2021-10-27 02:57:31,620 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch70.pth ...
+2021-10-27 02:57:31,651 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 02:59:15,775 - trainer - INFO -     epoch          : 71
+2021-10-27 02:59:15,776 - trainer - INFO -     loss           : 1.231277764836947
+2021-10-27 02:59:15,776 - trainer - INFO -     masked_mae_np  : 0.184439842030406
+2021-10-27 02:59:15,776 - trainer - INFO -     masked_mape_np : 0.07943428543706735
+2021-10-27 02:59:15,776 - trainer - INFO -     masked_rmse_np : 0.9809627185265223
+2021-10-27 02:59:15,776 - trainer - INFO -     val_loss       : 2.660678744316101
+2021-10-27 02:59:15,776 - trainer - INFO -     val_masked_mae_np: 0.39855764508247377
+2021-10-27 02:59:15,776 - trainer - INFO -     val_masked_mape_np: 0.11459270194172859
+2021-10-27 02:59:15,776 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 02:59:15,776 - trainer - INFO -     Time           : 90.7724s
+2021-10-27 02:59:15,788 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch71.pth ...
+2021-10-27 02:59:15,823 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:00:59,751 - trainer - INFO -     epoch          : 72
+2021-10-27 03:00:59,751 - trainer - INFO -     loss           : 1.2312777499357859
+2021-10-27 03:00:59,752 - trainer - INFO -     masked_mae_np  : 0.18443983979523182
+2021-10-27 03:00:59,752 - trainer - INFO -     masked_mape_np : 0.07943428369859855
+2021-10-27 03:00:59,752 - trainer - INFO -     masked_rmse_np : 0.9809627056121826
+2021-10-27 03:00:59,752 - trainer - INFO -     val_loss       : 2.660678744316101
+2021-10-27 03:00:59,752 - trainer - INFO -     val_masked_mae_np: 0.39855764508247377
+2021-10-27 03:00:59,752 - trainer - INFO -     val_masked_mape_np: 0.11459270194172859
+2021-10-27 03:00:59,752 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:00:59,752 - trainer - INFO -     Time           : 90.4269s
+2021-10-27 03:00:59,764 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch72.pth ...
+2021-10-27 03:00:59,796 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:02:43,247 - trainer - INFO -     epoch          : 73
+2021-10-27 03:02:43,247 - trainer - INFO -     loss           : 1.2312777360280356
+2021-10-27 03:02:43,248 - trainer - INFO -     masked_mae_np  : 0.1844398383051157
+2021-10-27 03:02:43,248 - trainer - INFO -     masked_mape_np : 0.0794342818359534
+2021-10-27 03:02:43,249 - trainer - INFO -     masked_rmse_np : 0.9809626946846645
+2021-10-27 03:02:43,249 - trainer - INFO -     val_loss       : 2.660678744316101
+2021-10-27 03:02:43,249 - trainer - INFO -     val_masked_mae_np: 0.39855764210224154
+2021-10-27 03:02:43,249 - trainer - INFO -     val_masked_mape_np: 0.11459269896149635
+2021-10-27 03:02:43,249 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:02:43,249 - trainer - INFO -     Time           : 89.7518s
+2021-10-27 03:02:43,261 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch73.pth ...
+2021-10-27 03:02:43,296 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:04:27,159 - trainer - INFO -     epoch          : 74
+2021-10-27 03:04:27,159 - trainer - INFO -     loss           : 1.2312777191400528
+2021-10-27 03:04:27,159 - trainer - INFO -     masked_mae_np  : 0.18443983706335226
+2021-10-27 03:04:27,159 - trainer - INFO -     masked_mape_np : 0.07943427935242653
+2021-10-27 03:04:27,159 - trainer - INFO -     masked_rmse_np : 0.9809626946846645
+2021-10-27 03:04:27,159 - trainer - INFO -     val_loss       : 2.6606786966323854
+2021-10-27 03:04:27,159 - trainer - INFO -     val_masked_mae_np: 0.398557636141777
+2021-10-27 03:04:27,159 - trainer - INFO -     val_masked_mape_np: 0.11459269970655442
+2021-10-27 03:04:27,159 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:04:27,159 - trainer - INFO -     Time           : 90.6281s
+2021-10-27 03:04:27,171 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch74.pth ...
+2021-10-27 03:04:27,207 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:06:11,247 - trainer - INFO -     epoch          : 75
+2021-10-27 03:06:11,247 - trainer - INFO -     loss           : 1.2312777052323023
+2021-10-27 03:06:11,247 - trainer - INFO -     masked_mae_np  : 0.18443983383476734
+2021-10-27 03:06:11,248 - trainer - INFO -     masked_mape_np : 0.07943427686889966
+2021-10-27 03:06:11,248 - trainer - INFO -     masked_rmse_np : 0.9809626847505569
+2021-10-27 03:06:11,248 - trainer - INFO -     val_loss       : 2.660678672790527
+2021-10-27 03:06:11,248 - trainer - INFO -     val_masked_mae_np: 0.39855763018131257
+2021-10-27 03:06:11,248 - trainer - INFO -     val_masked_mape_np: 0.11459269747138023
+2021-10-27 03:06:11,248 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:06:11,248 - trainer - INFO -     Time           : 90.1208s
+2021-10-27 03:06:11,304 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch75.pth ...
+2021-10-27 03:06:11,339 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:07:55,190 - trainer - INFO -     epoch          : 76
+2021-10-27 03:07:55,191 - trainer - INFO -     loss           : 1.2312776774168015
+2021-10-27 03:07:55,191 - trainer - INFO -     masked_mae_np  : 0.18443983135124048
+2021-10-27 03:07:55,191 - trainer - INFO -     masked_mape_np : 0.07943427426119645
+2021-10-27 03:07:55,191 - trainer - INFO -     masked_rmse_np : 0.9809626748164495
+2021-10-27 03:07:55,191 - trainer - INFO -     val_loss       : 2.660678672790527
+2021-10-27 03:07:55,191 - trainer - INFO -     val_masked_mae_np: 0.39855762720108034
+2021-10-27 03:07:55,191 - trainer - INFO -     val_masked_mape_np: 0.11459269523620605
+2021-10-27 03:07:55,191 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:07:55,191 - trainer - INFO -     Time           : 90.2819s
+2021-10-27 03:07:55,203 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch76.pth ...
+2021-10-27 03:07:55,235 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:09:38,111 - trainer - INFO -     epoch          : 77
+2021-10-27 03:09:38,111 - trainer - INFO -     loss           : 1.2312776654958726
+2021-10-27 03:09:38,112 - trainer - INFO -     masked_mae_np  : 0.18443982799847922
+2021-10-27 03:09:38,113 - trainer - INFO -     masked_mape_np : 0.07943427314360936
+2021-10-27 03:09:38,113 - trainer - INFO -     masked_rmse_np : 0.9809626708428065
+2021-10-27 03:09:38,113 - trainer - INFO -     val_loss       : 2.6606786251068115
+2021-10-27 03:09:38,113 - trainer - INFO -     val_masked_mae_np: 0.39855762720108034
+2021-10-27 03:09:38,113 - trainer - INFO -     val_masked_mape_np: 0.11459269374608994
+2021-10-27 03:09:38,113 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:09:38,113 - trainer - INFO -     Time           : 89.5226s
+2021-10-27 03:09:38,151 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch77.pth ...
+2021-10-27 03:09:38,165 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:11:21,909 - trainer - INFO -     epoch          : 78
+2021-10-27 03:11:21,909 - trainer - INFO -     loss           : 1.2312776565551757
+2021-10-27 03:11:21,909 - trainer - INFO -     masked_mae_np  : 0.18443982501824696
+2021-10-27 03:11:21,909 - trainer - INFO -     masked_mape_np : 0.07943427252272765
+2021-10-27 03:11:21,910 - trainer - INFO -     masked_rmse_np : 0.9809626619021098
+2021-10-27 03:11:21,910 - trainer - INFO -     val_loss       : 2.6606786251068115
+2021-10-27 03:11:21,910 - trainer - INFO -     val_masked_mae_np: 0.39855762422084806
+2021-10-27 03:11:21,910 - trainer - INFO -     val_masked_mape_np: 0.11459268927574158
+2021-10-27 03:11:21,910 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:11:21,910 - trainer - INFO -     Time           : 89.8701s
+2021-10-27 03:11:21,922 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch78.pth ...
+2021-10-27 03:11:21,953 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:13:03,594 - trainer - INFO -     epoch          : 79
+2021-10-27 03:13:03,594 - trainer - INFO -     loss           : 1.2312776426474252
+2021-10-27 03:13:03,596 - trainer - INFO -     masked_mae_np  : 0.18443982278307278
+2021-10-27 03:13:03,596 - trainer - INFO -     masked_mape_np : 0.0794342706600825
+2021-10-27 03:13:03,596 - trainer - INFO -     masked_rmse_np : 0.9809626549482345
+2021-10-27 03:13:03,596 - trainer - INFO -     val_loss       : 2.6606785535812376
+2021-10-27 03:13:03,596 - trainer - INFO -     val_masked_mae_np: 0.39855762720108034
+2021-10-27 03:13:03,596 - trainer - INFO -     val_masked_mape_np: 0.11459268555045128
+2021-10-27 03:13:03,596 - trainer - INFO -     val_masked_rmse_np: 2.076087462902069
+2021-10-27 03:13:03,596 - trainer - INFO -     Time           : 87.9290s
+2021-10-27 03:13:03,608 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch79.pth ...
+2021-10-27 03:13:03,642 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:14:45,873 - trainer - INFO -     epoch          : 80
+2021-10-27 03:14:45,873 - trainer - INFO -     loss           : 1.2312776366869609
+2021-10-27 03:14:45,874 - trainer - INFO -     masked_mae_np  : 0.18443982203801473
+2021-10-27 03:14:45,874 - trainer - INFO -     masked_mape_np : 0.07943426904579004
+2021-10-27 03:14:45,874 - trainer - INFO -     masked_rmse_np : 0.9809626450141271
+2021-10-27 03:14:45,874 - trainer - INFO -     val_loss       : 2.66067852973938
+2021-10-27 03:14:45,874 - trainer - INFO -     val_masked_mae_np: 0.39855762422084806
+2021-10-27 03:14:45,874 - trainer - INFO -     val_masked_mape_np: 0.11459268480539322
+2021-10-27 03:14:45,874 - trainer - INFO -     val_masked_rmse_np: 2.0760874271392824
+2021-10-27 03:14:45,874 - trainer - INFO -     Time           : 88.8512s
+2021-10-27 03:14:45,923 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch80.pth ...
+2021-10-27 03:14:45,958 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:16:29,947 - trainer - INFO -     epoch          : 81
+2021-10-27 03:16:29,948 - trainer - INFO -     loss           : 1.2312776108582815
+2021-10-27 03:16:29,948 - trainer - INFO -     masked_mae_np  : 0.18443982054789862
+2021-10-27 03:16:29,948 - trainer - INFO -     masked_mape_np : 0.07943426792820295
+2021-10-27 03:16:29,948 - trainer - INFO -     masked_rmse_np : 0.9809626450141271
+2021-10-27 03:16:29,948 - trainer - INFO -     val_loss       : 2.660678505897522
+2021-10-27 03:16:29,948 - trainer - INFO -     val_masked_mae_np: 0.3985576152801514
+2021-10-27 03:16:29,948 - trainer - INFO -     val_masked_mape_np: 0.11459268406033515
+2021-10-27 03:16:29,948 - trainer - INFO -     val_masked_rmse_np: 2.0760874152183533
+2021-10-27 03:16:29,948 - trainer - INFO -     Time           : 90.0749s
+2021-10-27 03:16:29,978 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch81.pth ...
+2021-10-27 03:16:30,011 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:18:13,768 - trainer - INFO -     epoch          : 82
+2021-10-27 03:18:13,768 - trainer - INFO -     loss           : 1.2312775880098343
+2021-10-27 03:18:13,768 - trainer - INFO -     masked_mae_np  : 0.18443981756766636
+2021-10-27 03:18:13,769 - trainer - INFO -     masked_mape_np : 0.07943426544467608
+2021-10-27 03:18:13,769 - trainer - INFO -     masked_rmse_np : 0.9809626410404841
+2021-10-27 03:18:13,769 - trainer - INFO -     val_loss       : 2.660678505897522
+2021-10-27 03:18:13,769 - trainer - INFO -     val_masked_mae_np: 0.39855762124061583
+2021-10-27 03:18:13,769 - trainer - INFO -     val_masked_mape_np: 0.11459268182516098
+2021-10-27 03:18:13,769 - trainer - INFO -     val_masked_rmse_np: 2.076087439060211
+2021-10-27 03:18:13,769 - trainer - INFO -     Time           : 88.9360s
+2021-10-27 03:18:13,848 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch82.pth ...
+2021-10-27 03:18:13,880 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:19:56,196 - trainer - INFO -     epoch          : 83
+2021-10-27 03:19:56,196 - trainer - INFO -     loss           : 1.2312775701284409
+2021-10-27 03:19:56,196 - trainer - INFO -     masked_mae_np  : 0.18443981607755025
+2021-10-27 03:19:56,196 - trainer - INFO -     masked_mape_np : 0.07943426333367824
+2021-10-27 03:19:56,196 - trainer - INFO -     masked_rmse_np : 0.9809626380602519
+2021-10-27 03:19:56,197 - trainer - INFO -     val_loss       : 2.660678505897522
+2021-10-27 03:19:56,197 - trainer - INFO -     val_masked_mae_np: 0.39855760931968687
+2021-10-27 03:19:56,197 - trainer - INFO -     val_masked_mape_np: 0.11459268182516098
+2021-10-27 03:19:56,197 - trainer - INFO -     val_masked_rmse_np: 2.0760874152183533
+2021-10-27 03:19:56,197 - trainer - INFO -     Time           : 88.5932s
+2021-10-27 03:19:56,209 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch83.pth ...
+2021-10-27 03:19:56,243 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:21:38,279 - trainer - INFO -     epoch          : 84
+2021-10-27 03:21:38,280 - trainer - INFO -     loss           : 1.2312775681416193
+2021-10-27 03:21:38,280 - trainer - INFO -     masked_mae_np  : 0.1844398144632578
+2021-10-27 03:21:38,280 - trainer - INFO -     masked_mape_np : 0.07943426171938578
+2021-10-27 03:21:38,280 - trainer - INFO -     masked_rmse_np : 0.9809626340866089
+2021-10-27 03:21:38,280 - trainer - INFO -     val_loss       : 2.660678482055664
+2021-10-27 03:21:38,280 - trainer - INFO -     val_masked_mae_np: 0.39855761229991915
+2021-10-27 03:21:38,280 - trainer - INFO -     val_masked_mape_np: 0.11459268182516098
+2021-10-27 03:21:38,280 - trainer - INFO -     val_masked_rmse_np: 2.0760873913764955
+2021-10-27 03:21:38,280 - trainer - INFO -     Time           : 88.6800s
+2021-10-27 03:21:38,292 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch84.pth ...
+2021-10-27 03:21:38,305 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:23:21,052 - trainer - INFO -     epoch          : 85
+2021-10-27 03:23:21,052 - trainer - INFO -     loss           : 1.231277554233869
+2021-10-27 03:23:21,053 - trainer - INFO -     masked_mae_np  : 0.18443981197973092
+2021-10-27 03:23:21,053 - trainer - INFO -     masked_mape_np : 0.07943425948421161
+2021-10-27 03:23:21,053 - trainer - INFO -     masked_rmse_np : 0.9809626241525015
+2021-10-27 03:23:21,053 - trainer - INFO -     val_loss       : 2.660678434371948
+2021-10-27 03:23:21,053 - trainer - INFO -     val_masked_mae_np: 0.39855760931968687
+2021-10-27 03:23:21,053 - trainer - INFO -     val_masked_mape_np: 0.1145926795899868
+2021-10-27 03:23:21,053 - trainer - INFO -     val_masked_rmse_np: 2.076087403297424
+2021-10-27 03:23:21,053 - trainer - INFO -     Time           : 89.5119s
+2021-10-27 03:23:21,065 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch85.pth ...
+2021-10-27 03:23:21,097 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:25:04,423 - trainer - INFO -     epoch          : 86
+2021-10-27 03:25:04,423 - trainer - INFO -     loss           : 1.2312775254249573
+2021-10-27 03:25:04,423 - trainer - INFO -     masked_mae_np  : 0.18443980726102988
+2021-10-27 03:25:04,423 - trainer - INFO -     masked_mape_np : 0.07943425799409548
+2021-10-27 03:25:04,423 - trainer - INFO -     masked_rmse_np : 0.9809626241525015
+2021-10-27 03:25:04,423 - trainer - INFO -     val_loss       : 2.660678434371948
+2021-10-27 03:25:04,423 - trainer - INFO -     val_masked_mae_np: 0.3985576033592224
+2021-10-27 03:25:04,423 - trainer - INFO -     val_masked_mape_np: 0.1145926758646965
+2021-10-27 03:25:04,423 - trainer - INFO -     val_masked_rmse_np: 2.076087403297424
+2021-10-27 03:25:04,423 - trainer - INFO -     Time           : 89.8466s
+2021-10-27 03:25:04,469 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch86.pth ...
+2021-10-27 03:25:04,503 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:26:45,776 - trainer - INFO -     epoch          : 87
+2021-10-27 03:26:45,776 - trainer - INFO -     loss           : 1.2312775244315466
+2021-10-27 03:26:45,776 - trainer - INFO -     masked_mae_np  : 0.18443980452915032
+2021-10-27 03:26:45,776 - trainer - INFO -     masked_mape_np : 0.07943425637980302
+2021-10-27 03:26:45,776 - trainer - INFO -     masked_rmse_np : 0.9809626122315724
+2021-10-27 03:26:45,776 - trainer - INFO -     val_loss       : 2.6606783628463746
+2021-10-27 03:26:45,776 - trainer - INFO -     val_masked_mae_np: 0.3985576033592224
+2021-10-27 03:26:45,776 - trainer - INFO -     val_masked_mape_np: 0.11459267139434814
+2021-10-27 03:26:45,777 - trainer - INFO -     val_masked_rmse_np: 2.0760873794555663
+2021-10-27 03:26:45,777 - trainer - INFO -     Time           : 88.0773s
+2021-10-27 03:26:45,789 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch87.pth ...
+2021-10-27 03:26:45,821 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:28:30,651 - trainer - INFO -     epoch          : 88
+2021-10-27 03:28:30,652 - trainer - INFO -     loss           : 1.231277522444725
+2021-10-27 03:28:30,652 - trainer - INFO -     masked_mae_np  : 0.18443980179727076
+2021-10-27 03:28:30,652 - trainer - INFO -     masked_mape_np : 0.07943425551056862
+2021-10-27 03:28:30,652 - trainer - INFO -     masked_rmse_np : 0.9809626082579295
+2021-10-27 03:28:30,652 - trainer - INFO -     val_loss       : 2.6606783151626585
+2021-10-27 03:28:30,652 - trainer - INFO -     val_masked_mae_np: 0.3985576003789902
+2021-10-27 03:28:30,652 - trainer - INFO -     val_masked_mape_np: 0.11459267064929009
+2021-10-27 03:28:30,652 - trainer - INFO -     val_masked_rmse_np: 2.0760873675346376
+2021-10-27 03:28:30,652 - trainer - INFO -     Time           : 89.9298s
+2021-10-27 03:28:30,664 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch88.pth ...
+2021-10-27 03:28:30,698 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:30:15,127 - trainer - INFO -     epoch          : 89
+2021-10-27 03:30:15,127 - trainer - INFO -     loss           : 1.2312774747610091
+2021-10-27 03:30:15,127 - trainer - INFO -     masked_mae_np  : 0.18443979906539124
+2021-10-27 03:30:15,127 - trainer - INFO -     masked_mape_np : 0.0794342540204525
+2021-10-27 03:30:15,127 - trainer - INFO -     masked_rmse_np : 0.9809626032908757
+2021-10-27 03:30:15,128 - trainer - INFO -     val_loss       : 2.6606783151626585
+2021-10-27 03:30:15,128 - trainer - INFO -     val_masked_mae_np: 0.3985576003789902
+2021-10-27 03:30:15,128 - trainer - INFO -     val_masked_mape_np: 0.11459266766905785
+2021-10-27 03:30:15,128 - trainer - INFO -     val_masked_rmse_np: 2.0760873556137085
+2021-10-27 03:30:15,128 - trainer - INFO -     Time           : 90.8037s
+2021-10-27 03:30:15,140 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch89.pth ...
+2021-10-27 03:30:15,172 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:31:57,174 - trainer - INFO -     epoch          : 90
+2021-10-27 03:31:57,175 - trainer - INFO -     loss           : 1.2312774668137232
+2021-10-27 03:31:57,175 - trainer - INFO -     masked_mae_np  : 0.1844397975752751
+2021-10-27 03:31:57,175 - trainer - INFO -     masked_mape_np : 0.07943425203363101
+2021-10-27 03:31:57,175 - trainer - INFO -     masked_rmse_np : 0.9809626042842865
+2021-10-27 03:31:57,175 - trainer - INFO -     val_loss       : 2.660678267478943
+2021-10-27 03:31:57,175 - trainer - INFO -     val_masked_mae_np: 0.3985575884580612
+2021-10-27 03:31:57,175 - trainer - INFO -     val_masked_mape_np: 0.11459266617894173
+2021-10-27 03:31:57,175 - trainer - INFO -     val_masked_rmse_np: 2.0760873556137085
+2021-10-27 03:31:57,175 - trainer - INFO -     Time           : 88.4457s
+2021-10-27 03:31:57,236 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch90.pth ...
+2021-10-27 03:31:57,269 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:33:41,082 - trainer - INFO -     epoch          : 91
+2021-10-27 03:33:41,082 - trainer - INFO -     loss           : 1.231277455886205
+2021-10-27 03:33:41,082 - trainer - INFO -     masked_mae_np  : 0.18443979608515898
+2021-10-27 03:33:41,082 - trainer - INFO -     masked_mape_np : 0.07943425091604392
+2021-10-27 03:33:41,082 - trainer - INFO -     masked_rmse_np : 0.9809626042842865
+2021-10-27 03:33:41,082 - trainer - INFO -     val_loss       : 2.660678267478943
+2021-10-27 03:33:41,083 - trainer - INFO -     val_masked_mae_np: 0.398557585477829
+2021-10-27 03:33:41,083 - trainer - INFO -     val_masked_mape_np: 0.11459266319870949
+2021-10-27 03:33:41,083 - trainer - INFO -     val_masked_rmse_np: 2.0760873436927794
+2021-10-27 03:33:41,083 - trainer - INFO -     Time           : 89.9718s
+2021-10-27 03:33:41,140 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch91.pth ...
+2021-10-27 03:33:41,173 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:35:27,068 - trainer - INFO -     epoch          : 92
+2021-10-27 03:35:27,068 - trainer - INFO -     loss           : 1.2312774449586867
+2021-10-27 03:35:27,068 - trainer - INFO -     masked_mae_np  : 0.1844397934774558
+2021-10-27 03:35:27,068 - trainer - INFO -     masked_mape_np : 0.07943424992263318
+2021-10-27 03:35:27,068 - trainer - INFO -     masked_rmse_np : 0.9809625933567683
+2021-10-27 03:35:27,068 - trainer - INFO -     val_loss       : 2.660678243637085
+2021-10-27 03:35:27,068 - trainer - INFO -     val_masked_mae_np: 0.39855758249759676
+2021-10-27 03:35:27,068 - trainer - INFO -     val_masked_mape_np: 0.11459266245365143
+2021-10-27 03:35:27,068 - trainer - INFO -     val_masked_rmse_np: 2.0760873436927794
+2021-10-27 03:35:27,069 - trainer - INFO -     Time           : 91.2784s
+2021-10-27 03:35:27,081 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch92.pth ...
+2021-10-27 03:35:27,115 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:37:10,770 - trainer - INFO -     epoch          : 93
+2021-10-27 03:37:10,770 - trainer - INFO -     loss           : 1.2312774389982224
+2021-10-27 03:37:10,770 - trainer - INFO -     masked_mae_np  : 0.18443979248404502
+2021-10-27 03:37:10,770 - trainer - INFO -     masked_mape_np : 0.07943424805998803
+2021-10-27 03:37:10,770 - trainer - INFO -     masked_rmse_np : 0.9809625963370006
+2021-10-27 03:37:10,770 - trainer - INFO -     val_loss       : 2.660678172111511
+2021-10-27 03:37:10,771 - trainer - INFO -     val_masked_mae_np: 0.398557585477829
+2021-10-27 03:37:10,771 - trainer - INFO -     val_masked_mape_np: 0.1145926609635353
+2021-10-27 03:37:10,771 - trainer - INFO -     val_masked_rmse_np: 2.0760873436927794
+2021-10-27 03:37:10,771 - trainer - INFO -     Time           : 90.2771s
+2021-10-27 03:37:10,820 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch93.pth ...
+2021-10-27 03:37:10,853 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:38:54,595 - trainer - INFO -     epoch          : 94
+2021-10-27 03:38:54,596 - trainer - INFO -     loss           : 1.2312774121761323
+2021-10-27 03:38:54,596 - trainer - INFO -     masked_mae_np  : 0.18443979149063428
+2021-10-27 03:38:54,596 - trainer - INFO -     masked_mape_np : 0.07943424570063749
+2021-10-27 03:38:54,596 - trainer - INFO -     masked_rmse_np : 0.98096258242925
+2021-10-27 03:38:54,596 - trainer - INFO -     val_loss       : 2.6606781244277955
+2021-10-27 03:38:54,596 - trainer - INFO -     val_masked_mae_np: 0.398557585477829
+2021-10-27 03:38:54,596 - trainer - INFO -     val_masked_mape_np: 0.11459266170859336
+2021-10-27 03:38:54,596 - trainer - INFO -     val_masked_rmse_np: 2.0760873436927794
+2021-10-27 03:38:54,596 - trainer - INFO -     Time           : 90.4555s
+2021-10-27 03:38:54,609 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch94.pth ...
+2021-10-27 03:38:54,623 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:40:37,177 - trainer - INFO -     epoch          : 95
+2021-10-27 03:40:37,178 - trainer - INFO -     loss           : 1.2312773992617925
+2021-10-27 03:40:37,178 - trainer - INFO -     masked_mae_np  : 0.18443979024887086
+2021-10-27 03:40:37,178 - trainer - INFO -     masked_mape_np : 0.07943424309293429
+2021-10-27 03:40:37,178 - trainer - INFO -     masked_rmse_np : 0.9809625784556071
+2021-10-27 03:40:37,178 - trainer - INFO -     val_loss       : 2.6606781005859377
+2021-10-27 03:40:37,178 - trainer - INFO -     val_masked_mae_np: 0.3985575735569
+2021-10-27 03:40:37,178 - trainer - INFO -     val_masked_mape_np: 0.11459265798330306
+2021-10-27 03:40:37,178 - trainer - INFO -     val_masked_rmse_np: 2.0760873317718507
+2021-10-27 03:40:37,178 - trainer - INFO -     Time           : 89.0174s
+2021-10-27 03:40:37,259 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch95.pth ...
+2021-10-27 03:40:37,291 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:42:20,650 - trainer - INFO -     epoch          : 96
+2021-10-27 03:42:20,651 - trainer - INFO -     loss           : 1.231277385354042
+2021-10-27 03:42:20,651 - trainer - INFO -     masked_mae_np  : 0.18443978826204935
+2021-10-27 03:42:20,651 - trainer - INFO -     masked_mape_np : 0.07943424209952354
+2021-10-27 03:42:20,651 - trainer - INFO -     masked_rmse_np : 0.9809625744819641
+2021-10-27 03:42:20,651 - trainer - INFO -     val_loss       : 2.6606781005859377
+2021-10-27 03:42:20,651 - trainer - INFO -     val_masked_mae_np: 0.3985575705766678
+2021-10-27 03:42:20,651 - trainer - INFO -     val_masked_mape_np: 0.1145926557481289
+2021-10-27 03:42:20,651 - trainer - INFO -     val_masked_rmse_np: 2.0760873317718507
+2021-10-27 03:42:20,651 - trainer - INFO -     Time           : 89.6633s
+2021-10-27 03:42:20,663 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch96.pth ...
+2021-10-27 03:42:20,695 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:44:05,282 - trainer - INFO -     epoch          : 97
+2021-10-27 03:44:05,283 - trainer - INFO -     loss           : 1.231277378400167
+2021-10-27 03:44:05,283 - trainer - INFO -     masked_mae_np  : 0.1844397855301698
+2021-10-27 03:44:05,283 - trainer - INFO -     masked_mape_np : 0.07943424036105474
+2021-10-27 03:44:05,283 - trainer - INFO -     masked_rmse_np : 0.9809625665346782
+2021-10-27 03:44:05,283 - trainer - INFO -     val_loss       : 2.6606780767440794
+2021-10-27 03:44:05,283 - trainer - INFO -     val_masked_mae_np: 0.3985575705766678
+2021-10-27 03:44:05,283 - trainer - INFO -     val_masked_mape_np: 0.11459265276789665
+2021-10-27 03:44:05,283 - trainer - INFO -     val_masked_rmse_np: 2.0760873317718507
+2021-10-27 03:44:05,283 - trainer - INFO -     Time           : 90.6683s
+2021-10-27 03:44:05,295 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch97.pth ...
+2021-10-27 03:44:05,327 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:45:48,018 - trainer - INFO -     epoch          : 98
+2021-10-27 03:45:48,018 - trainer - INFO -     loss           : 1.2312773446242014
+2021-10-27 03:45:48,018 - trainer - INFO -     masked_mae_np  : 0.18443978404005368
+2021-10-27 03:45:48,019 - trainer - INFO -     masked_mape_np : 0.07943423874676228
+2021-10-27 03:45:48,019 - trainer - INFO -     masked_rmse_np : 0.9809625506401062
+2021-10-27 03:45:48,019 - trainer - INFO -     val_loss       : 2.6606780767440794
+2021-10-27 03:45:48,019 - trainer - INFO -     val_masked_mae_np: 0.3985575646162033
+2021-10-27 03:45:48,019 - trainer - INFO -     val_masked_mape_np: 0.11459264978766441
+2021-10-27 03:45:48,019 - trainer - INFO -     val_masked_rmse_np: 2.0760873317718507
+2021-10-27 03:45:48,019 - trainer - INFO -     Time           : 89.2405s
+2021-10-27 03:45:48,031 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch98.pth ...
+2021-10-27 03:45:48,044 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:47:29,386 - trainer - INFO -     epoch          : 99
+2021-10-27 03:47:29,386 - trainer - INFO -     loss           : 1.2312773456176123
+2021-10-27 03:47:29,386 - trainer - INFO -     masked_mae_np  : 0.18443978130817412
+2021-10-27 03:47:29,386 - trainer - INFO -     masked_mape_np : 0.07943423725664615
+2021-10-27 03:47:29,386 - trainer - INFO -     masked_rmse_np : 0.9809625506401062
+2021-10-27 03:47:29,386 - trainer - INFO -     val_loss       : 2.6606780529022216
+2021-10-27 03:47:29,386 - trainer - INFO -     val_masked_mae_np: 0.39855756163597106
+2021-10-27 03:47:29,386 - trainer - INFO -     val_masked_mape_np: 0.11459264606237411
+2021-10-27 03:47:29,386 - trainer - INFO -     val_masked_rmse_np: 2.0760873317718507
+2021-10-27 03:47:29,386 - trainer - INFO -     Time           : 87.5378s
+2021-10-27 03:47:29,398 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch99.pth ...
+2021-10-27 03:47:29,429 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:49:14,817 - trainer - INFO -     epoch          : 100
+2021-10-27 03:49:14,818 - trainer - INFO -     loss           : 1.2312773366769154
+2021-10-27 03:49:14,818 - trainer - INFO -     masked_mae_np  : 0.18443977783123652
+2021-10-27 03:49:14,818 - trainer - INFO -     masked_mape_np : 0.07943423564235369
+2021-10-27 03:49:14,818 - trainer - INFO -     masked_rmse_np : 0.9809625407059988
+2021-10-27 03:49:14,818 - trainer - INFO -     val_loss       : 2.6606780529022216
+2021-10-27 03:49:14,818 - trainer - INFO -     val_masked_mae_np: 0.39855756163597106
+2021-10-27 03:49:14,818 - trainer - INFO -     val_masked_mape_np: 0.11459264308214187
+2021-10-27 03:49:14,818 - trainer - INFO -     val_masked_rmse_np: 2.0760873317718507
+2021-10-27 03:49:14,818 - trainer - INFO -     Time           : 91.4702s
+2021-10-27 03:49:14,852 - trainer - INFO - Saving checkpoint: saved/hangzhou/models/Hangzhou_DCRNN/1027_005347/checkpoint-epoch100.pth ...
+2021-10-27 03:49:14,885 - trainer - INFO - Saving current best: model_best.pth ...
+2021-10-27 03:49:14,885 - trainer - INFO - Average training time: 89.6001s
