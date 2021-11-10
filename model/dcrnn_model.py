@@ -102,7 +102,9 @@ class DCGRUDecoder(BaseModel):
         inputs = torch.reshape(inputs, (seq_length, batch_size, -1))  # (12+1, 50, 207*1)
 
         # tensor to store decoder outputs
+        
         outputs = torch.zeros(seq_length, batch_size, self._num_nodes*self._output_dim)  # (13, 50, 207*1)
+        print("outputs shape : {}".format(outputs.shape))
         # print(inputs.shape, outputs.shape)
         # if rnn has only one layer
         # if self._num_rnn_layers == 1:
@@ -125,6 +127,7 @@ class DCGRUDecoder(BaseModel):
                 current_input = output  # the input of present layer is the output of last layer
                 next_input_hidden_state.append(hidden_state)  # store each layer's hidden state
             initial_hidden_state = torch.stack(next_input_hidden_state, dim=0)
+            print("output.shape : {}".format(output.shape))
             outputs[t] = output  # store the last layer's output to outputs tensor
             # perform scheduled sampling teacher forcing
             teacher_force = random.random() < teacher_forcing_ratio  # a bool value

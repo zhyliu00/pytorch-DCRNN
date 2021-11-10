@@ -1,16 +1,16 @@
 {
-    "name": "Hangzhou_DCRNN",
+    "name": "round2_DCRNN",
     "n_gpu": 1,
 
     "arch": {
         "type": "DCRNNModel",
         "args": {
-			"batch_size": 1,
+			"batch_size": 10,
 			"enc_input_dim": 1,
 			"dec_input_dim": 1,
 			"max_diffusion_step": 2,
 			"num_nodes": 207,
-			"num_rnn_layers": 2,
+			"num_rnn_layers": 1,
 			"rnn_units": 64,
 			"seq_len": 3,
 			"output_dim": 1,
@@ -20,8 +20,8 @@
     "dataloader": {
         "type": "Data",
         "args":{
-			"train_batch_size": 1,
-            "data_dir": "data/hangzhou_withInOut_splitlength.pkl",
+			"train_batch_size": 10,
+            "data_dir": "data/round2_withInOut_splitlength.pkl",
             "shuffle": true,
             "validation_split": 0.1,
 			"val_batch_size": 10,
@@ -32,7 +32,7 @@
     "optimizer": {
         "type": "Adam",
         "args":{
-            "lr": 1e-6,
+            "lr": 1e-3,
             "weight_decay": 0,
 			"eps": 1.0e-3,
             "amsgrad": true
@@ -57,8 +57,8 @@
     "trainer": {
         "epochs": 100,
 		"cl_decay_steps": 100,
-        "save_dir": "saved/hangzhou/",
-        "save_period": 1,
+        "save_dir": "saved/round2/",
+        "save_period": 5,
         "verbosity": 2,
         "max_grad_norm": 5,
         "monitor": "min val_loss",

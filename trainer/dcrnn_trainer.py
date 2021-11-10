@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.core.fromnumeric import shape
 import torch
 from base import BaseTrainer
 import math
@@ -74,7 +75,7 @@ class DCRNNTrainer(BaseTrainer):
 
             # baseline mask
             mask = (label * self.stds + self.means > 5)
-
+            print("in training, output shape : {}, label shape : {}\noutput: {}\nlabel:{}".format(np.shape(output),np.shape(label),output,label))
             loss = self.loss(mask*output.cpu(), mask*label)  # loss is self-defined, need cpu input
             loss.backward()
             # add max grad clipping
